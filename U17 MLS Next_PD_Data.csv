@@ -1,0 +1,937 @@
+﻿Athlete Name,Athlete Position,Athlete Groups,Start Date,Start Time,Start Time (s),End Time (s),Week Start Date,Month Start Date,Session Type,Tags,Segment Name,Duration (mins),Session Load,Workload,Workload Volume,Workload Intensity,Distance (m),Metres per Minute (m),High Intensity Running (m),No. of High Intensity Events,Sprint Distance (m),No. of Sprints,Top Speed (kph),Avg Speed (kph),Accelerations,Decelerations
+Asher Herrmann,Centre Midfielder,None,3/25/25,19:15,19:15:00,20:30:00,3/24/25,3/1/25,Training Session,None,Whole Session,75,,10,10,10,3939,53,52,9,85,4,25.6,3.2,39,30
+Brendan Furlonge,Right Back,None,3/25/25,19:15,19:15:00,20:30:00,3/24/25,3/1/25,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+casey powers,Goalkeeper,None,3/25/25,19:15,19:15:00,20:30:00,3/24/25,3/1/25,Training Session,None,Whole Session,75,,9,10,7.99,5275,70,0,0,0,0,0,4.2,0,0
+Devin Smith,Left Back,None,3/25/25,19:15,19:15:00,20:30:00,3/24/25,3/1/25,Training Session,None,Whole Session,75,,8.7,9.98,7.36,1119,15,0,0,0,0,0,0.9,2,3
+Finn Van Clief,Striker,None,3/25/25,19:15,19:15:00,20:30:00,3/24/25,3/1/25,Training Session,None,Whole Session,75,,9.8,9.61,9.91,4481,60,79,19,203,12,28.8,3.6,43,47
+Henry Freeman,Right Back,None,3/25/25,19:15,19:15:00,20:30:00,3/24/25,3/1/25,Training Session,None,Whole Session,75,,9,8.46,9.58,3992,53,106,22,163,10,27.6,3.2,63,61
+Jake Ciavarro,Centre Defensive Midfielder,None,3/25/25,19:15,19:15:00,20:30:00,3/24/25,3/1/25,Training Session,None,Whole Session,75,,8,10,6,78,1,0,0,0,0,5.3,0.1,0,0
+Jonah Greenblatt,Left Back,None,3/25/25,19:15,19:15:00,20:30:00,3/24/25,3/1/25,Training Session,None,Whole Session,75,,10,10,10,4729,63,94,17,172,9,27.1,3.8,61,55
+Jonah Greenblatt,Left Back,None,3/25/25,19:15,19:15:00,20:30:00,3/24/25,3/1/25,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Kaio Morais,Right Winger,None,3/25/25,19:15,19:15:00,20:30:00,3/24/25,3/1/25,Training Session,None,Whole Session,75,,10,10,10,4011,53,105,19,84,7,25.4,3.2,57,59
+Karim Eljamal,Centre Midfielder,None,3/25/25,19:15,19:15:00,20:30:00,3/24/25,3/1/25,Training Session,None,Whole Session,75,,9.3,10,8.69,4056,54,41,10,134,7,24.1,3.2,38,35
+Killian Walsh,Striker,None,3/25/25,19:15,19:15:00,20:30:00,3/24/25,3/1/25,Training Session,None,Whole Session,75,,8.1,8.19,7.96,4640,62,57,12,175,8,27.4,3.7,59,51
+Liam Pitts,Right Winger,None,3/25/25,19:15,19:15:00,20:30:00,3/24/25,3/1/25,Training Session,None,Whole Session,75,,9.3,8.93,9.68,4690,63,64,16,196,13,26.2,3.8,78,48
+Marcus Cooper,Centre Back,None,3/25/25,19:15,19:15:00,20:30:00,3/24/25,3/1/25,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Sam Cunniffe,Centre Back,None,3/25/25,19:15,19:15:00,20:30:00,3/24/25,3/1/25,Training Session,None,Whole Session,75,,10,10,10,4381,58,63,14,147,7,24.1,3.5,53,35
+Vasilian,Centre Midfielder,None,3/25/25,19:15,19:15:00,20:30:00,3/24/25,3/1/25,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Asher Herrmann,Centre Midfielder,None,3/12/25,16:06,16:06:00,17:16:00,3/10/25,3/1/25,Training Session,None,Whole Session,70,,,,,0,0,0,0,0,0,0,0,0,0
+Asher Herrmann,Centre Midfielder,None,3/11/25,18:50,18:50:00,20:10:00,3/10/25,3/1/25,Training Session,None,Whole Session,80,,,,,4,0,0,0,0,0,0,0,0,0
+Asher Herrmann,Centre Midfielder,None,3/15/25,17:00,17:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Whole Session,90,,7.7,9.55,5.87,7,0,0,0,0,0,0.6,0,0,0
+Asher Herrmann,Centre Midfielder,None,3/15/25,17:00,17:00:00,17:45:00,3/10/25,3/1/25,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Asher Herrmann,Centre Midfielder,None,3/15/25,18:00,18:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Second Half,45,,,,,7,0,0,0,0,0,0.6,0,0,0
+Brendan Furlonge,Right Back,None,3/11/25,18:50,18:50:00,20:10:00,3/10/25,3/1/25,Training Session,None,Whole Session,80,,,,,4113,51,89,16,90,9,25.9,3.1,78,45
+Brendan Furlonge,Right Back,None,3/12/25,16:06,16:06:00,17:16:00,3/10/25,3/1/25,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Brendan Furlonge,Right Back,None,3/15/25,17:00,17:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Whole Session,90,,8.3,7.79,8.72,4450,49,394,47,337,24,28.7,3,42,56
+Brendan Furlonge,Right Back,None,3/15/25,18:00,18:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Brendan Furlonge,Right Back,None,3/15/25,17:00,17:00:00,17:45:00,3/10/25,3/1/25,Match Session,None,First Half,45,,,,,4450,99,394,47,337,24,28.7,5.9,42,56
+casey powers,Goalkeeper,None,3/12/25,16:06,16:06:00,17:16:00,3/10/25,3/1/25,Training Session,None,Whole Session,70,,,,,0,0,0,0,0,0,0,0,0,0
+casey powers,Goalkeeper,None,3/11/25,18:50,18:50:00,20:10:00,3/10/25,3/1/25,Training Session,None,Whole Session,80,,,,,2,0,0,0,0,0,0.7,0,0,0
+casey powers,Goalkeeper,None,3/15/25,17:00,17:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Whole Session,90,,8.3,10,6.66,14,0,0,0,0,0,3.4,0,0,0
+casey powers,Goalkeeper,None,3/15/25,18:00,18:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Second Half,45,,,,,9,0,0,0,0,0,3,0,0,0
+casey powers,Goalkeeper,None,3/15/25,17:00,17:00:00,17:45:00,3/10/25,3/1/25,Match Session,None,First Half,45,,,,,5,0,0,0,0,0,3.4,0,0,0
+Devin Smith,Left Back,None,3/11/25,18:50,18:50:00,20:10:00,3/10/25,3/1/25,Training Session,None,Whole Session,80,,,,,2,0,0,0,0,0,0,0,1,0
+Finn Van Clief,Striker,None,3/12/25,16:06,16:06:00,17:16:00,3/10/25,3/1/25,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Finn Van Clief,Striker,None,3/11/25,18:50,18:50:00,20:10:00,3/10/25,3/1/25,Training Session,None,Whole Session,80,,,,,4671,58,93,21,74,8,23.7,3.5,67,56
+Finn Van Clief,Striker,None,3/15/25,17:00,17:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Whole Session,90,,1,0.53,1.52,171,2,29,2,14,2,20.8,0.1,3,5
+Finn Van Clief,Striker,None,3/15/25,17:00,17:00:00,17:45:00,3/10/25,3/1/25,Match Session,None,First Half,45,,,,,3,0,0,0,0,0,2.6,0,0,0
+Finn Van Clief,Striker,None,3/15/25,18:00,18:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Second Half,45,,,,,168,4,29,2,14,2,20.8,0.2,3,5
+Henry Freeman,Right Back,None,3/15/25,17:00,17:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Whole Session,90,,3.3,3.24,3.29,1176,13,36,7,51,4,21.3,0.8,17,12
+Henry Freeman,Right Back,None,3/15/25,17:00,17:00:00,17:45:00,3/10/25,3/1/25,Match Session,None,First Half,45,,,,,69,2,0,0,26,1,21.3,0.1,1,0
+Henry Freeman,Right Back,None,3/15/25,18:00,18:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Second Half,45,,,,,1106,25,36,7,25,3,20.7,1.5,16,12
+Henry Freeman,Right Back,None,3/11/25,18:50,18:50:00,20:10:00,3/10/25,3/1/25,Training Session,None,Whole Session,80,,,,,4270,53,126,23,92,9,23.4,3.2,56,58
+Henry Freeman,Right Back,None,3/12/25,16:06,16:06:00,17:16:00,3/10/25,3/1/25,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,3/15/25,17:00,17:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Whole Session,90,,5,5,5,0,0,0,0,0,0,0,0,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,3/15/25,18:00,18:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,3/15/25,17:00,17:00:00,17:45:00,3/10/25,3/1/25,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,3/11/25,18:50,18:50:00,20:10:00,3/10/25,3/1/25,Training Session,None,Whole Session,80,,,,,0,0,0,0,0,0,0,0,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,3/12/25,16:06,16:06:00,17:16:00,3/10/25,3/1/25,Training Session,None,Whole Session,70,,10,10,10,3307,47,163,27,2235,36,40.9,2.8,4,12
+Jonah Greenblatt,Left Back,None,3/11/25,18:50,18:50:00,20:10:00,3/10/25,3/1/25,Training Session,None,Whole Session,80,,,,,4721,59,125,26,87,10,23,3.5,66,64
+Jonah Greenblatt,Left Back,None,3/12/25,16:06,16:06:00,17:16:00,3/10/25,3/1/25,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,3/12/25,16:06,16:06:00,17:16:00,3/10/25,3/1/25,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Jonah Greenblatt,Left Back,None,3/15/25,17:00,17:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Jonah Greenblatt,Left Back,None,3/15/25,17:00,17:00:00,17:45:00,3/10/25,3/1/25,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Jonah Greenblatt,Left Back,None,3/15/25,18:00,18:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Jonah Greenblatt,Left Back,None,3/15/25,17:00,17:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,3/15/25,17:00,17:00:00,17:45:00,3/10/25,3/1/25,Match Session,None,First Half,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,3/15/25,18:00,18:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Second Half,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,3/11/25,18:50,18:50:00,20:10:00,3/10/25,3/1/25,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Kaio Morais,Right Winger,None,3/15/25,17:00,17:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Whole Session,90,,5,5,5,0,0,0,0,0,0,0,0,0,0
+Kaio Morais,Right Winger,None,3/15/25,17:00,17:00:00,17:45:00,3/10/25,3/1/25,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Kaio Morais,Right Winger,None,3/15/25,18:00,18:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Kaio Morais,Right Winger,None,3/12/25,16:06,16:06:00,17:16:00,3/10/25,3/1/25,Training Session,None,Whole Session,70,,,,,0,0,0,0,0,0,0,0,0,0
+Karim Eljamal,Centre Midfielder,None,3/12/25,16:06,16:06:00,17:16:00,3/10/25,3/1/25,Training Session,None,Whole Session,70,,1.5,0,3,0,0,0,0,0,0,0,0,0,0
+Karim Eljamal,Centre Midfielder,None,3/11/25,18:50,18:50:00,20:10:00,3/10/25,3/1/25,Training Session,None,Whole Session,80,,,,,88,1,0,0,0,0,5.7,0.1,2,0
+Karim Eljamal,Centre Midfielder,None,3/15/25,17:00,17:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Whole Session,90,,10,10,10,3548,39,256,33,154,11,23.9,2.4,44,55
+Karim Eljamal,Centre Midfielder,None,3/15/25,18:00,18:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Second Half,45,,,,,1946,43,191,24,66,6,23.9,2.6,21,30
+Karim Eljamal,Centre Midfielder,None,3/15/25,17:00,17:00:00,17:45:00,3/10/25,3/1/25,Match Session,None,First Half,45,,,,,1603,36,65,9,88,5,23.9,2.1,23,25
+Killian Walsh,Striker,None,3/12/25,16:06,16:06:00,17:16:00,3/10/25,3/1/25,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Killian Walsh,Striker,None,3/11/25,18:50,18:50:00,20:10:00,3/10/25,3/1/25,Training Session,None,Whole Session,80,,,,,4834,60,125,21,41,3,25.1,3.6,55,47
+Killian Walsh,Striker,None,3/15/25,17:00,17:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Whole Session,90,,5.2,4.17,6.27,1858,21,109,18,220,13,28.6,1.2,25,21
+Killian Walsh,Striker,None,3/15/25,17:00,17:00:00,17:45:00,3/10/25,3/1/25,Match Session,None,First Half,45,,,,,1369,30,98,15,147,10,27.7,1.8,22,15
+Killian Walsh,Striker,None,3/15/25,18:00,18:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Second Half,45,,,,,489,11,12,3,73,3,28.6,0.7,3,6
+Liam Pitts,Right Winger,None,3/12/25,16:06,16:06:00,17:16:00,3/10/25,3/1/25,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Liam Pitts,Right Winger,None,3/15/25,17:00,17:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Whole Session,90,,4.6,3.83,5.34,1486,17,84,10,93,5,29.1,1,13,14
+Liam Pitts,Right Winger,None,3/15/25,18:00,18:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Second Half,45,,,,,1448,32,84,10,93,5,29.1,1.9,13,14
+Liam Pitts,Right Winger,None,3/15/25,17:00,17:00:00,17:45:00,3/10/25,3/1/25,Match Session,None,First Half,45,,,,,39,1,0,0,0,0,15,0.1,0,0
+Liam Pitts,Right Winger,None,3/11/25,18:50,18:50:00,20:10:00,3/10/25,3/1/25,Training Session,None,Whole Session,80,,,,,4332,54,67,15,47,5,26.1,3.3,65,41
+Logan Moniz,Centre Attacking Midfielder,None,3/12/25,16:06,16:06:00,17:16:00,3/10/25,3/1/25,Training Session,None,Whole Session,70,,2,0,4,0,0,0,0,0,0,0,0,0,0
+Logan Moniz,Centre Attacking Midfielder,None,3/11/25,18:50,18:50:00,20:10:00,3/10/25,3/1/25,Training Session,None,Whole Session,80,,,,,3,0,0,0,0,0,0,0,0,0
+Marcus Cooper,Centre Back,None,3/15/25,17:00,17:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Whole Session,,,,,,,,,,,,,,,
+Marcus Cooper,Centre Back,None,3/15/25,18:00,18:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Second Half,,,,,,,,,,,,,,,
+Marcus Cooper,Centre Back,None,3/15/25,17:00,17:00:00,17:45:00,3/10/25,3/1/25,Match Session,None,First Half,,,,,,,,,,,,,,,
+Marcus Cooper,Centre Back,None,3/11/25,18:50,18:50:00,20:10:00,3/10/25,3/1/25,Training Session,None,Whole Session,80,,,,,3659,46,102,20,69,6,26.3,2.7,60,45
+Marcus Cooper,Centre Back,None,3/12/25,16:06,16:06:00,17:16:00,3/10/25,3/1/25,Training Session,None,Whole Session,70,,,,,0,0,0,0,0,0,0,0,0,0
+Sam Cunniffe,Centre Back,None,3/15/25,17:00,17:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Whole Session,90,,0,0.05,0.01,14,0,0,0,0,0,4.8,0,0,0
+Sam Cunniffe,Centre Back,None,3/15/25,17:00,17:00:00,17:45:00,3/10/25,3/1/25,Match Session,None,First Half,45,,,,,5,0,0,0,0,0,4.8,0,0,0
+Sam Cunniffe,Centre Back,None,3/15/25,18:00,18:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Second Half,45,,,,,9,0,0,0,0,0,2.3,0,0,0
+Sam Cunniffe,Centre Back,None,3/11/25,18:50,18:50:00,20:10:00,3/10/25,3/1/25,Training Session,None,Whole Session,80,,,,,4321,54,44,9,42,4,22.4,3.2,46,24
+Sam Cunniffe,Centre Back,None,3/12/25,16:06,16:06:00,17:16:00,3/10/25,3/1/25,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vasilian,Centre Midfielder,None,3/11/25,18:50,18:50:00,20:10:00,3/10/25,3/1/25,Training Session,None,Whole Session,80,,,,,4805,60,130,24,30,4,21.5,3.6,55,54
+Vasilian,Centre Midfielder,None,3/15/25,17:00,17:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Whole Session,,,,,,,,,,,,,,,
+Vasilian,Centre Midfielder,None,3/15/25,18:00,18:00:00,18:45:00,3/10/25,3/1/25,Match Session,None,Second Half,,,,,,,,,,,,,,,
+Vasilian,Centre Midfielder,None,3/15/25,17:00,17:00:00,17:45:00,3/10/25,3/1/25,Match Session,None,First Half,,,,,,,,,,,,,,,
+Vasilian,Centre Midfielder,None,3/12/25,16:06,16:06:00,17:16:00,3/10/25,3/1/25,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Asher Herrmann,Centre Midfielder,None,12/4/24,13:00,13:00:00,13:10:00,12/2/24,12/1/24,Training Session,None,Whole Session,10,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Brendan Furlonge,Right Back,None,12/4/24,13:00,13:00:00,13:10:00,12/2/24,12/1/24,Training Session,None,Whole Session,10,,,,,0,0,0,0,0,0,0,0,0,0
+casey powers,Goalkeeper,None,12/4/24,13:00,13:00:00,13:10:00,12/2/24,12/1/24,Training Session,None,Whole Session,10,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Devin Smith,Left Back,None,12/4/24,13:00,13:00:00,13:10:00,12/2/24,12/1/24,Training Session,None,Whole Session,10,,1,0,2,0,0,0,0,0,0,0,0,0,0
+Finn Van Clief,Striker,None,12/4/24,13:00,13:00:00,13:10:00,12/2/24,12/1/24,Training Session,None,Whole Session,10,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Henry Freeman,Right Back,None,12/4/24,13:00,13:00:00,13:10:00,12/2/24,12/1/24,Training Session,None,Whole Session,10,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,12/4/24,13:00,13:00:00,13:10:00,12/2/24,12/1/24,Training Session,None,Whole Session,10,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Jonah Greenblatt,Left Back,None,12/4/24,13:00,13:00:00,13:10:00,12/2/24,12/1/24,Training Session,None,Whole Session,10,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Jonah Greenblatt,Left Back,None,12/4/24,13:00,13:00:00,13:10:00,12/2/24,12/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Kaio Morais,Right Winger,None,12/4/24,13:00,13:00:00,13:10:00,12/2/24,12/1/24,Training Session,None,Whole Session,10,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Karim Eljamal,Centre Midfielder,None,12/4/24,13:00,13:00:00,13:10:00,12/2/24,12/1/24,Training Session,None,Whole Session,10,,,,,0,0,0,0,0,0,0,0,0,0
+Killian Walsh,Striker,None,12/4/24,13:00,13:00:00,13:10:00,12/2/24,12/1/24,Training Session,None,Whole Session,10,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Liam Pitts,Right Winger,None,12/4/24,13:00,13:00:00,13:10:00,12/2/24,12/1/24,Training Session,None,Whole Session,10,,,,,0,0,0,0,0,0,0,0,0,0
+Logan Moniz,Centre Attacking Midfielder,None,12/4/24,13:00,13:00:00,13:10:00,12/2/24,12/1/24,Training Session,None,Whole Session,10,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Marcus Cooper,Centre Back,None,12/4/24,13:00,13:00:00,13:10:00,12/2/24,12/1/24,Training Session,None,Whole Session,10,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sam Cunniffe,Centre Back,None,12/4/24,13:00,13:00:00,13:10:00,12/2/24,12/1/24,Training Session,None,Whole Session,10,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vasilian,Centre Midfielder,None,12/4/24,13:00,13:00:00,13:10:00,12/2/24,12/1/24,Training Session,None,Whole Session,10,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Asher Herrmann,Centre Midfielder,None,11/19/24,18:50,18:50:00,20:10:00,11/18/24,11/1/24,Training Session,None,Whole Session,80,,4.9,4.37,5.5,2120,27,132,23,138,5,27.7,1.6,3,4
+Asher Herrmann,Centre Midfielder,None,11/19/24,20:02,20:02:00,20:08:00,11/18/24,11/1/24,Training Session,None,Run test,6,,,,,1525,254,119,19,76,3,22.8,15.3,0,0
+Brendan Furlonge,Right Back,None,11/19/24,18:50,18:50:00,20:10:00,11/18/24,11/1/24,Training Session,None,Whole Session,80,,,,,0,0,0,0,0,0,0,0,0,0
+Brendan Furlonge,Right Back,None,11/19/24,20:02,20:02:00,20:08:00,11/18/24,11/1/24,Training Session,None,Run test,6,,,,,0,0,0,0,0,0,0,0,0,0
+casey powers,Goalkeeper,None,11/19/24,18:50,18:50:00,20:10:00,11/18/24,11/1/24,Training Session,None,Whole Session,80,,7.7,5.48,10,1972,25,189,20,62,4,27.5,1.5,7,3
+casey powers,Goalkeeper,None,11/19/24,20:02,20:02:00,20:08:00,11/18/24,11/1/24,Training Session,None,Run test,6,,,,,1381,230,159,18,22,3,20.3,13.8,0,0
+Devin Smith,Left Back,None,11/19/24,18:50,18:50:00,20:10:00,11/18/24,11/1/24,Training Session,None,Whole Session,80,,1,0,2,0,0,0,0,0,0,0,0,0,0
+Devin Smith,Left Back,None,11/19/24,20:02,20:02:00,20:08:00,11/18/24,11/1/24,Training Session,None,Run test,6,,,,,0,0,0,0,0,0,0,0,0,0
+Finn Van Clief,Striker,None,11/19/24,18:50,18:50:00,20:10:00,11/18/24,11/1/24,Training Session,None,Whole Session,80,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Finn Van Clief,Striker,None,11/19/24,20:02,20:02:00,20:08:00,11/18/24,11/1/24,Training Session,None,Run test,6,,,,,0,0,0,0,0,0,0,0,0,0
+Henry Freeman,Right Back,None,11/19/24,18:50,18:50:00,20:10:00,11/18/24,11/1/24,Training Session,None,Whole Session,80,,2.6,2.58,2.62,1962,25,156,23,69,2,29.5,1.5,3,3
+Henry Freeman,Right Back,None,11/19/24,20:02,20:02:00,20:08:00,11/18/24,11/1/24,Training Session,None,Run test,6,,,,,1464,244,146,21,3,1,19.3,14.6,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,11/19/24,18:50,18:50:00,20:10:00,11/18/24,11/1/24,Training Session,None,Whole Session,80,,4,3.22,4.7,2266,28,294,40,149,8,30.8,1.7,8,8
+Jake Ciavarro,Centre Defensive Midfielder,None,11/19/24,20:02,20:02:00,20:08:00,11/18/24,11/1/24,Training Session,None,Run test,6,,,,,1539,257,264,34,97,6,22.5,15.4,0,0
+Jonah Greenblatt,Left Back,None,11/19/24,18:50,18:50:00,20:10:00,11/18/24,11/1/24,Training Session,None,Whole Session,80,,0.3,0.34,0.27,363,5,0,0,41,1,28.4,0.3,1,1
+Jonah Greenblatt,Left Back,None,11/19/24,20:02,20:02:00,20:08:00,11/18/24,11/1/24,Training Session,None,Run test,6,,,,,8,1,0,0,0,0,1.4,0.1,0,0
+Jonah Greenblatt,Left Back,None,11/19/24,18:50,18:50:00,20:10:00,11/18/24,11/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,11/19/24,20:02,20:02:00,20:08:00,11/18/24,11/1/24,Training Session,None,Run test,,,,,,,,,,,,,,,
+Kaio Morais,Right Winger,None,11/19/24,18:50,18:50:00,20:10:00,11/18/24,11/1/24,Training Session,None,Whole Session,80,,4,3.83,4.07,2102,26,140,28,161,4,28.7,1.6,12,9
+Kaio Morais,Right Winger,None,11/19/24,20:02,20:02:00,20:08:00,11/18/24,11/1/24,Training Session,None,Run test,6,,,,,1325,221,93,23,82,2,27.6,13.3,0,0
+Karim Eljamal,Centre Midfielder,None,11/19/24,18:50,18:50:00,20:10:00,11/18/24,11/1/24,Training Session,None,Whole Session,80,,5,5,5,0,0,0,0,0,0,0,0,0,0
+Karim Eljamal,Centre Midfielder,None,11/19/24,20:02,20:02:00,20:08:00,11/18/24,11/1/24,Training Session,None,Run test,6,,,,,0,0,0,0,0,0,0,0,0,0
+Killian Walsh,Striker,None,11/19/24,18:50,18:50:00,20:10:00,11/18/24,11/1/24,Training Session,None,Whole Session,80,,4.1,4.11,4.05,2304,29,270,37,107,5,29.5,1.7,3,6
+Killian Walsh,Striker,None,11/19/24,20:02,20:02:00,20:08:00,11/18/24,11/1/24,Training Session,None,Run test,6,,,,,1539,257,251,34,48,4,20.8,15.4,0,0
+Liam Pitts,Right Winger,None,11/19/24,18:50,18:50:00,20:10:00,11/18/24,11/1/24,Training Session,None,Whole Session,80,,,,,0,0,0,0,0,0,0,0,0,0
+Liam Pitts,Right Winger,None,11/19/24,20:02,20:02:00,20:08:00,11/18/24,11/1/24,Training Session,None,Run test,6,,,,,0,0,0,0,0,0,0,0,0,0
+Logan Moniz,Centre Attacking Midfielder,None,11/19/24,18:50,18:50:00,20:10:00,11/18/24,11/1/24,Training Session,None,Whole Session,80,,2.7,2.34,2.98,2480,31,577,77,92,9,31.3,1.9,9,6
+Logan Moniz,Centre Attacking Midfielder,None,11/19/24,20:02,20:02:00,20:08:00,11/18/24,11/1/24,Training Session,None,Run test,6,,,,,1619,270,553,73,32,6,21,16.2,0,0
+Marcus Cooper,Centre Back,None,11/19/24,18:50,18:50:00,20:10:00,11/18/24,11/1/24,Training Session,None,Whole Session,80,,2.5,2.08,2.81,2074,26,236,22,84,7,30.7,1.6,4,3
+Marcus Cooper,Centre Back,None,11/19/24,20:02,20:02:00,20:08:00,11/18/24,11/1/24,Training Session,None,Run test,6,,,,,1521,254,217,18,26,5,20.1,15.2,0,0
+Sam Cunniffe,Centre Back,None,11/19/24,18:50,18:50:00,20:10:00,11/18/24,11/1/24,Training Session,None,Whole Session,80,,3.8,3.52,4.05,2328,29,205,28,58,4,28.5,1.8,5,5
+Sam Cunniffe,Centre Back,None,11/19/24,20:02,20:02:00,20:08:00,11/18/24,11/1/24,Training Session,None,Run test,6,,,,,1472,245,166,23,12,2,19.8,14.7,0,0
+Vasilian,Centre Midfielder,None,11/19/24,18:50,18:50:00,20:10:00,11/18/24,11/1/24,Training Session,None,Whole Session,80,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vasilian,Centre Midfielder,None,11/19/24,20:02,20:02:00,20:08:00,11/18/24,11/1/24,Training Session,None,Run test,6,,,,,0,0,0,0,0,0,0,0,0,0
+Asher Herrmann,Centre Midfielder,None,11/13/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Asher Herrmann,Centre Midfielder,None,11/14/24,18:50,18:50:00,19:50:00,11/11/24,11/1/24,Training Session,None,Whole Session,60,,10,10,10,4206,70,43,9,14,2,21.2,4.2,42,32
+Asher Herrmann,Centre Midfielder,None,11/12/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,3.2,5.17,1.13,2040,29,0,0,0,0,5.4,1.8,0,0
+Asher Herrmann,Centre Midfielder,None,11/16/24,13:05,13:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Whole Session,90,,10,10,10,6363,71,287,50,297,20,25.4,4.2,31,30
+Asher Herrmann,Centre Midfielder,None,11/16/24,14:05,14:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Second Half,45,,,,,1059,24,30,7,115,6,23.4,1.4,3,5
+Asher Herrmann,Centre Midfielder,None,11/16/24,13:05,13:05:00,13:50:00,11/11/24,11/1/24,Match Session,None,First Half,45,,,,,5304,118,257,43,182,14,25.4,7.1,28,25
+casey powers,Goalkeeper,None,11/16/24,13:05,13:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Whole Session,90,,10,10,10,5662,63,57,9,20,1,22.8,3.8,20,16
+casey powers,Goalkeeper,None,11/16/24,13:05,13:05:00,13:50:00,11/11/24,11/1/24,Match Session,None,First Half,45,,,,,2819,63,27,4,20,1,22.8,3.8,9,7
+casey powers,Goalkeeper,None,11/16/24,14:05,14:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Second Half,45,,,,,2843,63,30,5,0,0,18.9,3.8,11,9
+casey powers,Goalkeeper,None,11/12/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,6,8.85,3.14,2690,38,0,0,0,0,7.1,2.3,4,0
+casey powers,Goalkeeper,None,11/13/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+casey powers,Goalkeeper,None,11/14/24,18:50,18:50:00,19:50:00,11/11/24,11/1/24,Training Session,None,Whole Session,60,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Devin Smith,Left Back,None,11/14/24,18:50,18:50:00,19:50:00,11/11/24,11/1/24,Training Session,None,Whole Session,60,,3.6,0,7.23,0,0,0,0,0,0,0,0,5,2
+Devin Smith,Left Back,None,11/12/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,,,,1994,28,0,0,0,0,4.3,1.7,2,0
+Devin Smith,Left Back,None,11/13/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,1.5,0,3,0,0,0,0,0,0,0,0,0,0
+Finn Van Clief,Striker,None,11/14/24,18:50,18:50:00,19:50:00,11/11/24,11/1/24,Training Session,None,Whole Session,60,,2.7,2.59,2.73,1121,19,12,3,13,2,22.5,1.1,10,11
+Finn Van Clief,Striker,None,11/16/24,13:05,13:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Whole Session,90,,10,10,10,9736,108,566,95,721,49,30.5,6.5,104,97
+Finn Van Clief,Striker,None,11/16/24,14:05,14:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Second Half,45,,,,,4696,104,313,49,400,23,30.5,6.3,50,49
+Finn Van Clief,Striker,None,11/16/24,13:05,13:05:00,13:50:00,11/11/24,11/1/24,Match Session,None,First Half,45,,,,,5040,112,252,46,321,26,29.5,6.7,54,48
+Finn Van Clief,Striker,None,11/13/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Finn Van Clief,Striker,None,11/12/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Henry Freeman,Right Back,None,11/12/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,2.3,3.7,0.9,2640,38,0,0,0,0,4.3,2.3,1,0
+Henry Freeman,Right Back,None,11/13/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Henry Freeman,Right Back,None,11/14/24,18:50,18:50:00,19:50:00,11/11/24,11/1/24,Training Session,None,Whole Session,60,,6.7,5.72,7.67,3809,63,123,21,79,9,23.5,3.8,45,34
+Henry Freeman,Right Back,None,11/16/24,13:05,13:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Whole Session,90,,9.8,10,8.21,8425,94,230,37,148,11,25.2,5.6,45,57
+Henry Freeman,Right Back,None,11/16/24,13:05,13:05:00,13:50:00,11/11/24,11/1/24,Match Session,None,First Half,45,,,,,4448,99,133,22,120,7,25.2,5.9,29,34
+Henry Freeman,Right Back,None,11/16/24,14:05,14:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Second Half,45,,,,,3978,88,96,15,29,4,21.6,5.3,16,23
+Jake Ciavarro,Centre Defensive Midfielder,None,11/14/24,18:50,18:50:00,19:50:00,11/11/24,11/1/24,Training Session,None,Whole Session,60,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,11/12/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,11/13/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,11/16/24,13:05,13:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Whole Session,90,,10,10,10,10474,116,455,65,346,23,27.6,7,76,78
+Jake Ciavarro,Centre Defensive Midfielder,None,11/16/24,14:05,14:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Second Half,45,,,,,5241,116,225,33,185,11,27.6,7,39,37
+Jake Ciavarro,Centre Defensive Midfielder,None,11/16/24,13:05,13:05:00,13:50:00,11/11/24,11/1/24,Match Session,None,First Half,45,,,,,5233,116,231,32,161,12,25.8,7,37,41
+Jonah Greenblatt,Left Back,None,11/12/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,3.8,3.79,3.74,3958,57,121,20,20,4,21.6,3.4,47,42
+Jonah Greenblatt,Left Back,None,11/12/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,11/14/24,18:50,18:50:00,19:50:00,11/11/24,11/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,11/14/24,18:50,18:50:00,19:50:00,11/11/24,11/1/24,Training Session,None,Whole Session,60,,5.6,4.52,6.67,4685,78,182,31,100,12,23.4,4.7,77,72
+Jonah Greenblatt,Left Back,None,11/13/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,5.9,4.94,6.87,5154,74,288,42,417,27,25.6,4.4,43,50
+Jonah Greenblatt,Left Back,None,11/16/24,13:05,13:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,11/16/24,13:05,13:05:00,13:50:00,11/11/24,11/1/24,Match Session,None,First Half,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,11/16/24,14:05,14:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Second Half,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,11/16/24,13:05,13:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Jonah Greenblatt,Left Back,None,11/16/24,14:05,14:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Jonah Greenblatt,Left Back,None,11/16/24,13:05,13:05:00,13:50:00,11/11/24,11/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Jonah Greenblatt,Left Back,None,11/13/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Kaio Morais,Right Winger,None,11/13/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Kaio Morais,Right Winger,None,11/14/24,18:50,18:50:00,19:50:00,11/11/24,11/1/24,Training Session,None,Whole Session,60,,8.8,8.14,9.48,4669,78,245,38,57,9,22.2,4.7,60,59
+Kaio Morais,Right Winger,None,11/12/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,1.8,2.48,1.08,1472,21,0,0,0,0,0,1.3,8,9
+Kaio Morais,Right Winger,None,11/16/24,13:05,13:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Kaio Morais,Right Winger,None,11/16/24,13:05,13:05:00,13:50:00,11/11/24,11/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Kaio Morais,Right Winger,None,11/16/24,14:05,14:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Karim Eljamal,Centre Midfielder,None,11/14/24,18:50,18:50:00,19:50:00,11/11/24,11/1/24,Training Session,None,Whole Session,60,,,,,0,0,0,0,0,0,0,0,0,0
+Killian Walsh,Striker,None,11/13/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Killian Walsh,Striker,None,11/12/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,7.5,7.62,7.34,4592,66,143,24,32,5,20.2,3.9,49,41
+Killian Walsh,Striker,None,11/16/24,13:05,13:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Killian Walsh,Striker,None,11/16/24,14:05,14:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Killian Walsh,Striker,None,11/16/24,13:05,13:05:00,13:50:00,11/11/24,11/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Killian Walsh,Striker,None,11/14/24,18:50,18:50:00,19:50:00,11/11/24,11/1/24,Training Session,None,Whole Session,60,,7.6,7.78,7.49,4523,75,124,21,24,3,22.7,4.5,37,36
+Logan Moniz,Centre Attacking Midfielder,None,11/13/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Logan Moniz,Centre Attacking Midfielder,None,11/16/24,13:05,13:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Whole Session,90,,10,10,10,10191,113,659,116,1063,85,29.6,6.8,88,122
+Logan Moniz,Centre Attacking Midfielder,None,11/16/24,14:05,14:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Second Half,45,,,,,5112,114,317,57,610,51,28.9,6.8,42,65
+Logan Moniz,Centre Attacking Midfielder,None,11/16/24,13:05,13:05:00,13:50:00,11/11/24,11/1/24,Match Session,None,First Half,45,,,,,5079,113,342,59,453,34,29.6,6.8,46,57
+Marcus Cooper,Centre Back,None,11/12/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,4.1,3.79,4.4,3359,48,64,13,18,2,21.8,2.9,40,39
+Marcus Cooper,Centre Back,None,11/13/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,6,5.53,6.46,4949,71,147,28,194,13,25.7,4.2,27,26
+Marcus Cooper,Centre Back,None,11/16/24,13:05,13:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Whole Session,90,,9.1,9.39,8.84,8849,98,322,48,280,19,29.6,5.9,60,52
+Marcus Cooper,Centre Back,None,11/16/24,13:05,13:05:00,13:50:00,11/11/24,11/1/24,Match Session,None,First Half,45,,,,,4507,100,155,25,173,13,25.3,6,29,31
+Marcus Cooper,Centre Back,None,11/16/24,14:05,14:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Second Half,45,,,,,4342,96,167,23,107,6,29.6,5.8,31,21
+Marcus Cooper,Centre Back,None,11/14/24,18:50,18:50:00,19:50:00,11/11/24,11/1/24,Training Session,None,Whole Session,60,,4.6,4.11,4.98,3630,60,77,14,0,0,19.7,3.6,48,32
+Sam Cunniffe,Centre Back,None,11/16/24,13:05,13:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Whole Session,90,,10,10,10,9332,104,254,42,168,12,26.1,6.2,33,39
+Sam Cunniffe,Centre Back,None,11/16/24,14:05,14:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Second Half,45,,,,,4642,103,105,17,53,4,24.2,6.2,16,22
+Sam Cunniffe,Centre Back,None,11/16/24,13:05,13:05:00,13:50:00,11/11/24,11/1/24,Match Session,None,First Half,45,,,,,4690,104,149,25,114,8,26.1,6.3,17,17
+Sam Cunniffe,Centre Back,None,11/12/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sam Cunniffe,Centre Back,None,11/14/24,18:50,18:50:00,19:50:00,11/11/24,11/1/24,Training Session,None,Whole Session,60,,10,10,10,4961,83,143,24,27,3,22.1,5,54,36
+Sam Cunniffe,Centre Back,None,11/13/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vasilian,Centre Midfielder,None,11/16/24,13:05,13:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Whole Session,90,,10,10,10,10121,112,650,95,602,41,24.7,6.8,66,68
+Vasilian,Centre Midfielder,None,11/16/24,13:05,13:05:00,13:50:00,11/11/24,11/1/24,Match Session,None,First Half,45,,,,,5088,113,397,62,418,29,24.6,6.8,42,35
+Vasilian,Centre Midfielder,None,11/16/24,14:05,14:05:00,14:50:00,11/11/24,11/1/24,Match Session,None,Second Half,45,,,,,5033,112,253,33,183,12,24.7,6.7,24,33
+Vasilian,Centre Midfielder,None,11/13/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vasilian,Centre Midfielder,None,11/14/24,18:50,18:50:00,19:50:00,11/11/24,11/1/24,Training Session,None,Whole Session,60,,6.1,5.33,6.76,4264,71,127,26,72,11,23.7,4.3,37,40
+Vasilian,Centre Midfielder,None,11/12/24,18:50,18:50:00,20:00:00,11/11/24,11/1/24,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Asher Herrmann,Centre Midfielder,None,11/9/24,9:00,9:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Whole Session,90,,5.8,5.26,6.41,2067,23,74,13,92,7,25.1,1.4,12,11
+Asher Herrmann,Centre Midfielder,None,11/9/24,9:00,9:00:00,9:45:00,11/4/24,11/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Asher Herrmann,Centre Midfielder,None,11/9/24,10:00,10:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Second Half,45,,,,,2067,46,74,13,92,7,25.1,2.8,12,11
+Asher Herrmann,Centre Midfielder,None,11/6/24,18:50,18:50:00,20:00:00,11/4/24,11/1/24,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+casey powers,Goalkeeper,None,11/9/24,9:00,9:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Whole Session,90,,7.1,6.44,7.74,2441,27,37,7,39,4,20.9,1.6,8,8
+casey powers,Goalkeeper,None,11/9/24,10:00,10:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Second Half,45,,,,,2441,54,37,7,39,4,20.9,3.3,8,8
+casey powers,Goalkeeper,None,11/9/24,9:00,9:00:00,9:45:00,11/4/24,11/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+casey powers,Goalkeeper,None,11/6/24,18:50,18:50:00,20:00:00,11/4/24,11/1/24,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Devin Smith,Left Back,None,11/6/24,18:50,18:50:00,20:00:00,11/4/24,11/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Finn Van Clief,Striker,None,11/9/24,9:00,9:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Whole Session,90,,10,10,10,9560,106,498,83,630,49,27.4,6.4,70,69
+Finn Van Clief,Striker,None,11/9/24,9:00,9:00:00,9:45:00,11/4/24,11/1/24,Match Session,None,First Half,45,,,,,5124,114,262,43,326,26,26.8,6.8,45,40
+Finn Van Clief,Striker,None,11/9/24,10:00,10:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Second Half,45,,,,,4436,99,236,40,304,23,27.4,5.9,25,29
+Finn Van Clief,Striker,None,11/5/24,18:50,18:50:00,20:05:00,11/4/24,11/1/24,Training Session,None,Whole Session,75,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Finn Van Clief,Striker,None,11/6/24,18:50,18:50:00,20:00:00,11/4/24,11/1/24,Training Session,None,Whole Session,70,,10,10,10,5170,74,176,34,137,14,27.1,4.4,51,59
+Henry Freeman,Right Back,None,11/9/24,9:00,9:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Whole Session,90,,4.8,4.79,4.79,3498,39,138,22,150,11,25.4,2.3,34,24
+Henry Freeman,Right Back,None,11/9/24,9:00,9:00:00,9:45:00,11/4/24,11/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Henry Freeman,Right Back,None,11/9/24,10:00,10:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Second Half,45,,,,,3498,78,138,22,150,11,25.4,4.7,34,24
+Henry Freeman,Right Back,None,11/5/24,18:50,18:50:00,20:05:00,11/4/24,11/1/24,Training Session,None,Whole Session,75,,5.1,5.26,4.9,4472,60,45,10,4,1,20.2,3.6,78,58
+Henry Freeman,Right Back,None,11/6/24,18:50,18:50:00,20:00:00,11/4/24,11/1/24,Training Session,None,Whole Session,70,,0.7,0.56,0.8,425,6,16,4,0,0,18.4,0.4,7,10
+Jake Ciavarro,Centre Defensive Midfielder,None,11/9/24,9:00,9:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Whole Session,90,,10,10,10,9564,106,387,55,249,27,25.9,6.4,76,64
+Jake Ciavarro,Centre Defensive Midfielder,None,11/9/24,9:00,9:00:00,9:45:00,11/4/24,11/1/24,Match Session,None,First Half,45,,,,,5296,118,187,24,130,14,25.9,7.1,46,36
+Jake Ciavarro,Centre Defensive Midfielder,None,11/9/24,10:00,10:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Second Half,45,,,,,4268,95,200,31,119,13,25.6,5.7,30,28
+Jake Ciavarro,Centre Defensive Midfielder,None,11/6/24,18:50,18:50:00,20:00:00,11/4/24,11/1/24,Training Session,None,Whole Session,70,,0.8,1.37,0.31,904,13,0,0,0,0,0,0.8,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,11/5/24,18:50,18:50:00,20:05:00,11/4/24,11/1/24,Training Session,None,Whole Session,75,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Jonah Greenblatt,Left Back,None,11/9/24,9:00,9:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Whole Session,90,,9.3,9.16,9.45,9792,109,528,82,728,49,28,6.5,66,84
+Jonah Greenblatt,Left Back,None,11/9/24,10:00,10:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Second Half,45,,,,,4633,103,267,43,339,20,28,6.2,26,37
+Jonah Greenblatt,Left Back,None,11/9/24,9:00,9:00:00,9:45:00,11/4/24,11/1/24,Match Session,None,First Half,45,,,,,5160,115,261,39,389,29,26.2,6.9,40,47
+Jonah Greenblatt,Left Back,None,11/6/24,18:50,18:50:00,20:00:00,11/4/24,11/1/24,Training Session,None,Whole Session,70,,0.7,1.07,0.27,1068,15,0,0,0,0,0,0.9,1,0
+Jonah Greenblatt,Left Back,None,11/6/24,18:50,18:50:00,20:00:00,11/4/24,11/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,11/5/24,18:50,18:50:00,20:05:00,11/4/24,11/1/24,Training Session,None,Whole Session,75,,4.5,4.65,4.3,5028,67,74,17,46,8,23.2,4,84,59
+Jonah Greenblatt,Left Back,None,11/9/24,9:00,9:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,11/9/24,10:00,10:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Second Half,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,11/9/24,9:00,9:00:00,9:45:00,11/4/24,11/1/24,Match Session,None,First Half,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,11/5/24,18:50,18:50:00,20:05:00,11/4/24,11/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Kaio Morais,Right Winger,None,11/5/24,18:50,18:50:00,20:05:00,11/4/24,11/1/24,Training Session,None,Whole Session,75,,7.5,8.05,6.98,5183,69,119,20,20,2,20.9,4.2,86,75
+Kaio Morais,Right Winger,None,11/9/24,9:00,9:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Kaio Morais,Right Winger,None,11/9/24,10:00,10:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Kaio Morais,Right Winger,None,11/9/24,9:00,9:00:00,9:45:00,11/4/24,11/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Kaio Morais,Right Winger,None,11/6/24,18:50,18:50:00,20:00:00,11/4/24,11/1/24,Training Session,None,Whole Session,70,,9.5,8.65,10,5385,77,254,41,165,14,25.9,4.6,82,80
+Killian Walsh,Striker,None,11/9/24,9:00,9:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Whole Session,90,,9.7,8.82,10,5063,56,373,62,473,32,27.4,3.4,26,44
+Killian Walsh,Striker,None,11/9/24,10:00,10:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Second Half,45,,,,,5040,112,373,62,473,32,27.4,6.7,26,44
+Killian Walsh,Striker,None,11/9/24,9:00,9:00:00,9:45:00,11/4/24,11/1/24,Match Session,None,First Half,45,,,,,23,1,0,0,0,0,2,0,0,0
+Killian Walsh,Striker,None,11/6/24,18:50,18:50:00,20:00:00,11/4/24,11/1/24,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Killian Walsh,Striker,None,11/5/24,18:50,18:50:00,20:05:00,11/4/24,11/1/24,Training Session,None,Whole Session,75,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Logan Moniz,Centre Attacking Midfielder,None,11/9/24,9:00,9:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Whole Session,90,,10,10,10,9797,109,576,97,1088,73,30.4,6.5,90,127
+Logan Moniz,Centre Attacking Midfielder,None,11/9/24,10:00,10:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Second Half,45,,,,,4674,104,272,47,551,38,28.3,6.2,31,50
+Logan Moniz,Centre Attacking Midfielder,None,11/9/24,9:00,9:00:00,9:45:00,11/4/24,11/1/24,Match Session,None,First Half,45,,,,,5123,114,304,50,538,35,30.4,6.8,59,77
+Logan Moniz,Centre Attacking Midfielder,None,11/5/24,18:50,18:50:00,20:05:00,11/4/24,11/1/24,Training Session,None,Whole Session,75,,5.9,6.07,5.68,5115,68,194,26,60,8,21.6,4.1,70,73
+Logan Moniz,Centre Attacking Midfielder,None,11/6/24,18:50,18:50:00,20:00:00,11/4/24,11/1/24,Training Session,None,Whole Session,70,,0.9,1.33,0.52,1152,16,0,0,0,0,0.8,1,4,5
+Marcus Cooper,Centre Back,None,11/5/24,18:50,18:50:00,20:05:00,11/4/24,11/1/24,Training Session,None,Whole Session,75,,5.7,5.06,6.28,4205,56,60,14,17,4,21.9,3.4,76,55
+Marcus Cooper,Centre Back,None,11/9/24,9:00,9:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Whole Session,90,,8.8,9.27,8.35,8402,93,223,34,332,22,27.8,5.6,49,37
+Marcus Cooper,Centre Back,None,11/9/24,10:00,10:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Second Half,45,,,,,3964,88,87,15,188,12,26.5,5.3,22,12
+Marcus Cooper,Centre Back,None,11/9/24,9:00,9:00:00,9:45:00,11/4/24,11/1/24,Match Session,None,First Half,45,,,,,4439,99,136,19,144,10,27.8,5.9,27,25
+Marcus Cooper,Centre Back,None,11/6/24,18:50,18:50:00,20:00:00,11/4/24,11/1/24,Training Session,None,Whole Session,70,,7.3,5.76,8.8,4749,68,137,27,136,17,24.9,4.1,52,67
+Sam Cunniffe,Centre Back,None,11/9/24,9:00,9:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Whole Session,90,,10,10,10,9431,105,461,70,352,28,25.5,6.3,59,58
+Sam Cunniffe,Centre Back,None,11/9/24,10:00,10:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Second Half,45,,,,,4578,102,203,29,198,12,25.5,6.1,24,25
+Sam Cunniffe,Centre Back,None,11/9/24,9:00,9:00:00,9:45:00,11/4/24,11/1/24,Match Session,None,First Half,45,,,,,4853,108,258,41,154,16,23.4,6.5,35,33
+Sam Cunniffe,Centre Back,None,11/5/24,18:50,18:50:00,20:05:00,11/4/24,11/1/24,Training Session,None,Whole Session,75,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sam Cunniffe,Centre Back,None,11/6/24,18:50,18:50:00,20:00:00,11/4/24,11/1/24,Training Session,None,Whole Session,70,,2,2.85,1.12,965,14,0,0,0,0,0,0.8,4,0
+Vasilian,Centre Midfielder,None,11/6/24,18:50,18:50:00,20:00:00,11/4/24,11/1/24,Training Session,None,Whole Session,70,,6.5,6.26,6.68,5494,78,199,40,79,7,23.4,4.7,50,48
+Vasilian,Centre Midfielder,None,11/9/24,9:00,9:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Whole Session,90,,9.6,10,8.87,9777,109,522,77,283,25,25.4,6.5,49,54
+Vasilian,Centre Midfielder,None,11/9/24,10:00,10:00:00,10:45:00,11/4/24,11/1/24,Match Session,None,Second Half,45,,,,,4624,103,231,37,161,13,25.4,6.2,24,27
+Vasilian,Centre Midfielder,None,11/9/24,9:00,9:00:00,9:45:00,11/4/24,11/1/24,Match Session,None,First Half,45,,,,,5153,115,290,40,123,12,23.2,6.9,25,27
+Vasilian,Centre Midfielder,None,11/5/24,18:50,18:50:00,20:05:00,11/4/24,11/1/24,Training Session,None,Whole Session,75,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Asher Herrmann,Centre Midfielder,None,10/31/24,17:30,17:30:00,18:45:00,10/28/24,10/1/24,Training Session,None,Whole Session,75,,0,0,0,0,0,0,0,0,0,0,0,0,0
+casey powers,Goalkeeper,None,11/2/24,17:00,17:00:00,18:45:00,10/28/24,11/1/24,Match Session,None,Whole Session,90,,6.7,6.85,6.45,4234,47,21,4,14,2,20.9,2.8,17,23
+casey powers,Goalkeeper,None,11/2/24,17:00,17:00:00,17:45:00,10/28/24,11/1/24,Match Session,None,First Half,45,,,,,1967,44,0,0,8,1,20.9,2.6,8,16
+casey powers,Goalkeeper,None,11/2/24,18:00,18:00:00,18:45:00,10/28/24,11/1/24,Match Session,None,Second Half,45,,,,,2267,50,21,4,6,1,19.9,3,9,7
+casey powers,Goalkeeper,None,11/3/24,14:00,14:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+casey powers,Goalkeeper,None,11/3/24,14:00,14:00:00,14:45:00,10/28/24,11/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+casey powers,Goalkeeper,None,11/3/24,15:00,15:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+casey powers,Goalkeeper,None,10/31/24,17:30,17:30:00,18:45:00,10/28/24,10/1/24,Training Session,None,Whole Session,75,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Finn Van Clief,Striker,None,11/3/24,14:00,14:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Whole Session,90,,10,10,10,8312,92,480,82,611,45,29.1,5.5,57,74
+Finn Van Clief,Striker,None,11/3/24,15:00,15:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Second Half,45,,,,,3989,89,231,37,295,20,29.1,5.3,29,33
+Finn Van Clief,Striker,None,11/3/24,14:00,14:00:00,14:45:00,10/28/24,11/1/24,Match Session,None,First Half,45,,,,,4322,96,249,45,316,25,26.1,5.8,28,41
+Finn Van Clief,Striker,None,10/31/24,17:30,17:30:00,18:45:00,10/28/24,10/1/24,Training Session,None,Whole Session,75,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Finn Van Clief,Striker,None,11/2/24,17:00,17:00:00,18:45:00,10/28/24,11/1/24,Match Session,None,Whole Session,90,,3.4,2.66,4.11,1457,16,86,20,175,13,27.8,1,17,13
+Finn Van Clief,Striker,None,11/2/24,18:00,18:00:00,18:45:00,10/28/24,11/1/24,Match Session,None,Second Half,45,,,,,1457,32,86,20,175,13,27.8,1.9,17,13
+Finn Van Clief,Striker,None,11/2/24,17:00,17:00:00,17:45:00,10/28/24,11/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Henry Freeman,Right Back,None,11/3/24,14:00,14:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Whole Session,90,,0,0,0,4,0,0,0,0,0,2.9,0,0,0
+Henry Freeman,Right Back,None,11/3/24,15:00,15:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Second Half,45,,,,,1,0,0,0,0,0,0.8,0,0,0
+Henry Freeman,Right Back,None,11/3/24,14:00,14:00:00,14:45:00,10/28/24,11/1/24,Match Session,None,First Half,45,,,,,3,0,0,0,0,0,2.9,0,0,0
+Henry Freeman,Right Back,None,11/2/24,17:00,17:00:00,18:45:00,10/28/24,11/1/24,Match Session,None,Whole Session,90,,7.9,7.7,8.15,8213,91,535,75,340,24,26.1,5.5,51,75
+Henry Freeman,Right Back,None,11/2/24,17:00,17:00:00,17:45:00,10/28/24,11/1/24,Match Session,None,First Half,45,,,,,4441,99,327,45,155,12,26.1,5.9,32,46
+Henry Freeman,Right Back,None,11/2/24,18:00,18:00:00,18:45:00,10/28/24,11/1/24,Match Session,None,Second Half,45,,,,,3772,84,207,30,184,12,24.7,5,19,29
+Henry Freeman,Right Back,None,10/31/24,17:30,17:30:00,18:45:00,10/28/24,10/1/24,Training Session,None,Whole Session,75,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,11/2/24,17:00,17:00:00,18:45:00,10/28/24,11/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,11/2/24,17:00,17:00:00,17:45:00,10/28/24,11/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,11/2/24,18:00,18:00:00,18:45:00,10/28/24,11/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,11/3/24,14:00,14:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Whole Session,90,,9.8,10,9.59,8299,92,376,61,310,22,26.9,5.5,61,51
+Jake Ciavarro,Centre Defensive Midfielder,None,11/3/24,14:00,14:00:00,14:45:00,10/28/24,11/1/24,Match Session,None,First Half,45,,,,,4347,97,176,27,109,10,21.8,5.8,32,29
+Jake Ciavarro,Centre Defensive Midfielder,None,11/3/24,15:00,15:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Second Half,45,,,,,3952,88,200,34,201,12,26.9,5.3,29,22
+Jake Ciavarro,Centre Defensive Midfielder,None,10/31/24,17:30,17:30:00,18:45:00,10/28/24,10/1/24,Training Session,None,Whole Session,75,,7.6,5.84,9.43,5344,71,213,34,471,24,27.7,4.3,50,37
+Jonah Greenblatt,Left Back,None,11/3/24,14:00,14:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,11/3/24,14:00,14:00:00,14:45:00,10/28/24,11/1/24,Match Session,None,First Half,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,11/3/24,15:00,15:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Second Half,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,10/31/24,17:30,17:30:00,18:45:00,10/28/24,10/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,11/3/24,14:00,14:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Whole Session,90,,7.9,7.62,8.26,8311,92,593,89,590,43,29.4,5.5,52,80
+Jonah Greenblatt,Left Back,None,11/3/24,15:00,15:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Second Half,45,,,,,4077,91,257,39,303,21,29.4,5.4,24,36
+Jonah Greenblatt,Left Back,None,11/3/24,14:00,14:00:00,14:45:00,10/28/24,11/1/24,Match Session,None,First Half,45,,,,,4234,94,336,50,288,22,25,5.7,28,44
+Jonah Greenblatt,Left Back,None,11/2/24,17:00,17:00:00,18:45:00,10/28/24,11/1/24,Match Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,11/2/24,17:00,17:00:00,17:45:00,10/28/24,11/1/24,Match Session,None,First Half,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,11/2/24,18:00,18:00:00,18:45:00,10/28/24,11/1/24,Match Session,None,Second Half,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,11/2/24,17:00,17:00:00,18:45:00,10/28/24,11/1/24,Match Session,None,Whole Session,90,,6.9,6.83,6.96,8357,93,490,78,564,37,27.5,5.6,74,80
+Jonah Greenblatt,Left Back,None,11/2/24,18:00,18:00:00,18:45:00,10/28/24,11/1/24,Match Session,None,Second Half,45,,,,,3907,87,214,32,337,18,27.5,5.2,40,38
+Jonah Greenblatt,Left Back,None,11/2/24,17:00,17:00:00,17:45:00,10/28/24,11/1/24,Match Session,None,First Half,45,,,,,4450,99,276,46,227,19,26.2,5.9,34,42
+Jonah Greenblatt,Left Back,None,10/31/24,17:30,17:30:00,18:45:00,10/28/24,10/1/24,Training Session,None,Whole Session,75,,0.6,1.03,0.26,1110,15,0,0,0,0,0,0.9,1,1
+Kaio Morais,Right Winger,None,11/3/24,14:00,14:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Kaio Morais,Right Winger,None,11/3/24,14:00,14:00:00,14:45:00,10/28/24,11/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Kaio Morais,Right Winger,None,11/3/24,15:00,15:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Kaio Morais,Right Winger,None,10/31/24,17:30,17:30:00,18:45:00,10/28/24,10/1/24,Training Session,None,Whole Session,75,,0,0,0.05,0,0,0,0,0,0,0,0,1,1
+Killian Walsh,Striker,None,11/2/24,17:00,17:00:00,18:45:00,10/28/24,11/1/24,Match Session,None,Whole Session,90,,9,8.14,9.87,7735,86,595,89,545,40,28.2,5.2,58,54
+Killian Walsh,Striker,None,11/2/24,17:00,17:00:00,17:45:00,10/28/24,11/1/24,Match Session,None,First Half,45,,,,,5236,116,337,54,354,27,28.2,7,40,35
+Killian Walsh,Striker,None,11/2/24,18:00,18:00:00,18:45:00,10/28/24,11/1/24,Match Session,None,Second Half,45,,,,,2499,56,258,35,191,13,24.8,3.3,18,19
+Killian Walsh,Striker,None,10/31/24,17:30,17:30:00,18:45:00,10/28/24,10/1/24,Training Session,None,Whole Session,75,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Killian Walsh,Striker,None,11/3/24,14:00,14:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Whole Session,90,,1.1,1.06,1.06,823,9,65,8,36,2,21.9,0.6,2,5
+Killian Walsh,Striker,None,11/3/24,14:00,14:00:00,14:45:00,10/28/24,11/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Killian Walsh,Striker,None,11/3/24,15:00,15:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Second Half,45,,,,,823,18,65,8,36,2,21.9,1.1,2,5
+Logan Moniz,Centre Attacking Midfielder,None,11/2/24,17:00,17:00:00,18:45:00,10/28/24,11/1/24,Match Session,None,Whole Session,90,,10,10,10,9079,101,558,97,903,68,28.3,6.1,103,138
+Logan Moniz,Centre Attacking Midfielder,None,11/2/24,18:00,18:00:00,18:45:00,10/28/24,11/1/24,Match Session,None,Second Half,45,,,,,4300,96,312,49,392,31,27.7,5.7,41,61
+Logan Moniz,Centre Attacking Midfielder,None,11/2/24,17:00,17:00:00,17:45:00,10/28/24,11/1/24,Match Session,None,First Half,45,,,,,4778,106,245,48,511,37,28.3,6.4,62,77
+Logan Moniz,Centre Attacking Midfielder,None,10/31/24,17:30,17:30:00,18:45:00,10/28/24,10/1/24,Training Session,None,Whole Session,75,,0.3,0.49,0.14,331,4,0,0,0,0,0,0.3,1,0
+Logan Moniz,Centre Attacking Midfielder,None,11/3/24,14:00,14:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Whole Session,90,,10,10,10,8666,96,556,99,956,68,31.1,5.8,69,113
+Logan Moniz,Centre Attacking Midfielder,None,11/3/24,15:00,15:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Second Half,45,,,,,4485,100,223,43,514,33,31.1,6,35,56
+Logan Moniz,Centre Attacking Midfielder,None,11/3/24,14:00,14:00:00,14:45:00,10/28/24,11/1/24,Match Session,None,First Half,45,,,,,4181,93,333,56,442,35,28.1,5.6,34,57
+Marcus Cooper,Centre Back,None,10/31/24,17:30,17:30:00,18:45:00,10/28/24,10/1/24,Training Session,None,Whole Session,75,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Marcus Cooper,Centre Back,None,11/3/24,14:00,14:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Whole Session,90,,8.6,8.62,8.52,7389,82,258,47,206,15,27,4.9,47,42
+Marcus Cooper,Centre Back,None,11/3/24,15:00,15:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Second Half,45,,,,,3331,74,157,27,145,10,25.5,4.4,25,21
+Marcus Cooper,Centre Back,None,11/3/24,14:00,14:00:00,14:45:00,10/28/24,11/1/24,Match Session,None,First Half,45,,,,,4058,90,101,20,61,5,27,5.4,22,21
+Marcus Cooper,Centre Back,None,11/2/24,17:00,17:00:00,18:45:00,10/28/24,11/1/24,Match Session,None,Whole Session,90,,8.7,8.5,8.98,7369,82,361,56,227,19,27.8,4.9,52,47
+Marcus Cooper,Centre Back,None,11/2/24,18:00,18:00:00,18:45:00,10/28/24,11/1/24,Match Session,None,Second Half,45,,,,,3373,75,83,15,91,6,27.8,4.5,20,20
+Marcus Cooper,Centre Back,None,11/2/24,17:00,17:00:00,17:45:00,10/28/24,11/1/24,Match Session,None,First Half,45,,,,,3996,89,278,41,136,13,24.8,5.3,32,27
+Sam Cunniffe,Centre Back,None,10/31/24,17:30,17:30:00,18:45:00,10/28/24,10/1/24,Training Session,None,Whole Session,75,,1.7,2.79,0.61,1641,22,0,0,0,0,7.4,1.3,0,0
+Sam Cunniffe,Centre Back,None,11/3/24,14:00,14:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Whole Session,90,,10,10,10,7526,84,227,36,265,15,25.5,5,52,40
+Sam Cunniffe,Centre Back,None,11/3/24,15:00,15:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Second Half,45,,,,,3600,80,57,12,136,5,23.3,4.8,21,14
+Sam Cunniffe,Centre Back,None,11/3/24,14:00,14:00:00,14:45:00,10/28/24,11/1/24,Match Session,None,First Half,45,,,,,3926,87,170,24,129,10,25.5,5.2,31,26
+Vasilian,Centre Midfielder,None,10/31/24,17:30,17:30:00,18:45:00,10/28/24,10/1/24,Training Session,None,Whole Session,75,,1.1,1.78,0.41,1565,21,0,0,0,0,1.8,1.3,1,0
+Vasilian,Centre Midfielder,None,11/3/24,14:00,14:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Whole Session,90,,8.2,8.39,7.91,8357,93,469,67,313,26,23.6,5.6,51,54
+Vasilian,Centre Midfielder,None,11/3/24,14:00,14:00:00,14:45:00,10/28/24,11/1/24,Match Session,None,First Half,45,,,,,4262,95,186,28,186,13,23.6,5.7,25,26
+Vasilian,Centre Midfielder,None,11/3/24,15:00,15:00:00,15:45:00,10/28/24,11/1/24,Match Session,None,Second Half,45,,,,,4095,91,283,39,126,13,23.1,5.5,26,28
+Vasilian,Centre Midfielder,None,11/2/24,17:00,17:00:00,18:45:00,10/28/24,11/1/24,Match Session,None,Whole Session,90,,8.8,8.7,8.82,8922,99,662,90,366,29,26,6,62,69
+Vasilian,Centre Midfielder,None,11/2/24,18:00,18:00:00,18:45:00,10/28/24,11/1/24,Match Session,None,Second Half,45,,,,,4076,91,303,40,204,14,25.3,5.4,30,33
+Vasilian,Centre Midfielder,None,11/2/24,17:00,17:00:00,17:45:00,10/28/24,11/1/24,Match Session,None,First Half,45,,,,,4846,108,359,50,162,15,26,6.5,32,36
+Asher Herrmann,Centre Midfielder,None,10/23/24,18:50,18:50:00,20:10:00,10/21/24,10/1/24,Training Session,None,Whole Session,80,,10,10,10,5961,75,240,43,96,12,23.5,4.5,37,35
+Asher Herrmann,Centre Midfielder,None,10/22/24,18:50,18:50:00,20:05:00,10/21/24,10/1/24,Training Session,None,Whole Session,75,,9.9,8.02,10,3777,50,86,16,4,1,19.5,3,61,39
+Asher Herrmann,Centre Midfielder,None,10/24/24,18:50,18:50:00,20:00:00,10/21/24,10/1/24,Training Session,None,Whole Session,70,,7,6.84,7.11,3909,56,76,11,23,4,22.3,3.4,30,25
+Asher Herrmann,Centre Midfielder,None,10/26/24,11:15,11:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Asher Herrmann,Centre Midfielder,None,10/26/24,12:15,12:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Asher Herrmann,Centre Midfielder,None,10/26/24,11:15,11:15:00,12:00:00,10/21/24,10/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+casey powers,Goalkeeper,None,10/26/24,11:15,11:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Whole Session,90,,3.9,3.44,4.28,2793,31,51,10,25,2,21.7,1.9,11,5
+casey powers,Goalkeeper,None,10/26/24,12:15,12:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Second Half,45,,,,,2793,62,51,10,25,2,21.7,3.7,11,5
+casey powers,Goalkeeper,None,10/26/24,11:15,11:15:00,12:00:00,10/21/24,10/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Finn Van Clief,Striker,None,10/22/24,18:50,18:50:00,20:05:00,10/21/24,10/1/24,Training Session,None,Whole Session,75,,0.1,0,0.26,0,0,0,0,0,0,0,0,2,8
+Finn Van Clief,Striker,None,10/24/24,18:50,18:50:00,20:00:00,10/21/24,10/1/24,Training Session,None,Whole Session,70,,2.1,3.33,0.83,2535,36,0,0,0,0,1.1,2.2,0,2
+Finn Van Clief,Striker,None,10/26/24,11:15,11:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Finn Van Clief,Striker,None,10/26/24,12:15,12:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Finn Van Clief,Striker,None,10/26/24,11:15,11:15:00,12:00:00,10/21/24,10/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Henry Freeman,Right Back,None,10/22/24,18:50,18:50:00,20:05:00,10/21/24,10/1/24,Training Session,None,Whole Session,75,,3.8,3.94,3.66,3729,50,69,11,11,2,21.9,3,76,59
+Henry Freeman,Right Back,None,10/26/24,11:15,11:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Whole Session,90,,10,9.8,10,9926,110,523,85,387,37,24.5,6.6,77,93
+Henry Freeman,Right Back,None,10/26/24,12:15,12:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Second Half,45,,,,,4854,108,218,39,171,18,24,6.5,39,44
+Henry Freeman,Right Back,None,10/26/24,11:15,11:15:00,12:00:00,10/21/24,10/1/24,Match Session,None,First Half,45,,,,,5072,113,305,46,217,19,24.5,6.8,38,49
+Henry Freeman,Right Back,None,10/24/24,18:50,18:50:00,20:00:00,10/21/24,10/1/24,Training Session,None,Whole Session,70,,2.3,3.65,0.85,3346,48,0,0,0,0,6.5,2.9,0,1
+Henry Freeman,Right Back,None,10/23/24,18:50,18:50:00,20:10:00,10/21/24,10/1/24,Training Session,None,Whole Session,80,,6.7,6.66,6.73,6547,82,268,46,180,20,23.7,4.9,71,65
+Jake Ciavarro,Centre Defensive Midfielder,None,10/26/24,11:15,11:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Whole Session,90,,2.6,2.7,2.42,2532,28,89,14,40,5,22.5,1.7,19,20
+Jake Ciavarro,Centre Defensive Midfielder,None,10/26/24,11:15,11:15:00,12:00:00,10/21/24,10/1/24,Match Session,None,First Half,45,,,,,2532,56,89,14,40,5,22.5,3.4,19,20
+Jake Ciavarro,Centre Defensive Midfielder,None,10/26/24,12:15,12:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,10/22/24,18:50,18:50:00,20:05:00,10/21/24,10/1/24,Training Session,None,Whole Session,75,,3.7,3.82,3.63,3859,51,57,12,37,5,23.6,3.1,63,32
+Jake Ciavarro,Centre Defensive Midfielder,None,10/23/24,18:50,18:50:00,20:10:00,10/21/24,10/1/24,Training Session,None,Whole Session,80,,5.6,5.95,5.22,6140,77,228,32,55,7,22.5,4.6,56,37
+Jake Ciavarro,Centre Defensive Midfielder,None,10/24/24,18:50,18:50:00,20:00:00,10/21/24,10/1/24,Training Session,None,Whole Session,70,,3.9,3.88,3.93,3802,54,91,15,23,3,21.2,3.3,46,35
+Jonah Greenblatt,Left Back,None,10/23/24,18:50,18:50:00,20:10:00,10/21/24,10/1/24,Training Session,None,Whole Session,80,,5.5,5.79,5.14,6609,83,260,41,208,18,25.3,5,63,68
+Jonah Greenblatt,Left Back,None,10/23/24,18:50,18:50:00,20:10:00,10/21/24,10/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,10/22/24,18:50,18:50:00,20:05:00,10/21/24,10/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,10/22/24,18:50,18:50:00,20:05:00,10/21/24,10/1/24,Training Session,None,Whole Session,75,,3.5,3.89,3.07,4365,58,45,10,9,2,21.3,3.5,87,52
+Jonah Greenblatt,Left Back,None,10/24/24,18:50,18:50:00,20:00:00,10/21/24,10/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,10/26/24,11:15,11:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Whole Session,90,,8.3,8.55,8.06,10068,112,545,84,570,40,27.6,6.7,70,84
+Jonah Greenblatt,Left Back,None,10/26/24,12:15,12:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Second Half,45,,,,,4838,108,248,41,272,18,27.6,6.5,29,39
+Jonah Greenblatt,Left Back,None,10/26/24,11:15,11:15:00,12:00:00,10/21/24,10/1/24,Match Session,None,First Half,45,,,,,5230,116,296,43,298,22,25.2,7,41,45
+Jonah Greenblatt,Left Back,None,10/24/24,18:50,18:50:00,20:00:00,10/21/24,10/1/24,Training Session,None,Whole Session,70,,3.5,3.71,3.2,4063,58,92,18,54,6,24.3,3.5,57,35
+Jonah Greenblatt,Left Back,None,10/26/24,11:15,11:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,10/26/24,12:15,12:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Second Half,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,10/26/24,11:15,11:15:00,12:00:00,10/21/24,10/1/24,Match Session,None,First Half,,,,,,,,,,,,,,,
+Kaio Morais,Right Winger,None,10/26/24,11:15,11:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Whole Session,90,,10,10,10,9926,110,633,91,441,41,27.5,6.6,68,106
+Kaio Morais,Right Winger,None,10/26/24,11:15,11:15:00,12:00:00,10/21/24,10/1/24,Match Session,None,First Half,45,,,,,4996,111,297,45,213,21,27.5,6.7,30,54
+Kaio Morais,Right Winger,None,10/26/24,12:15,12:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Second Half,45,,,,,4931,110,337,46,228,20,26.3,6.6,38,52
+Kaio Morais,Right Winger,None,10/23/24,18:50,18:50:00,20:10:00,10/21/24,10/1/24,Training Session,None,Whole Session,80,,8.4,8.22,8.63,6965,87,432,65,346,34,24.9,5.2,89,83
+Kaio Morais,Right Winger,None,10/22/24,18:50,18:50:00,20:05:00,10/21/24,10/1/24,Training Session,None,Whole Session,75,,4.2,4.67,3.64,3673,49,97,20,27,4,21.9,2.9,59,45
+Kaio Morais,Right Winger,None,10/24/24,18:50,18:50:00,20:00:00,10/21/24,10/1/24,Training Session,None,Whole Session,70,,0.1,0,0.23,0,0,0,0,0,0,0,0,4,6
+Killian Walsh,Striker,None,10/23/24,18:50,18:50:00,20:10:00,10/21/24,10/1/24,Training Session,None,Whole Session,80,,7.1,7.32,6.86,7173,90,370,54,136,17,23.7,5.4,49,46
+Killian Walsh,Striker,None,10/24/24,18:50,18:50:00,20:00:00,10/21/24,10/1/24,Training Session,None,Whole Session,70,,4.4,4.58,4.22,4440,63,72,13,32,4,22.7,3.8,55,35
+Killian Walsh,Striker,None,10/26/24,11:15,11:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Whole Session,90,,3,2.75,3.28,2554,28,213,23,118,6,26,1.7,20,15
+Killian Walsh,Striker,None,10/26/24,12:15,12:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Second Half,45,,,,,2554,57,213,23,118,6,26,3.4,20,15
+Killian Walsh,Striker,None,10/26/24,11:15,11:15:00,12:00:00,10/21/24,10/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Killian Walsh,Striker,None,10/22/24,18:50,18:50:00,20:05:00,10/21/24,10/1/24,Training Session,None,Whole Session,75,,3.9,4.12,3.65,3797,51,43,9,15,2,22.2,3,56,35
+Logan Moniz,Centre Attacking Midfielder,None,10/22/24,18:50,18:50:00,20:05:00,10/21/24,10/1/24,Training Session,None,Whole Session,75,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Logan Moniz,Centre Attacking Midfielder,None,10/24/24,18:50,18:50:00,20:00:00,10/21/24,10/1/24,Training Session,None,Whole Session,70,,6.8,6.49,7.06,4550,65,192,36,113,15,24.1,3.9,87,69
+Logan Moniz,Centre Attacking Midfielder,None,10/23/24,18:50,18:50:00,20:10:00,10/21/24,10/1/24,Training Session,None,Whole Session,80,,1.7,2.76,0.56,2074,26,0,0,0,0,0,1.6,0,0
+Logan Moniz,Centre Attacking Midfielder,None,10/26/24,11:15,11:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Whole Session,90,,10,10,10,10220,114,493,93,1002,67,31.4,6.8,92,120
+Logan Moniz,Centre Attacking Midfielder,None,10/26/24,12:15,12:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Second Half,45,,,,,4957,110,271,49,458,31,27.5,6.6,47,51
+Logan Moniz,Centre Attacking Midfielder,None,10/26/24,11:15,11:15:00,12:00:00,10/21/24,10/1/24,Match Session,None,First Half,45,,,,,5262,117,222,44,544,36,31.4,7,45,69
+Marcus Cooper,Centre Back,None,10/26/24,11:15,11:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Whole Session,90,,10,10,10,9233,103,367,60,391,24,30,6.2,55,60
+Marcus Cooper,Centre Back,None,10/26/24,11:15,11:15:00,12:00:00,10/21/24,10/1/24,Match Session,None,First Half,45,,,,,4717,105,189,34,250,14,27.7,6.3,23,27
+Marcus Cooper,Centre Back,None,10/26/24,12:15,12:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Second Half,45,,,,,4516,100,178,26,142,10,30,6,32,33
+Marcus Cooper,Centre Back,None,10/24/24,18:50,18:50:00,20:00:00,10/21/24,10/1/24,Training Session,None,Whole Session,70,,3.5,5.69,1.3,4043,58,0,0,0,0,4.5,3.5,0,0
+Marcus Cooper,Centre Back,None,10/23/24,18:50,18:50:00,20:10:00,10/21/24,10/1/24,Training Session,None,Whole Session,80,,1.4,2.29,0.5,1445,18,0,0,0,0,0,1.1,0,1
+Marcus Cooper,Centre Back,None,10/22/24,18:50,18:50:00,20:05:00,10/21/24,10/1/24,Training Session,None,Whole Session,75,,4.4,4.54,4.22,3035,40,43,10,13,3,21.9,2.4,51,35
+Sam Cunniffe,Centre Back,None,10/22/24,18:50,18:50:00,20:05:00,10/21/24,10/1/24,Training Session,None,Whole Session,75,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sam Cunniffe,Centre Back,None,10/23/24,18:50,18:50:00,20:10:00,10/21/24,10/1/24,Training Session,None,Whole Session,80,,7.3,7.54,7.13,6784,85,135,29,113,13,23.8,5.1,52,49
+Sam Cunniffe,Centre Back,None,10/24/24,18:50,18:50:00,20:00:00,10/21/24,10/1/24,Training Session,None,Whole Session,70,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sam Cunniffe,Centre Back,None,10/26/24,11:15,11:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sam Cunniffe,Centre Back,None,10/26/24,12:15,12:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Sam Cunniffe,Centre Back,None,10/26/24,11:15,11:15:00,12:00:00,10/21/24,10/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Vasilian,Centre Midfielder,None,10/24/24,18:50,18:50:00,20:00:00,10/21/24,10/1/24,Training Session,None,Whole Session,70,,4.5,4.52,4.42,4382,63,110,20,39,5,20.8,3.8,57,44
+Vasilian,Centre Midfielder,None,10/22/24,18:50,18:50:00,20:05:00,10/21/24,10/1/24,Training Session,None,Whole Session,75,,0,0,0.09,0,0,0,0,0,0,0,0,4,0
+Vasilian,Centre Midfielder,None,10/26/24,11:15,11:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Whole Session,90,,5.4,5.6,5.27,5500,61,331,45,217,16,23.8,3.7,33,36
+Vasilian,Centre Midfielder,None,10/26/24,12:15,12:15:00,13:00:00,10/21/24,10/1/24,Match Session,None,Second Half,45,,,,,5500,122,331,45,217,16,23.8,7.3,33,36
+Vasilian,Centre Midfielder,None,10/26/24,11:15,11:15:00,12:00:00,10/21/24,10/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Vasilian,Centre Midfielder,None,10/23/24,18:50,18:50:00,20:10:00,10/21/24,10/1/24,Training Session,None,Whole Session,80,,7.1,7.52,6.63,7693,96,396,60,122,12,23,5.8,62,65
+Asher Herrmann,Centre Midfielder,None,10/20/24,13:00,13:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Asher Herrmann,Centre Midfielder,None,10/20/24,13:00,13:00:00,13:45:00,10/14/24,10/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Asher Herrmann,Centre Midfielder,None,10/20/24,14:00,14:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Brendan Furlonge,Right Back,None,10/20/24,13:00,13:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Brendan Furlonge,Right Back,None,10/20/24,14:00,14:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Brendan Furlonge,Right Back,None,10/20/24,13:00,13:00:00,13:45:00,10/14/24,10/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+casey powers,Goalkeeper,None,10/20/24,13:00,13:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+casey powers,Goalkeeper,None,10/20/24,14:00,14:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+casey powers,Goalkeeper,None,10/20/24,13:00,13:00:00,13:45:00,10/14/24,10/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Finn Van Clief,Striker,None,10/20/24,13:00,13:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Finn Van Clief,Striker,None,10/20/24,13:00,13:00:00,13:45:00,10/14/24,10/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Finn Van Clief,Striker,None,10/20/24,14:00,14:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Henry Freeman,Right Back,None,10/20/24,13:00,13:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Henry Freeman,Right Back,None,10/20/24,13:00,13:00:00,13:45:00,10/14/24,10/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Henry Freeman,Right Back,None,10/20/24,14:00,14:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,10/20/24,13:00,13:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,10/20/24,13:00,13:00:00,13:45:00,10/14/24,10/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,10/20/24,14:00,14:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Jonah Greenblatt,Left Back,None,10/20/24,13:00,13:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Jonah Greenblatt,Left Back,None,10/20/24,13:00,13:00:00,13:45:00,10/14/24,10/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Jonah Greenblatt,Left Back,None,10/20/24,14:00,14:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Jonah Greenblatt,Left Back,None,10/20/24,13:00,13:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,10/20/24,14:00,14:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Second Half,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,10/20/24,13:00,13:00:00,13:45:00,10/14/24,10/1/24,Match Session,None,First Half,,,,,,,,,,,,,,,
+Kaio Morais,Right Winger,None,10/20/24,13:00,13:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Kaio Morais,Right Winger,None,10/20/24,13:00,13:00:00,13:45:00,10/14/24,10/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Kaio Morais,Right Winger,None,10/20/24,14:00,14:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Killian Walsh,Striker,None,10/20/24,13:00,13:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Killian Walsh,Striker,None,10/20/24,14:00,14:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Killian Walsh,Striker,None,10/20/24,13:00,13:00:00,13:45:00,10/14/24,10/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Logan Moniz,Centre Attacking Midfielder,None,10/20/24,13:00,13:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Logan Moniz,Centre Attacking Midfielder,None,10/20/24,14:00,14:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Logan Moniz,Centre Attacking Midfielder,None,10/20/24,13:00,13:00:00,13:45:00,10/14/24,10/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Marcus Cooper,Centre Back,None,10/20/24,13:00,13:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Marcus Cooper,Centre Back,None,10/20/24,13:00,13:00:00,13:45:00,10/14/24,10/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Marcus Cooper,Centre Back,None,10/20/24,14:00,14:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Sam Cunniffe,Centre Back,None,10/20/24,13:00,13:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sam Cunniffe,Centre Back,None,10/20/24,13:00,13:00:00,13:45:00,10/14/24,10/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Sam Cunniffe,Centre Back,None,10/20/24,14:00,14:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Vasilian,Centre Midfielder,None,10/20/24,13:00,13:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vasilian,Centre Midfielder,None,10/20/24,14:00,14:00:00,14:45:00,10/14/24,10/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Vasilian,Centre Midfielder,None,10/20/24,13:00,13:00:00,13:45:00,10/14/24,10/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Asher Herrmann,Centre Midfielder,None,10/8/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,2.3,3.68,0.85,2539,32,0,0,0,0,0,1.9,0,1
+Asher Herrmann,Centre Midfielder,None,10/9/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,1.5,1.95,1.09,1290,16,0,0,0,0,0,1,7,4
+Asher Herrmann,Centre Midfielder,None,10/10/24,18:50,18:50:00,20:05:00,10/7/24,10/1/24,Training Session,None,Whole Session,75,,0.4,0.61,0.14,425,6,0,0,0,0,0,0.3,0,0
+Brendan Furlonge,Right Back,None,10/9/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,4.5,4.55,4.49,5410,68,157,32,136,17,23.5,4.1,79,65
+Brendan Furlonge,Right Back,None,10/10/24,18:50,18:50:00,20:05:00,10/7/24,10/1/24,Training Session,None,Whole Session,75,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Brendan Furlonge,Right Back,None,10/8/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,3.8,3.62,3.98,4335,54,148,30,115,10,23.8,3.3,82,50
+Finn Van Clief,Striker,None,10/10/24,18:50,18:50:00,20:05:00,10/7/24,10/1/24,Training Session,None,Whole Session,75,,4,4.3,3.67,4795,64,162,28,39,6,21.7,3.8,48,32
+Finn Van Clief,Striker,None,10/9/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,0.7,1.09,0.27,1225,15,0,0,0,0,0,0.9,1,1
+Finn Van Clief,Striker,None,10/8/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,3.7,4.07,3.37,4833,60,89,19,98,9,24.1,3.6,42,54
+Henry Freeman,Right Back,None,10/9/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,5.7,5.78,5.63,5780,72,214,40,162,14,24,4.3,79,77
+Henry Freeman,Right Back,None,10/10/24,18:50,18:50:00,20:05:00,10/7/24,10/1/24,Training Session,None,Whole Session,75,,4.5,4.86,4.14,4777,64,199,32,81,7,24.1,3.8,40,44
+Henry Freeman,Right Back,None,10/8/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,4.4,4.68,4.15,4626,58,111,20,75,8,21.7,3.5,65,66
+Jake Ciavarro,Centre Defensive Midfielder,None,10/9/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,4.9,5.08,4.64,5344,67,138,24,101,9,23.8,4,57,45
+Jake Ciavarro,Centre Defensive Midfielder,None,10/8/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,4.2,4.47,3.93,4689,59,89,17,60,9,22.5,3.5,58,42
+Jake Ciavarro,Centre Defensive Midfielder,None,10/10/24,18:50,18:50:00,20:05:00,10/7/24,10/1/24,Training Session,None,Whole Session,75,,4.9,4.96,4.91,5328,71,197,28,95,13,23.5,4.3,48,30
+Jonah Greenblatt,Left Back,None,10/9/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,10/10/24,18:50,18:50:00,20:05:00,10/7/24,10/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,10/10/24,18:50,18:50:00,20:05:00,10/7/24,10/1/24,Training Session,None,Whole Session,75,,4.2,4.12,4.28,5693,76,225,34,220,22,25.3,4.6,73,54
+Jonah Greenblatt,Left Back,None,10/8/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,4.1,4.04,4.16,5557,69,208,38,120,14,22.1,4.2,87,71
+Jonah Greenblatt,Left Back,None,10/9/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,4.5,4.31,4.63,5859,73,255,43,154,19,23.8,4.4,102,70
+Jonah Greenblatt,Left Back,None,10/8/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Kaio Morais,Right Winger,None,10/10/24,18:50,18:50:00,20:05:00,10/7/24,10/1/24,Training Session,None,Whole Session,75,,0,0,0.07,0,0,0,0,0,0,0,0,2,2
+Kaio Morais,Right Winger,None,10/8/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,5.8,5.72,5.91,6310,79,319,58,166,23,24.5,4.7,98,95
+Kaio Morais,Right Winger,None,10/9/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,5.8,5.78,5.87,6456,81,343,58,172,19,23.9,4.8,92,99
+Killian Walsh,Striker,None,10/8/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,4.3,4.43,4.18,4670,58,166,27,51,6,23.2,3.5,49,41
+Killian Walsh,Striker,None,10/9/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,5.5,5.8,5.15,6258,78,269,46,93,11,24.9,4.7,48,46
+Killian Walsh,Striker,None,10/10/24,18:50,18:50:00,20:05:00,10/7/24,10/1/24,Training Session,None,Whole Session,75,,4.7,4.88,4.42,5177,69,242,39,91,11,23.1,4.1,33,29
+Liam Pitts,Right Winger,None,10/9/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Liam Pitts,Right Winger,None,10/8/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Logan Moniz,Centre Attacking Midfielder,None,10/10/24,18:50,18:50:00,20:05:00,10/7/24,10/1/24,Training Session,None,Whole Session,75,,6.5,5.97,7.12,6305,84,399,77,461,45,27.1,5,79,94
+Logan Moniz,Centre Attacking Midfielder,None,10/9/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Logan Moniz,Centre Attacking Midfielder,None,10/8/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,0,0,0,1,0,0,0,0,0,0.5,0,0,0
+Marcus Cooper,Centre Back,None,10/9/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,5.5,5.43,5.6,5104,64,143,28,44,8,21.7,3.8,65,68
+Marcus Cooper,Centre Back,None,10/8/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,4.9,4.79,5.03,4471,56,103,21,107,11,22.7,3.4,54,54
+Marcus Cooper,Centre Back,None,10/10/24,18:50,18:50:00,20:05:00,10/7/24,10/1/24,Training Session,None,Whole Session,75,,3.8,4.23,3.43,3865,52,67,13,25,4,21.3,3.1,33,33
+Sam Cunniffe,Centre Back,None,10/10/24,18:50,18:50:00,20:05:00,10/7/24,10/1/24,Training Session,None,Whole Session,75,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sam Cunniffe,Centre Back,None,10/8/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,4.4,4.73,4.01,5408,68,101,17,43,4,22.8,4.1,66,38
+Sam Cunniffe,Centre Back,None,10/9/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,4.6,5.09,4.01,5824,73,142,25,26,2,24.2,4.4,55,41
+Vasilian,Centre Midfielder,None,10/9/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,4.4,4.62,4.25,6224,78,147,29,75,9,22.5,4.7,64,78
+Vasilian,Centre Midfielder,None,10/8/24,18:50,18:50:00,20:10:00,10/7/24,10/1/24,Training Session,None,Whole Session,80,,4.4,4.28,4.58,5791,72,262,50,166,20,23.2,4.3,61,66
+Vasilian,Centre Midfielder,None,10/10/24,18:50,18:50:00,20:05:00,10/7/24,10/1/24,Training Session,None,Whole Session,75,,4.6,4.65,4.47,6328,84,290,39,128,16,24.4,5.1,46,55
+Asher Herrmann,Centre Midfielder,None,10/5/24,18:30,18:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Whole Session,90,,6.7,6.75,6.68,4859,54,196,35,109,7,24.1,3.2,29,22
+Asher Herrmann,Centre Midfielder,None,10/5/24,18:30,18:30:00,19:15:00,9/30/24,10/1/24,Match Session,None,First Half,45,,,,,166,4,0,0,0,0,18.6,0.2,2,1
+Asher Herrmann,Centre Midfielder,None,10/5/24,19:30,19:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Second Half,45,,,,,4693,104,196,35,109,7,24.1,6.3,27,21
+Asher Herrmann,Centre Midfielder,None,10/1/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,6.8,6.86,6.82,4954,62,39,7,12,1,21,3.7,61,41
+Asher Herrmann,Centre Midfielder,None,10/2/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,1,1.26,0.72,869,11,0,0,0,0,0,0.7,5,4
+Brendan Furlonge,Right Back,None,10/1/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,4.5,4.25,4.64,4916,61,115,22,83,12,22.9,3.7,83,76
+Brendan Furlonge,Right Back,None,10/2/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,5.1,4.9,5.36,5656,71,289,46,171,20,26.1,4.2,65,73
+Brendan Furlonge,Right Back,None,10/5/24,18:30,18:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Whole Session,90,,8.1,8.06,8.18,9722,108,495,83,743,49,30.5,6.5,83,104
+Brendan Furlonge,Right Back,None,10/5/24,18:30,18:30:00,19:15:00,9/30/24,10/1/24,Match Session,None,First Half,45,,,,,5106,113,237,36,276,21,27.3,6.8,41,47
+Brendan Furlonge,Right Back,None,10/5/24,19:30,19:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Second Half,45,,,,,4616,103,258,47,467,28,30.5,6.2,42,57
+casey powers,Goalkeeper,None,10/5/24,18:30,18:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Whole Session,90,,5.9,6.94,4.77,5336,59,25,3,15,2,21.1,3.6,25,20
+casey powers,Goalkeeper,None,10/5/24,18:30,18:30:00,19:15:00,9/30/24,10/1/24,Match Session,None,First Half,45,,,,,2569,57,0,0,5,1,19.4,3.4,11,10
+casey powers,Goalkeeper,None,10/5/24,19:30,19:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Second Half,45,,,,,2766,61,25,3,10,1,21.1,3.7,14,10
+Devin Smith,Left Back,None,10/2/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Finn Van Clief,Striker,None,10/2/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,4.8,4.88,4.76,5686,71,231,39,85,10,25.8,4.3,68,62
+Finn Van Clief,Striker,None,10/1/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,4.5,4.6,4.46,5378,67,86,18,38,6,21.5,4,76,80
+Finn Van Clief,Striker,None,10/5/24,18:30,18:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Whole Session,90,,8.4,8.12,8.59,9777,109,462,79,729,55,30.4,6.5,97,97
+Finn Van Clief,Striker,None,10/5/24,18:30,18:30:00,19:15:00,9/30/24,10/1/24,Match Session,None,First Half,45,,,,,4946,110,194,38,313,23,27.5,6.6,46,52
+Finn Van Clief,Striker,None,10/5/24,19:30,19:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Second Half,45,,,,,4831,107,268,41,416,32,30.4,6.4,51,45
+Henry Freeman,Right Back,None,10/1/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,5.1,5.47,4.7,5063,63,114,21,61,8,21.8,3.8,63,85
+Henry Freeman,Right Back,None,10/2/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,5.6,5.92,5.25,5551,69,226,38,24,4,21.2,4.2,74,87
+Henry Freeman,Right Back,None,10/5/24,18:30,18:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Whole Session,90,,5.7,6.46,4.99,6361,71,267,43,200,20,28.2,4.2,53,68
+Henry Freeman,Right Back,None,10/5/24,19:30,19:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Second Half,45,,,,,1064,24,43,7,55,4,28.2,1.4,14,11
+Henry Freeman,Right Back,None,10/5/24,18:30,18:30:00,19:15:00,9/30/24,10/1/24,Match Session,None,First Half,45,,,,,5296,118,224,36,145,16,23.2,7.1,39,57
+Jake Ciavarro,Centre Defensive Midfielder,None,10/2/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,5.3,5.75,4.82,6129,77,185,27,5,1,21.1,4.6,62,60
+Jake Ciavarro,Centre Defensive Midfielder,None,10/1/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,4.8,4.71,4.88,4971,62,106,20,28,4,21.1,3.7,79,65
+Jake Ciavarro,Centre Defensive Midfielder,None,10/5/24,18:30,18:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Whole Session,90,,7.9,8.36,7.47,8745,97,255,43,267,21,25.3,5.8,78,85
+Jake Ciavarro,Centre Defensive Midfielder,None,10/5/24,19:30,19:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Second Half,45,,,,,4417,98,149,25,179,15,25,5.9,39,45
+Jake Ciavarro,Centre Defensive Midfielder,None,10/5/24,18:30,18:30:00,19:15:00,9/30/24,10/1/24,Match Session,None,First Half,45,,,,,4328,96,107,18,89,6,25.3,5.8,39,40
+Jonah Greenblatt,Left Back,None,10/1/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,10/5/24,18:30,18:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,10/5/24,19:30,19:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Second Half,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,10/5/24,18:30,18:30:00,19:15:00,9/30/24,10/1/24,Match Session,None,First Half,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,10/2/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,10/5/24,18:30,18:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Whole Session,90,,8.1,7.77,8.32,10607,118,748,116,817,67,26.8,7.1,101,109
+Jonah Greenblatt,Left Back,None,10/5/24,18:30,18:30:00,19:15:00,9/30/24,10/1/24,Match Session,None,First Half,45,,,,,5263,117,386,57,385,33,26.8,7,47,61
+Jonah Greenblatt,Left Back,None,10/5/24,19:30,19:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Second Half,45,,,,,5344,119,361,59,432,34,26.5,7.1,54,48
+Jonah Greenblatt,Left Back,None,10/2/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,5.2,5.01,5.32,6609,83,277,47,162,17,26.6,5,94,81
+Jonah Greenblatt,Left Back,None,10/1/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,4.1,4.05,4.21,5343,67,122,26,63,10,23.2,4,98,65
+Kaio Morais,Right Winger,None,10/5/24,18:30,18:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Whole Session,90,,4.7,4.71,4.68,5153,57,378,71,383,35,27,3.4,44,64
+Kaio Morais,Right Winger,None,10/5/24,19:30,19:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Second Half,45,,,,,2,0,0,0,0,0,1.7,0,0,0
+Kaio Morais,Right Winger,None,10/5/24,18:30,18:30:00,19:15:00,9/30/24,10/1/24,Match Session,None,First Half,45,,,,,5151,114,378,71,383,35,27,6.9,44,64
+Kaio Morais,Right Winger,None,10/2/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,5.5,5.51,5.48,6403,80,310,58,167,21,23.6,4.8,78,104
+Kaio Morais,Right Winger,None,10/1/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,0.4,0.03,0.71,32,0,0,0,0,0,0,0,16,29
+Killian Walsh,Striker,None,10/1/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,4.9,5.06,4.8,5141,64,130,25,54,9,23.2,3.9,58,48
+Killian Walsh,Striker,None,10/5/24,18:30,18:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Whole Session,90,,5.7,5.36,5.99,5712,63,301,48,508,30,27.7,3.8,33,46
+Killian Walsh,Striker,None,10/5/24,19:30,19:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Second Half,45,,,,,5608,125,301,48,508,30,27.7,7.5,33,46
+Killian Walsh,Striker,None,10/5/24,18:30,18:30:00,19:15:00,9/30/24,10/1/24,Match Session,None,First Half,45,,,,,104,2,0,0,0,0,10.2,0.1,0,0
+Killian Walsh,Striker,None,10/2/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,6.1,5.97,6.28,6151,77,242,43,126,16,24,4.6,68,60
+Liam Pitts,Right Winger,None,10/2/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,5.8,5.98,5.6,5878,73,153,29,83,6,25,4.4,90,58
+Liam Pitts,Right Winger,None,10/1/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,5.1,5.04,5.08,4874,61,74,15,22,3,21.6,3.7,87,65
+Logan Moniz,Centre Attacking Midfielder,None,10/1/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,4.8,4.46,5.15,5443,68,271,50,202,20,24.5,4.1,113,96
+Logan Moniz,Centre Attacking Midfielder,None,10/2/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,5.1,5.04,5.15,6156,77,224,47,271,29,27.4,4.6,96,105
+Logan Moniz,Centre Attacking Midfielder,None,10/5/24,18:30,18:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Whole Session,90,,8.4,8.48,8.28,10502,117,600,106,1088,76,30.2,7,114,121
+Logan Moniz,Centre Attacking Midfielder,None,10/5/24,18:30,18:30:00,19:15:00,9/30/24,10/1/24,Match Session,None,First Half,45,,,,,5132,114,285,48,432,29,29.1,6.8,59,71
+Logan Moniz,Centre Attacking Midfielder,None,10/5/24,19:30,19:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Second Half,45,,,,,5370,119,315,58,656,47,30.2,7.2,55,50
+Marcus Cooper,Centre Back,None,10/2/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,0,0,0,1,0,0,0,0,0,0.4,0,0,0
+Marcus Cooper,Centre Back,None,10/1/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,5,4.7,5.24,4470,56,90,20,8,2,20,3.4,69,75
+Marcus Cooper,Centre Back,None,10/5/24,18:30,18:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Whole Session,90,,9.2,9.76,8.55,9114,101,383,60,362,31,27.6,6.1,78,57
+Marcus Cooper,Centre Back,None,10/5/24,19:30,19:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Second Half,45,,,,,4475,99,214,32,230,17,27.6,6,42,35
+Marcus Cooper,Centre Back,None,10/5/24,18:30,18:30:00,19:15:00,9/30/24,10/1/24,Match Session,None,First Half,45,,,,,4640,103,169,28,132,14,23.5,6.2,36,22
+Sam Cunniffe,Centre Back,None,10/5/24,18:30,18:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Whole Session,90,,7.9,8.61,7.11,9788,109,434,69,206,22,27.7,6.5,62,61
+Sam Cunniffe,Centre Back,None,10/5/24,19:30,19:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Second Half,45,,,,,4768,106,182,31,100,10,27.7,6.4,20,30
+Sam Cunniffe,Centre Back,None,10/5/24,18:30,18:30:00,19:15:00,9/30/24,10/1/24,Match Session,None,First Half,45,,,,,5020,112,252,38,106,12,23.6,6.7,42,31
+Sam Cunniffe,Centre Back,None,10/1/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,4.6,4.74,4.45,4725,59,117,20,12,2,19.8,3.5,66,44
+Sam Cunniffe,Centre Back,None,10/2/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,5.9,5.93,5.93,5980,75,205,41,105,12,23.4,4.5,58,56
+Vasilian,Centre Midfielder,None,10/5/24,18:30,18:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Whole Session,90,,4.8,4.74,4.85,6414,71,284,49,517,41,27.6,4.3,48,50
+Vasilian,Centre Midfielder,None,10/5/24,19:30,19:30:00,20:15:00,9/30/24,10/1/24,Match Session,None,Second Half,45,,,,,918,20,89,15,94,7,27.6,1.2,9,8
+Vasilian,Centre Midfielder,None,10/5/24,18:30,18:30:00,19:15:00,9/30/24,10/1/24,Match Session,None,First Half,45,,,,,5496,122,194,34,422,34,25.7,7.3,39,42
+Vasilian,Centre Midfielder,None,10/2/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,4.5,4.52,4.47,6212,78,241,44,127,14,21.2,4.7,57,70
+Vasilian,Centre Midfielder,None,10/1/24,18:50,18:50:00,20:10:00,9/30/24,10/1/24,Training Session,None,Whole Session,80,,4.1,3.94,4.27,5449,68,229,40,58,11,21.3,4.1,73,64
+Asher Herrmann,Centre Midfielder,None,9/24/24,18:50,18:50:00,20:10:00,9/23/24,9/1/24,Training Session,None,Whole Session,80,,0.9,1.08,0.71,854,11,0,0,0,0,0,0.6,4,7
+Asher Herrmann,Centre Midfielder,None,9/25/24,20:10,20:10:00,21:30:00,9/23/24,9/1/24,Training Session,None,Whole Session,80,,2,3.3,0.7,2472,31,0,0,0,0,3.4,1.9,0,0
+Brendan Furlonge,Right Back,None,9/25/24,20:10,20:10:00,21:30:00,9/23/24,9/1/24,Training Session,None,Whole Session,80,,6.1,5.59,6.62,6399,80,259,48,248,16,27.5,4.8,96,87
+Brendan Furlonge,Right Back,None,9/24/24,18:50,18:50:00,20:10:00,9/23/24,9/1/24,Training Session,None,Whole Session,80,,4.6,4.42,4.75,5013,63,169,27,60,9,22.5,3.8,88,56
+Finn Van Clief,Striker,None,9/24/24,18:50,18:50:00,20:10:00,9/23/24,9/1/24,Training Session,None,Whole Session,80,,4.5,4.45,4.63,5018,63,139,28,40,5,23.5,3.8,71,74
+Henry Freeman,Right Back,None,9/24/24,18:50,18:50:00,20:10:00,9/23/24,9/1/24,Training Session,None,Whole Session,80,,5.3,5.46,5.23,5030,63,143,24,76,8,23.3,3.8,74,79
+Henry Freeman,Right Back,None,9/25/24,20:10,20:10:00,21:30:00,9/23/24,9/1/24,Training Session,None,Whole Session,80,,7.8,7.24,8.34,6694,84,391,65,207,21,23.8,5,94,126
+Jake Ciavarro,Centre Defensive Midfielder,None,9/24/24,18:50,18:50:00,20:10:00,9/23/24,9/1/24,Training Session,None,Whole Session,80,,4.9,4.89,4.81,5190,65,99,20,82,10,21.7,3.9,64,56
+Jake Ciavarro,Centre Defensive Midfielder,None,9/25/24,20:10,20:10:00,21:30:00,9/23/24,9/1/24,Training Session,None,Whole Session,80,,6.4,6.03,6.83,6393,80,223,39,142,16,24.9,4.8,84,75
+Jonah Greenblatt,Left Back,None,9/25/24,20:10,20:10:00,21:30:00,9/23/24,9/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,9/25/24,20:10,20:10:00,21:30:00,9/23/24,9/1/24,Training Session,None,Whole Session,80,,5.5,4.92,5.99,6460,81,342,62,258,25,25.1,4.8,91,94
+Kaio Morais,Right Winger,None,9/24/24,18:50,18:50:00,20:10:00,9/23/24,9/1/24,Training Session,None,Whole Session,80,,4.6,4.51,4.69,5485,69,216,39,100,12,23.7,4.1,81,97
+Kaio Morais,Right Winger,None,9/25/24,20:10,20:10:00,21:30:00,9/23/24,9/1/24,Training Session,None,Whole Session,80,,6.6,6.04,7.06,7379,92,382,64,321,27,25.6,5.5,111,133
+Killian Walsh,Striker,None,9/24/24,18:50,18:50:00,20:10:00,9/23/24,9/1/24,Training Session,None,Whole Session,80,,5.7,5.51,5.92,5834,73,249,46,106,13,23.5,4.4,60,62
+Logan Moniz,Centre Attacking Midfielder,None,9/24/24,18:50,18:50:00,20:10:00,9/23/24,9/1/24,Training Session,None,Whole Session,80,,4.3,4.08,4.58,4961,62,231,40,212,26,25.9,3.7,85,87
+Logan Moniz,Centre Attacking Midfielder,None,9/25/24,20:10,20:10:00,21:30:00,9/23/24,9/1/24,Training Session,None,Whole Session,80,,6.1,5.8,6.44,7058,88,402,72,195,16,26.7,5.3,116,132
+Marcus Cooper,Centre Back,None,9/25/24,20:10,20:10:00,21:30:00,9/23/24,9/1/24,Training Session,None,Whole Session,80,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Marcus Cooper,Centre Back,None,9/24/24,18:50,18:50:00,20:10:00,9/23/24,9/1/24,Training Session,None,Whole Session,80,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sam Cunniffe,Centre Back,None,9/25/24,20:10,20:10:00,21:30:00,9/23/24,9/1/24,Training Session,None,Whole Session,80,,7,6.39,7.61,6456,81,274,50,66,7,22.5,4.8,85,86
+Sam Cunniffe,Centre Back,None,9/24/24,18:50,18:50:00,20:10:00,9/23/24,9/1/24,Training Session,None,Whole Session,80,,5.5,4.98,5.93,5038,63,195,34,78,8,22.3,3.8,66,50
+Vasilian,Centre Midfielder,None,9/25/24,20:10,20:10:00,21:30:00,9/23/24,9/1/24,Training Session,None,Whole Session,80,,5.8,5.13,6.46,7024,88,341,63,194,21,23.9,5.3,100,103
+Vasilian,Centre Midfielder,None,9/24/24,18:50,18:50:00,20:10:00,9/23/24,9/1/24,Training Session,None,Whole Session,80,,3.8,3.51,4.08,4771,60,176,32,47,5,22.7,3.6,80,57
+Asher Herrmann,Centre Midfielder,None,9/17/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,0.1,0.11,0.17,102,1,0,0,0,0,0,0.1,2,2
+Asher Herrmann,Centre Midfielder,None,9/19/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Asher Herrmann,Centre Midfielder,None,9/21/24,18:58,18:58:00,20:40:00,9/16/24,9/1/24,Match Session,None,Whole Session,92,,7.4,8.33,6.47,7357,80,252,45,156,14,24.4,4.8,33,29
+Asher Herrmann,Centre Midfielder,None,9/21/24,19:55,19:55:00,20:40:00,9/16/24,9/1/24,Match Session,None,Second Half,45,,,,,1802,40,96,17,49,4,24.1,2.4,13,6
+Asher Herrmann,Centre Midfielder,None,9/21/24,18:58,18:58:00,19:45:00,9/16/24,9/1/24,Match Session,None,First Half,47,,,,,5555,118,156,28,107,10,24.4,7.1,20,23
+Asher Herrmann,Centre Midfielder,None,9/18/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,7.5,6.27,8.81,5655,71,237,38,396,19,26.3,4.2,38,32
+Brendan Furlonge,Right Back,None,9/21/24,18:58,18:58:00,20:40:00,9/16/24,9/1/24,Match Session,None,Whole Session,92,,8.3,8.6,8.05,9842,107,457,77,816,59,28.3,6.4,72,74
+Brendan Furlonge,Right Back,None,9/21/24,18:58,18:58:00,19:45:00,9/16/24,9/1/24,Match Session,None,First Half,47,,,,,5266,112,238,42,418,33,28.3,6.7,27,37
+Brendan Furlonge,Right Back,None,9/21/24,19:55,19:55:00,20:40:00,9/16/24,9/1/24,Match Session,None,Second Half,45,,,,,4576,102,219,35,398,26,27.5,6.1,45,37
+Brendan Furlonge,Right Back,None,9/17/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,3.3,3.29,3.36,3779,47,133,24,59,8,24.6,2.8,43,50
+Brendan Furlonge,Right Back,None,9/19/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,1.5,1.64,1.35,1764,22,34,7,25,3,22.6,1.3,22,14
+Brendan Furlonge,Right Back,None,9/18/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,5,4.68,5.26,5346,67,304,43,432,21,28.7,4,56,30
+casey powers,Goalkeeper,None,9/18/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,5.1,4.8,5.34,3501,44,7,2,3,1,19.7,2.6,51,43
+casey powers,Goalkeeper,None,9/21/24,18:58,18:58:00,20:40:00,9/16/24,9/1/24,Match Session,None,Whole Session,92,,6.8,8.06,5.47,5637,61,20,5,26,2,23,3.7,17,20
+casey powers,Goalkeeper,None,9/21/24,18:58,18:58:00,19:45:00,9/16/24,9/1/24,Match Session,None,First Half,47,,,,,2756,59,0,0,18,1,23,3.5,7,6
+casey powers,Goalkeeper,None,9/21/24,19:55,19:55:00,20:40:00,9/16/24,9/1/24,Match Session,None,Second Half,45,,,,,2881,64,20,5,9,1,21.9,3.8,10,14
+casey powers,Goalkeeper,None,9/19/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,0,0,0,0,0,0,0,0,0,0,0,0,0
+casey powers,Goalkeeper,None,9/17/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,3.4,3.79,2.95,2780,35,0,0,0,0,16.7,2.1,41,13
+Devin Smith,Left Back,None,9/17/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Finn Van Clief,Striker,None,9/21/24,18:58,18:58:00,20:40:00,9/16/24,9/1/24,Match Session,None,Whole Session,92,,6.3,5.77,6.74,6711,73,423,70,585,41,26.9,4.4,57,75
+Finn Van Clief,Striker,None,9/21/24,18:58,18:58:00,19:45:00,9/16/24,9/1/24,Match Session,None,First Half,47,,,,,5413,115,357,59,540,37,26.9,6.9,51,64
+Finn Van Clief,Striker,None,9/21/24,19:55,19:55:00,20:40:00,9/16/24,9/1/24,Match Session,None,Second Half,45,,,,,1298,29,66,11,45,4,23.5,1.7,6,11
+Finn Van Clief,Striker,None,9/19/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,2.2,2.51,1.83,2891,36,56,12,14,2,21.5,2.2,18,30
+Finn Van Clief,Striker,None,9/18/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,4.6,4.49,4.7,5347,67,167,32,405,18,29.4,4,47,37
+Finn Van Clief,Striker,None,9/17/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,3.7,4.01,3.44,4814,60,78,16,64,7,23.9,3.6,53,50
+Henry Freeman,Right Back,None,9/18/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,6.8,5.96,7.56,5928,74,322,54,553,31,27.6,4.5,61,71
+Henry Freeman,Right Back,None,9/19/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,1.6,1.9,1.3,1816,23,9,3,0,0,17.2,1.4,18,26
+Henry Freeman,Right Back,None,9/21/24,18:58,18:58:00,20:40:00,9/16/24,9/1/24,Match Session,None,Whole Session,92,,4.1,4.23,3.97,4003,44,279,44,234,15,24.5,2.6,28,38
+Henry Freeman,Right Back,None,9/21/24,18:58,18:58:00,19:45:00,9/16/24,9/1/24,Match Session,None,First Half,47,,,,,21,0,0,0,0,0,7.4,0,0,0
+Henry Freeman,Right Back,None,9/21/24,19:55,19:55:00,20:40:00,9/16/24,9/1/24,Match Session,None,Second Half,45,,,,,3982,88,279,44,234,15,24.5,5.3,28,38
+Henry Freeman,Right Back,None,9/17/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,5,4.99,5.09,4894,61,281,42,51,8,21.2,3.7,70,64
+Jake Ciavarro,Centre Defensive Midfielder,None,9/18/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,6.8,5.81,7.81,6237,78,328,45,466,31,27.7,4.7,57,57
+Jake Ciavarro,Centre Defensive Midfielder,None,9/19/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,2,2.59,1.34,2678,33,0,0,0,0,15.1,2,21,14
+Jake Ciavarro,Centre Defensive Midfielder,None,9/21/24,18:58,18:58:00,20:40:00,9/16/24,9/1/24,Match Session,None,Whole Session,92,,8.9,10,7.78,11015,120,387,58,262,22,26.5,7.2,69,79
+Jake Ciavarro,Centre Defensive Midfielder,None,9/21/24,19:55,19:55:00,20:40:00,9/16/24,9/1/24,Match Session,None,Second Half,45,,,,,5249,117,180,26,166,11,26.5,7,35,37
+Jake Ciavarro,Centre Defensive Midfielder,None,9/21/24,18:58,18:58:00,19:45:00,9/16/24,9/1/24,Match Session,None,First Half,47,,,,,5766,123,208,32,96,11,22.7,7.4,34,42
+Jake Ciavarro,Centre Defensive Midfielder,None,9/17/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,4.5,4.53,4.55,4768,60,147,24,60,6,23.2,3.6,54,53
+Jonah Greenblatt,Left Back,None,9/18/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,4.8,4.57,4.93,6123,77,253,42,528,24,26.2,4.6,43,51
+Jonah Greenblatt,Left Back,None,9/19/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,9/18/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,9/19/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,2.1,2.05,2.09,2644,33,118,17,86,9,23.3,2,30,26
+Jonah Greenblatt,Left Back,None,9/21/24,18:58,18:58:00,20:40:00,9/16/24,9/1/24,Match Session,None,Whole Session,92,,7.8,7.92,7.66,10582,115,704,101,654,51,28,6.9,79,90
+Jonah Greenblatt,Left Back,None,9/21/24,18:58,18:58:00,19:45:00,9/16/24,9/1/24,Match Session,None,First Half,47,,,,,5619,120,401,55,326,27,26.2,7.2,41,49
+Jonah Greenblatt,Left Back,None,9/21/24,19:55,19:55:00,20:40:00,9/16/24,9/1/24,Match Session,None,Second Half,45,,,,,4963,110,303,46,328,24,28,6.6,38,41
+Jonah Greenblatt,Left Back,None,9/17/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,3.7,3.51,3.88,4728,59,181,35,106,12,23.8,3.6,69,63
+Jonah Greenblatt,Left Back,None,9/17/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,9/21/24,18:58,18:58:00,20:40:00,9/16/24,9/1/24,Match Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,9/21/24,18:58,18:58:00,19:45:00,9/16/24,9/1/24,Match Session,None,First Half,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,9/21/24,19:55,19:55:00,20:40:00,9/16/24,9/1/24,Match Session,None,Second Half,,,,,,,,,,,,,,,
+Kaio Morais,Right Winger,None,9/17/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,4.1,3.99,4.25,4978,62,210,41,87,14,23.6,3.7,78,76
+Kaio Morais,Right Winger,None,9/21/24,18:58,18:58:00,20:40:00,9/16/24,9/1/24,Match Session,None,Whole Session,92,,8.7,8.54,8.83,10707,116,853,135,831,70,28.1,7,85,117
+Kaio Morais,Right Winger,None,9/21/24,18:58,18:58:00,19:45:00,9/16/24,9/1/24,Match Session,None,First Half,47,,,,,5616,120,530,79,508,45,28.1,7.2,42,65
+Kaio Morais,Right Winger,None,9/21/24,19:55,19:55:00,20:40:00,9/16/24,9/1/24,Match Session,None,Second Half,45,,,,,5090,113,323,56,323,25,25.1,6.8,43,52
+Kaio Morais,Right Winger,None,9/18/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,5.3,4.73,5.91,5981,75,357,52,567,30,26.9,4.5,62,71
+Kaio Morais,Right Winger,None,9/19/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,1.9,2.13,1.66,2550,32,104,16,36,5,21.7,1.9,26,19
+Karim Eljamal,Centre Midfielder,None,9/19/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Karim Eljamal,Centre Midfielder,None,9/18/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Killian Walsh,Striker,None,9/21/24,18:58,18:58:00,20:40:00,9/16/24,9/1/24,Match Session,None,Whole Session,92,,4.6,4.38,4.73,4754,52,311,52,332,30,26.6,3.1,26,40
+Killian Walsh,Striker,None,9/21/24,18:58,18:58:00,19:45:00,9/16/24,9/1/24,Match Session,None,First Half,47,,,,,70,1,0,0,0,0,14.5,0.1,0,0
+Killian Walsh,Striker,None,9/21/24,19:55,19:55:00,20:40:00,9/16/24,9/1/24,Match Session,None,Second Half,45,,,,,4684,104,311,52,332,30,26.6,6.3,26,40
+Killian Walsh,Striker,None,9/19/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,2.9,3.87,1.91,4242,53,22,3,0,0,18.1,3.2,25,14
+Killian Walsh,Striker,None,9/18/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,5.2,4.95,5.37,5501,69,239,40,432,25,28.2,4.1,34,29
+Killian Walsh,Striker,None,9/17/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,5,4.82,5.07,5359,67,202,31,122,13,23.1,4,56,52
+Liam Pitts,Right Winger,None,9/17/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,4.8,5.11,4.49,5332,67,216,35,39,7,22.1,4,67,41
+Liam Pitts,Right Winger,None,9/21/24,18:58,18:58:00,20:40:00,9/16/24,9/1/24,Match Session,None,Whole Session,92,,3.1,2.87,3.39,2868,31,261,41,125,13,23.2,1.9,33,33
+Liam Pitts,Right Winger,None,9/21/24,18:58,18:58:00,19:45:00,9/16/24,9/1/24,Match Session,None,First Half,47,,,,,14,0,0,0,0,0,6.8,0,0,0
+Liam Pitts,Right Winger,None,9/21/24,19:55,19:55:00,20:40:00,9/16/24,9/1/24,Match Session,None,Second Half,45,,,,,2854,63,261,41,125,13,23.2,3.8,33,33
+Liam Pitts,Right Winger,None,9/19/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,2.4,3.07,1.66,3153,39,4,1,0,0,18.1,2.4,30,17
+Liam Pitts,Right Winger,None,9/18/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,6.8,5.8,7.71,6127,77,336,53,611,30,28.2,4.6,66,50
+Logan Moniz,Centre Attacking Midfielder,None,9/21/24,18:58,18:58:00,20:40:00,9/16/24,9/1/24,Match Session,None,Whole Session,92,,0,0,0.03,0,0,0,0,0,0,0,0,1,1
+Logan Moniz,Centre Attacking Midfielder,None,9/21/24,19:55,19:55:00,20:40:00,9/16/24,9/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,1,1
+Logan Moniz,Centre Attacking Midfielder,None,9/21/24,18:58,18:58:00,19:45:00,9/16/24,9/1/24,Match Session,None,First Half,47,,,,,0,0,0,0,0,0,0,0,0,0
+Logan Moniz,Centre Attacking Midfielder,None,9/19/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,2.2,2.38,2.06,3202,40,104,20,50,6,22.1,2.4,43,41
+Logan Moniz,Centre Attacking Midfielder,None,9/17/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,3.6,3.5,3.63,4881,61,232,45,183,20,25.6,3.7,77,64
+Marcus Cooper,Centre Back,None,9/18/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,6.2,4.86,7.45,5131,64,312,55,624,32,28,3.9,48,44
+Marcus Cooper,Centre Back,None,9/19/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,2.4,3.03,1.67,3096,39,14,2,0,0,19.9,2.3,22,18
+Marcus Cooper,Centre Back,None,9/21/24,18:58,18:58:00,20:40:00,9/16/24,9/1/24,Match Session,None,Whole Session,92,,7.4,8.07,6.76,8661,94,375,58,263,20,28.1,5.7,69,52
+Marcus Cooper,Centre Back,None,9/21/24,19:55,19:55:00,20:40:00,9/16/24,9/1/24,Match Session,None,Second Half,45,,,,,3997,89,228,34,94,9,26,5.3,35,22
+Marcus Cooper,Centre Back,None,9/21/24,18:58,18:58:00,19:45:00,9/16/24,9/1/24,Match Session,None,First Half,47,,,,,4664,99,147,24,169,11,28.1,6,34,30
+Marcus Cooper,Centre Back,None,9/17/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,4.2,3.65,4.81,3867,48,157,28,74,10,21.9,2.9,71,49
+Sam Cunniffe,Centre Back,None,9/17/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,4.3,3.9,4.73,4481,56,171,28,38,5,21.9,3.4,50,58
+Sam Cunniffe,Centre Back,None,9/19/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,2.7,3.41,1.99,3832,48,38,7,12,2,20.9,2.9,22,17
+Sam Cunniffe,Centre Back,None,9/21/24,18:58,18:58:00,20:40:00,9/16/24,9/1/24,Match Session,None,Whole Session,92,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sam Cunniffe,Centre Back,None,9/21/24,19:55,19:55:00,20:40:00,9/16/24,9/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Sam Cunniffe,Centre Back,None,9/21/24,18:58,18:58:00,19:45:00,9/16/24,9/1/24,Match Session,None,First Half,47,,,,,0,0,0,0,0,0,0,0,0,0
+Sam Cunniffe,Centre Back,None,9/18/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,6,4.9,7.07,5618,70,281,53,428,22,27,4.2,45,37
+Vasilian,Centre Midfielder,None,9/21/24,18:58,18:58:00,20:40:00,9/16/24,9/1/24,Match Session,None,Whole Session,92,,7.4,7.59,7.24,10647,116,592,98,735,49,26.9,6.9,68,67
+Vasilian,Centre Midfielder,None,9/21/24,19:55,19:55:00,20:40:00,9/16/24,9/1/24,Match Session,None,Second Half,45,,,,,5073,113,206,38,297,18,25.2,6.8,35,30
+Vasilian,Centre Midfielder,None,9/21/24,18:58,18:58:00,19:45:00,9/16/24,9/1/24,Match Session,None,First Half,47,,,,,5573,119,386,60,438,31,26.9,7.1,33,37
+Vasilian,Centre Midfielder,None,9/17/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,4,3.87,4.12,5433,68,247,40,137,17,23.1,4.1,61,51
+Vasilian,Centre Midfielder,None,9/19/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,2.8,3.26,2.23,4424,55,73,15,59,8,22.3,3.3,36,22
+Vasilian,Centre Midfielder,None,9/18/24,18:50,18:50:00,20:10:00,9/16/24,9/1/24,Training Session,None,Whole Session,80,,4.8,4.27,5.35,5930,74,303,52,497,32,27.3,4.5,53,50
+Asher Herrmann,Centre Midfielder,None,9/15/24,13:00,13:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,9.9,10,8.95,10199,113,392,58,276,20,26.2,6.8,42,35
+Asher Herrmann,Centre Midfielder,None,9/15/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,5342,119,227,38,187,14,25.2,7.1,21,25
+Asher Herrmann,Centre Midfielder,None,9/15/24,14:00,14:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,4857,108,165,20,89,6,26.2,6.5,21,10
+Asher Herrmann,Centre Midfielder,None,9/11/24,20:10,20:10:00,21:20:00,9/9/24,9/1/24,Training Session,None,Whole Session,70,,0.7,0.15,1.18,131,2,0,0,0,0,0,0.1,11,20
+Asher Herrmann,Centre Midfielder,None,9/14/24,12:00,12:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,7.8,8.2,7.32,6952,77,314,48,211,13,25.1,4.6,35,33
+Asher Herrmann,Centre Midfielder,None,9/14/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,5155,115,222,35,136,9,25.1,6.9,27,24
+Asher Herrmann,Centre Midfielder,None,9/14/24,12:00,12:00:00,12:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,1797,40,92,13,75,4,23.7,2.4,8,9
+Asher Herrmann,Centre Midfielder,None,9/12/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,1.2,1.67,0.66,1367,17,0,0,0,0,0,1,5,5
+Asher Herrmann,Centre Midfielder,None,9/10/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,4.4,5.12,3.64,4633,58,58,8,8,1,21.8,3.5,39,31
+Brendan Furlonge,Right Back,None,9/10/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,5.6,5.53,5.58,4930,62,150,26,79,11,22.9,3.7,87,61
+Brendan Furlonge,Right Back,None,9/15/24,13:00,13:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,5,5.75,4.29,6159,68,303,45,324,27,28.4,4.1,31,28
+Brendan Furlonge,Right Back,None,9/15/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,4598,102,208,31,221,18,26.9,6.1,23,25
+Brendan Furlonge,Right Back,None,9/15/24,14:00,14:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,1561,35,96,14,102,9,28.4,2.1,8,3
+Brendan Furlonge,Right Back,None,9/11/24,20:10,20:10:00,21:20:00,9/9/24,9/1/24,Training Session,None,Whole Session,70,,8.8,7.7,9.95,7219,103,521,71,799,47,27.9,6.2,34,42
+Brendan Furlonge,Right Back,None,9/14/24,12:00,12:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,9.3,9.81,8.72,9797,109,589,80,714,41,29.2,6.5,57,59
+Brendan Furlonge,Right Back,None,9/14/24,12:00,12:00:00,12:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,4770,106,262,34,337,19,27.7,6.4,29,33
+Brendan Furlonge,Right Back,None,9/14/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,5027,112,327,46,376,22,29.2,6.7,28,26
+Brendan Furlonge,Right Back,None,9/12/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,3.5,4.17,2.87,3854,48,59,13,19,4,21.7,2.9,51,27
+casey powers,Goalkeeper,None,9/14/24,12:00,12:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,8,8.53,7.52,5444,60,83,13,42,3,23.4,3.6,20,14
+casey powers,Goalkeeper,None,9/14/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,2884,64,39,6,36,2,23.4,3.9,12,8
+casey powers,Goalkeeper,None,9/14/24,12:00,12:00:00,12:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,2560,57,44,7,6,1,20,3.4,8,6
+casey powers,Goalkeeper,None,9/12/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,5.3,5.38,5.21,3212,40,14,3,0,0,17.9,2.4,68,23
+casey powers,Goalkeeper,None,9/15/24,13:00,13:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,9.5,8.27,10,5576,62,119,18,52,7,22,3.7,28,27
+casey powers,Goalkeeper,None,9/15/24,14:00,14:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,2552,57,69,10,38,5,21.9,3.4,15,14
+casey powers,Goalkeeper,None,9/15/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,3024,67,50,8,13,2,22,4,13,13
+casey powers,Goalkeeper,None,9/11/24,20:10,20:10:00,21:20:00,9/9/24,9/1/24,Training Session,None,Whole Session,70,,4.6,5.26,3.87,3114,44,23,5,0,0,18.8,2.7,28,11
+Devin Smith,Left Back,None,9/14/24,12:00,12:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,,,,,,,,,,,,,,,
+Devin Smith,Left Back,None,9/14/24,12:00,12:00:00,12:45:00,9/9/24,9/1/24,Match Session,None,First Half,,,,,,,,,,,,,,,
+Devin Smith,Left Back,None,9/14/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Second Half,,,,,,,,,,,,,,,
+Finn Van Clief,Striker,None,9/15/24,13:00,13:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,8.1,8.33,7.88,9428,105,519,89,569,43,28,6.3,69,72
+Finn Van Clief,Striker,None,9/15/24,14:00,14:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,4362,97,202,36,258,18,28,5.8,34,27
+Finn Van Clief,Striker,None,9/15/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,5066,113,317,53,312,25,26.6,6.8,35,45
+Finn Van Clief,Striker,None,9/12/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,2.9,3.6,2.28,3769,47,38,8,17,3,21.4,2.8,40,21
+Finn Van Clief,Striker,None,9/14/24,12:00,12:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,6,6.13,5.8,6504,72,365,54,344,30,28.9,4.3,56,45
+Finn Van Clief,Striker,None,9/14/24,12:00,12:00:00,12:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,5272,117,257,40,282,25,28.9,7,40,34
+Finn Van Clief,Striker,None,9/14/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,1232,27,108,14,62,5,26.4,1.6,16,11
+Finn Van Clief,Striker,None,9/11/24,20:10,20:10:00,21:20:00,9/9/24,9/1/24,Training Session,None,Whole Session,70,,7.8,6.53,9.04,6953,99,477,71,752,39,29.2,6,29,39
+Henry Freeman,Right Back,None,9/10/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,4.6,5.04,4.1,4363,55,74,14,8,2,19.3,3.3,72,60
+Henry Freeman,Right Back,None,9/14/24,12:00,12:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,5.6,5.56,5.53,5000,56,358,48,319,24,25.1,3.3,26,46
+Henry Freeman,Right Back,None,9/14/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,4979,111,358,48,319,24,25.1,6.6,26,46
+Henry Freeman,Right Back,None,9/14/24,12:00,12:00:00,12:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,21,0,0,0,0,0,2.4,0,0,0
+Henry Freeman,Right Back,None,9/15/24,13:00,13:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,3.6,3.5,3.65,3282,36,227,33,232,14,26,2.2,26,29
+Henry Freeman,Right Back,None,9/15/24,14:00,14:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,3277,73,227,33,232,14,26,4.4,26,29
+Henry Freeman,Right Back,None,9/15/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,5,0,0,0,0,0,2,0,0,0
+Henry Freeman,Right Back,None,9/12/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,3.9,4.27,3.6,3818,48,90,17,63,6,22.6,2.9,47,49
+Henry Freeman,Right Back,None,9/11/24,20:10,20:10:00,21:20:00,9/9/24,9/1/24,Training Session,None,Whole Session,70,,9.6,7.86,10,7090,101,635,74,683,40,27.5,6.1,26,33
+Jake Ciavarro,Centre Defensive Midfielder,None,9/10/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,3.5,4.01,3.06,4392,55,11,3,17,2,22.2,3.3,69,37
+Jake Ciavarro,Centre Defensive Midfielder,None,9/12/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,0.9,1.53,0.3,1638,20,0,0,0,0,0,1.2,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,9/11/24,20:10,20:10:00,21:20:00,9/9/24,9/1/24,Training Session,None,Whole Session,70,,8.5,6.57,10,7359,105,680,74,619,37,26.6,6.3,31,30
+Jake Ciavarro,Centre Defensive Midfielder,None,9/14/24,12:00,12:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,3.4,3.49,3.2,3678,41,156,24,170,14,23.2,2.5,28,22
+Jake Ciavarro,Centre Defensive Midfielder,None,9/14/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,30,1,0,0,0,0,3.8,0,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,9/14/24,12:00,12:00:00,12:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,3648,81,156,24,170,14,23.2,4.9,28,22
+Jake Ciavarro,Centre Defensive Midfielder,None,9/15/24,13:00,13:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,9/15/24,14:00,14:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Jake Ciavarro,Centre Defensive Midfielder,None,9/15/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Jonah Greenblatt,Left Back,None,9/10/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,3.9,4.34,3.43,4985,62,115,19,40,5,22.8,3.7,63,48
+Jonah Greenblatt,Left Back,None,9/14/24,12:00,12:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,7.8,8.24,7.42,9802,109,555,88,665,46,29.5,6.5,59,76
+Jonah Greenblatt,Left Back,None,9/14/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,4815,107,273,39,272,21,29.5,6.4,29,41
+Jonah Greenblatt,Left Back,None,9/14/24,12:00,12:00:00,12:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,4987,111,282,49,393,25,25.6,6.7,30,35
+Jonah Greenblatt,Left Back,None,9/11/24,20:10,20:10:00,21:20:00,9/9/24,9/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,9/15/24,13:00,13:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,9/15/24,14:00,14:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Second Half,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,9/15/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,First Half,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,9/11/24,20:10,20:10:00,21:20:00,9/9/24,9/1/24,Training Session,None,Whole Session,70,,6.4,5.64,7.15,6534,93,427,59,729,33,28,5.6,26,30
+Jonah Greenblatt,Left Back,None,9/14/24,12:00,12:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,9/14/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Second Half,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,9/14/24,12:00,12:00:00,12:45:00,9/9/24,9/1/24,Match Session,None,First Half,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,9/12/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,4,4.02,4.06,4604,58,151,29,129,12,24.9,3.5,65,58
+Jonah Greenblatt,Left Back,None,9/10/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,9/12/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,9/15/24,13:00,13:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,7.5,7.66,7.27,9726,108,622,85,686,45,27.7,6.5,48,86
+Jonah Greenblatt,Left Back,None,9/15/24,14:00,14:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,4657,103,318,44,327,24,26.5,6.2,19,37
+Jonah Greenblatt,Left Back,None,9/15/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,5069,113,304,41,360,21,27.7,6.8,29,49
+Kaio Morais,Right Winger,None,9/15/24,13:00,13:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,4.6,4.99,4.24,5904,66,321,54,381,32,27.8,3.9,42,42
+Kaio Morais,Right Winger,None,9/15/24,14:00,14:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,940,21,41,7,62,6,26.6,1.3,7,9
+Kaio Morais,Right Winger,None,9/15/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,4964,110,280,47,320,26,27.8,6.6,35,33
+Kaio Morais,Right Winger,None,9/10/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,5,4.82,5.15,5638,70,206,37,84,13,21.8,4.2,91,106
+Kaio Morais,Right Winger,None,9/14/24,12:00,12:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,8,8.44,7.5,9748,108,511,86,736,51,29.3,6.5,60,75
+Kaio Morais,Right Winger,None,9/14/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,4881,108,331,54,341,28,26.4,6.5,27,43
+Kaio Morais,Right Winger,None,9/14/24,12:00,12:00:00,12:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,4867,108,180,32,394,23,29.3,6.5,33,32
+Kaio Morais,Right Winger,None,9/12/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,0.1,0,0.26,0,0,0,0,0,0,0,0,11,4
+Kaio Morais,Right Winger,None,9/11/24,20:10,20:10:00,21:20:00,9/9/24,9/1/24,Training Session,None,Whole Session,70,,6.4,5.62,7.24,6626,95,469,68,650,37,26.7,5.7,37,38
+Karim Eljamal,Centre Midfielder,None,9/14/24,12:00,12:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Karim Eljamal,Centre Midfielder,None,9/14/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Karim Eljamal,Centre Midfielder,None,9/14/24,12:00,12:00:00,12:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Killian Walsh,Striker,None,9/10/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,5,5.24,4.82,5368,67,120,23,49,6,25.6,4,71,49
+Killian Walsh,Striker,None,9/11/24,20:10,20:10:00,21:20:00,9/9/24,9/1/24,Training Session,None,Whole Session,70,,7.5,6.88,8.16,7225,103,548,71,545,31,28.9,6.2,23,21
+Killian Walsh,Striker,None,9/12/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,3.4,3.78,2.92,3909,49,68,15,25,3,21.9,2.9,49,21
+Killian Walsh,Striker,None,9/14/24,12:00,12:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,5.2,5.2,5.18,5393,60,359,60,367,25,26.6,3.6,27,35
+Killian Walsh,Striker,None,9/14/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,60,1,0,0,0,0,5.5,0.1,0,0
+Killian Walsh,Striker,None,9/14/24,12:00,12:00:00,12:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,5333,119,359,60,367,25,26.6,7.1,27,35
+Killian Walsh,Striker,None,9/15/24,13:00,13:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,4.1,4.38,3.79,4694,52,278,39,269,18,26.2,3.1,18,24
+Killian Walsh,Striker,None,9/15/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,3,0,0,0,0,0,2.1,0,0,0
+Killian Walsh,Striker,None,9/15/24,14:00,14:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,4691,104,278,39,269,18,26.2,6.3,18,24
+Liam Pitts,Right Winger,None,9/15/24,13:00,13:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,4.2,4,4.48,4164,46,416,65,215,19,23.5,2.8,40,26
+Liam Pitts,Right Winger,None,9/15/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,107,2,0,0,0,0,5.9,0.1,0,0
+Liam Pitts,Right Winger,None,9/15/24,14:00,14:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,4058,90,416,65,215,19,23.5,5.4,40,26
+Liam Pitts,Right Winger,None,9/12/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,3,3.78,2.13,4054,51,12,3,0,0,16.8,3,37,27
+Liam Pitts,Right Winger,None,9/11/24,20:10,20:10:00,21:20:00,9/9/24,9/1/24,Training Session,None,Whole Session,70,,7.4,6.23,8.49,6856,98,521,69,626,34,26.4,5.9,43,29
+Liam Pitts,Right Winger,None,9/10/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,4.2,4.36,4.01,4658,58,144,28,14,3,20.2,3.5,77,45
+Liam Pitts,Right Winger,None,9/14/24,12:00,12:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,4.3,4.44,4.11,4704,52,268,45,306,20,25.5,3.1,33,20
+Liam Pitts,Right Winger,None,9/14/24,12:00,12:00:00,12:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,35,1,0,0,0,0,5.6,0.1,0,0
+Liam Pitts,Right Winger,None,9/14/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,4669,104,268,45,306,20,25.5,6.2,33,20
+Logan Moniz,Centre Attacking Midfielder,None,9/12/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,4,4.15,3.89,5064,63,183,37,121,15,24.9,3.8,86,62
+Logan Moniz,Centre Attacking Midfielder,None,9/14/24,12:00,12:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,7.3,7.78,6.82,9885,110,540,84,881,66,29.7,6.6,74,82
+Logan Moniz,Centre Attacking Midfielder,None,9/14/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,4886,109,235,41,411,32,28,6.5,44,41
+Logan Moniz,Centre Attacking Midfielder,None,9/14/24,12:00,12:00:00,12:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,5000,111,305,43,471,34,29.7,6.7,30,41
+Logan Moniz,Centre Attacking Midfielder,None,9/10/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,4.4,4.37,4.41,5284,66,176,33,94,13,22.1,4,93,86
+Logan Moniz,Centre Attacking Midfielder,None,9/15/24,13:00,13:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,7.6,7.63,7.55,10261,114,708,124,1017,78,28.4,6.8,88,104
+Logan Moniz,Centre Attacking Midfielder,None,9/15/24,14:00,14:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,4844,108,322,58,406,33,28.4,6.5,45,53
+Logan Moniz,Centre Attacking Midfielder,None,9/15/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,5418,120,386,66,610,45,28.1,7.2,43,51
+Logan Moniz,Centre Attacking Midfielder,None,9/11/24,20:10,20:10:00,21:20:00,9/9/24,9/1/24,Training Session,None,Whole Session,70,,7.6,6.34,8.77,7828,112,685,105,1040,61,28.1,6.7,50,66
+Marcus Cooper,Centre Back,None,9/14/24,12:00,12:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,7.5,8.48,6.5,7964,88,248,37,380,24,30.4,5.3,34,42
+Marcus Cooper,Centre Back,None,9/14/24,12:00,12:00:00,12:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,4053,90,107,17,171,10,30.4,5.4,18,21
+Marcus Cooper,Centre Back,None,9/14/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,3910,87,141,20,209,14,27,5.2,16,21
+Marcus Cooper,Centre Back,None,9/11/24,20:10,20:10:00,21:20:00,9/9/24,9/1/24,Training Session,None,Whole Session,70,,9.3,7.33,10,6631,95,464,59,708,41,28.6,5.7,28,29
+Marcus Cooper,Centre Back,None,9/10/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,5.1,5.21,5.01,4532,57,75,15,50,9,22.5,3.4,75,48
+Marcus Cooper,Centre Back,None,9/12/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,3.9,4.15,3.65,3701,46,73,16,18,4,20.5,2.8,49,42
+Marcus Cooper,Centre Back,None,9/15/24,13:00,13:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,7.6,8.17,7.02,8218,91,360,52,343,21,30.1,5.5,50,48
+Marcus Cooper,Centre Back,None,9/15/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,4451,99,204,28,293,18,30.1,5.9,28,24
+Marcus Cooper,Centre Back,None,9/15/24,14:00,14:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,3767,84,156,24,50,3,28.4,5,22,24
+Sam Cunniffe,Centre Back,None,9/10/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,4.5,5.13,3.77,5013,63,85,14,0,0,18.7,3.8,54,28
+Sam Cunniffe,Centre Back,None,9/12/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,3.9,3.87,3.92,3839,48,117,20,19,3,20.9,2.9,49,36
+Sam Cunniffe,Centre Back,None,9/14/24,12:00,12:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,7.8,8.51,7.13,8816,98,367,49,215,13,26.1,5.9,41,54
+Sam Cunniffe,Centre Back,None,9/14/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,4467,99,185,25,131,8,25.7,6,23,26
+Sam Cunniffe,Centre Back,None,9/14/24,12:00,12:00:00,12:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,4349,97,182,24,84,5,26.1,5.8,18,28
+Sam Cunniffe,Centre Back,None,9/11/24,20:10,20:10:00,21:20:00,9/9/24,9/1/24,Training Session,None,Whole Session,70,,9.4,7.22,10,7268,104,475,74,643,46,25.5,6.2,22,27
+Sam Cunniffe,Centre Back,None,9/15/24,13:00,13:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,7.1,8.01,6.15,8724,97,284,39,181,17,24.9,5.8,44,51
+Sam Cunniffe,Centre Back,None,9/15/24,14:00,14:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,4066,90,90,15,73,6,24.6,5.4,19,20
+Sam Cunniffe,Centre Back,None,9/15/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,4659,104,194,24,109,11,24.9,6.2,25,31
+Vasilian,Centre Midfielder,None,9/10/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,4.4,4.95,3.77,5754,72,128,21,31,7,20.5,4.3,65,44
+Vasilian,Centre Midfielder,None,9/11/24,20:10,20:10:00,21:20:00,9/9/24,9/1/24,Training Session,None,Whole Session,70,,7.4,6.35,8.43,7515,107,622,88,669,41,27.3,6.4,27,22
+Vasilian,Centre Midfielder,None,9/12/24,18:50,18:50:00,20:10:00,9/9/24,9/1/24,Training Session,None,Whole Session,80,,3.6,3.94,3.29,4599,57,123,21,31,5,21.1,3.5,49,46
+Vasilian,Centre Midfielder,None,9/15/24,13:00,13:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,7.1,7.74,6.53,10027,111,606,98,546,42,25.5,6.7,39,50
+Vasilian,Centre Midfielder,None,9/15/24,14:00,14:00:00,14:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,4728,105,243,41,254,21,24.7,6.3,15,20
+Vasilian,Centre Midfielder,None,9/15/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,5299,118,363,57,293,21,25.5,7.1,24,30
+Vasilian,Centre Midfielder,None,9/14/24,12:00,12:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Whole Session,90,,8.1,8.62,7.59,10526,117,535,79,720,47,27.1,7,49,46
+Vasilian,Centre Midfielder,None,9/14/24,12:00,12:00:00,12:45:00,9/9/24,9/1/24,Match Session,None,First Half,45,,,,,5448,121,310,46,427,28,27.1,7.3,30,27
+Vasilian,Centre Midfielder,None,9/14/24,13:00,13:00:00,13:45:00,9/9/24,9/1/24,Match Session,None,Second Half,45,,,,,5077,113,225,33,294,19,25.7,6.8,19,19
+Asher Herrmann,Centre Midfielder,None,9/7/24,9:00,9:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Whole Session,90,,5,5.03,4.98,4578,51,215,35,188,16,24.7,3.1,23,25
+Asher Herrmann,Centre Midfielder,None,9/7/24,9:00,9:00:00,9:45:00,9/2/24,9/1/24,Match Session,None,First Half,45,,,,,37,1,0,0,0,0,2.8,0.1,0,0
+Asher Herrmann,Centre Midfielder,None,9/7/24,10:00,10:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Second Half,45,,,,,4541,101,215,35,188,16,24.7,6.1,23,25
+Asher Herrmann,Centre Midfielder,None,9/3/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,4.1,4.93,3.21,4899,61,41,9,8,2,19.7,3.7,40,26
+Asher Herrmann,Centre Midfielder,None,9/5/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,5.1,5.43,4.68,4942,62,124,18,50,5,22.7,3.7,34,42
+Asher Herrmann,Centre Midfielder,None,9/4/24,20:10,20:10:00,21:30:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,0.4,0,0.86,0,0,0,0,0,0,0,0,12,16
+Brendan Furlonge,Right Back,None,9/5/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,4.6,5.25,3.94,4206,53,53,12,97,11,25.7,3.2,56,35
+Brendan Furlonge,Right Back,None,9/4/24,20:10,20:10:00,21:30:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,8.1,7.74,8.47,5473,68,247,42,475,31,30.4,4.1,52,51
+Brendan Furlonge,Right Back,None,9/3/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,6,6.03,5.89,3976,50,114,19,113,11,24.7,3,70,44
+Brendan Furlonge,Right Back,None,9/7/24,9:00,9:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Whole Session,90,,8.5,9.15,7.79,8066,90,324,55,563,34,28.6,5.4,49,59
+Brendan Furlonge,Right Back,None,9/7/24,9:00,9:00:00,9:45:00,9/2/24,9/1/24,Match Session,None,First Half,45,,,,,5012,111,234,38,256,17,28.6,6.7,33,35
+Brendan Furlonge,Right Back,None,9/7/24,10:00,10:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Second Half,45,,,,,3055,68,90,17,307,17,27.9,4.1,16,24
+Devin Smith,Left Back,None,9/3/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Finn Van Clief,Striker,None,9/7/24,9:00,9:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Whole Session,90,,9.8,8.81,10,8605,96,555,94,748,52,29.4,5.7,75,77
+Finn Van Clief,Striker,None,9/7/24,10:00,10:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Second Half,45,,,,,3160,70,180,33,350,19,29.4,4.2,28,28
+Finn Van Clief,Striker,None,9/7/24,9:00,9:00:00,9:45:00,9/2/24,9/1/24,Match Session,None,First Half,45,,,,,5445,121,375,61,398,33,28.4,7.3,47,49
+Finn Van Clief,Striker,None,9/3/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,5.6,5.99,5.17,5592,70,120,21,10,2,21,4.2,77,63
+Finn Van Clief,Striker,None,9/4/24,20:10,20:10:00,21:30:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,6.1,5.9,6.29,5583,70,253,42,194,17,27.6,4.2,54,54
+Finn Van Clief,Striker,None,9/5/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,4.8,5.37,4.25,4961,62,108,20,42,7,22.2,3.7,43,56
+Henry Freeman,Right Back,None,9/5/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,4.9,5.33,4.56,4873,61,139,26,54,7,21.2,3.7,74,49
+Henry Freeman,Right Back,None,9/7/24,9:00,9:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Whole Session,90,,3.1,2.78,3.36,2457,27,198,30,168,9,27.9,1.6,20,20
+Henry Freeman,Right Back,None,9/7/24,9:00,9:00:00,9:45:00,9/2/24,9/1/24,Match Session,None,First Half,45,,,,,18,0,0,0,0,0,3.7,0,0,0
+Henry Freeman,Right Back,None,9/7/24,10:00,10:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Second Half,45,,,,,2439,54,198,30,168,9,27.9,3.3,20,20
+Henry Freeman,Right Back,None,9/3/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,5.3,5.68,4.97,4682,59,102,19,20,4,20.7,3.5,77,67
+Henry Freeman,Right Back,None,9/4/24,20:10,20:10:00,21:30:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,7.2,6.11,8.26,5129,64,339,61,335,26,26.2,3.9,50,62
+Jake Ciavarro,Centre Defensive Midfielder,None,9/5/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,4,4.35,3.68,4610,58,94,17,34,3,23.7,3.5,54,48
+Jake Ciavarro,Centre Defensive Midfielder,None,9/7/24,9:00,9:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Whole Session,90,,8.2,8.86,7.51,9933,110,440,61,266,20,25.2,6.6,76,54
+Jake Ciavarro,Centre Defensive Midfielder,None,9/7/24,10:00,10:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Second Half,45,,,,,4444,99,143,18,92,8,24.9,5.9,27,22
+Jake Ciavarro,Centre Defensive Midfielder,None,9/7/24,9:00,9:00:00,9:45:00,9/2/24,9/1/24,Match Session,None,First Half,45,,,,,5489,122,297,43,175,12,25.2,7.3,49,32
+Jake Ciavarro,Centre Defensive Midfielder,None,9/3/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,3.9,4.65,3.12,4982,62,39,10,0,0,18.8,3.7,61,42
+Jake Ciavarro,Centre Defensive Midfielder,None,9/4/24,20:10,20:10:00,21:30:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,6.4,5.79,6.96,6277,78,245,41,355,20,30.8,4.7,56,50
+Jonah Greenblatt,Left Back,None,9/5/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,9/7/24,9:00,9:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,9/7/24,10:00,10:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Second Half,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,9/7/24,9:00,9:00:00,9:45:00,9/2/24,9/1/24,Match Session,None,First Half,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,9/3/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,9/4/24,20:10,20:10:00,21:30:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,5.7,5.24,6.07,5944,74,403,65,390,28,29.4,4.5,55,60
+Jonah Greenblatt,Left Back,None,9/4/24,20:10,20:10:00,21:30:00,9/2/24,9/1/24,Training Session,None,Whole Session,,,,,,,,,,,,,,,
+Jonah Greenblatt,Left Back,None,9/3/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,4.3,4.55,4.02,5148,64,116,25,36,6,20.3,3.9,86,63
+Jonah Greenblatt,Left Back,None,9/5/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,4,4.51,3.47,5044,63,130,22,82,9,22,3.8,52,48
+Jonah Greenblatt,Left Back,None,9/7/24,9:00,9:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Whole Session,90,,7.7,8.34,7.01,9800,109,438,69,637,38,28,6.5,66,56
+Jonah Greenblatt,Left Back,None,9/7/24,10:00,10:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Second Half,45,,,,,4504,100,160,24,264,15,28,6,30,28
+Jonah Greenblatt,Left Back,None,9/7/24,9:00,9:00:00,9:45:00,9/2/24,9/1/24,Match Session,None,First Half,45,,,,,5295,118,278,45,373,23,26.9,7.1,36,28
+Kaio Morais,Right Winger,None,9/7/24,9:00,9:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Whole Session,90,,9,9.02,9.03,10572,117,745,109,715,54,27.2,7.1,78,94
+Kaio Morais,Right Winger,None,9/7/24,9:00,9:00:00,9:45:00,9/2/24,9/1/24,Match Session,None,First Half,45,,,,,5514,123,456,67,388,32,26.9,7.4,46,62
+Kaio Morais,Right Winger,None,9/7/24,10:00,10:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Second Half,45,,,,,5058,112,289,42,327,22,27.2,6.7,32,32
+Kaio Morais,Right Winger,None,9/5/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,4.6,4.76,4.48,5207,65,227,36,64,6,22.3,3.9,78,63
+Kaio Morais,Right Winger,None,9/3/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,5.7,5.87,5.5,5827,73,173,27,32,6,21.9,4.4,96,86
+Kaio Morais,Right Winger,None,9/4/24,20:10,20:10:00,21:30:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,6.1,5.78,6.49,5818,73,415,66,290,25,24.9,4.4,52,67
+Karim Eljamal,Centre Midfielder,None,9/7/24,9:00,9:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Whole Session,90,,7.5,6.97,8.03,5228,58,375,61,458,31,27.8,3.5,43,43
+Karim Eljamal,Centre Midfielder,None,9/7/24,10:00,10:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Second Half,45,,,,,12,0,0,0,0,0,2.9,0,0,0
+Karim Eljamal,Centre Midfielder,None,9/7/24,9:00,9:00:00,9:45:00,9/2/24,9/1/24,Match Session,None,First Half,45,,,,,5216,116,375,61,458,31,27.8,7,43,43
+Killian Walsh,Striker,None,9/7/24,9:00,9:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Whole Session,90,,3.1,2.96,3.28,3075,34,272,46,248,22,26.9,2.1,10,15
+Killian Walsh,Striker,None,9/7/24,10:00,10:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Second Half,45,,,,,3032,67,272,46,248,22,26.9,4,10,15
+Killian Walsh,Striker,None,9/7/24,9:00,9:00:00,9:45:00,9/2/24,9/1/24,Match Session,None,First Half,45,,,,,42,1,0,0,0,0,5.2,0.1,0,0
+Killian Walsh,Striker,None,9/5/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,4,4.72,3.18,5047,63,137,23,39,6,21.8,3.8,31,29
+Killian Walsh,Striker,None,9/4/24,20:10,20:10:00,21:30:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,5.6,5.03,6.07,5550,69,344,54,304,20,27.5,4.2,48,48
+Killian Walsh,Striker,None,9/3/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,4.6,5.1,4.12,5627,70,143,24,38,5,22.2,4.2,48,52
+Liam Pitts,Right Winger,None,9/7/24,9:00,9:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Whole Session,90,,5.6,5.33,5.87,5789,64,390,60,470,25,27.8,3.9,44,24
+Liam Pitts,Right Winger,None,9/7/24,10:00,10:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Second Half,45,,,,,5747,128,390,60,470,25,27.8,7.7,44,24
+Liam Pitts,Right Winger,None,9/7/24,9:00,9:00:00,9:45:00,9/2/24,9/1/24,Match Session,None,First Half,45,,,,,42,1,0,0,0,0,3.6,0.1,0,0
+Liam Pitts,Right Winger,None,9/4/24,20:10,20:10:00,21:30:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,5.8,5.02,6.67,5505,69,336,54,424,25,28.6,4.1,54,43
+Liam Pitts,Right Winger,None,9/3/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,4.1,4.4,3.76,4827,60,110,19,16,4,19.8,3.6,74,49
+Liam Pitts,Right Winger,None,9/5/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,3.9,4.49,3.31,4830,60,88,16,66,7,23,3.6,51,33
+Logan Moniz,Centre Attacking Midfielder,None,9/3/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,4.3,4.61,4.01,5399,67,149,26,119,12,23.6,4.1,83,64
+Logan Moniz,Centre Attacking Midfielder,None,9/7/24,9:00,9:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Whole Session,90,,7.6,8.14,6.96,10049,112,474,83,776,62,28.5,6.7,76,88
+Logan Moniz,Centre Attacking Midfielder,None,9/7/24,10:00,10:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Second Half,45,,,,,4885,109,203,35,354,27,28.5,6.5,33,40
+Logan Moniz,Centre Attacking Midfielder,None,9/7/24,9:00,9:00:00,9:45:00,9/2/24,9/1/24,Match Session,None,First Half,45,,,,,5164,115,271,48,421,35,26.7,6.9,43,48
+Logan Moniz,Centre Attacking Midfielder,None,9/4/24,20:10,20:10:00,21:30:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,6,5.53,6.43,6553,82,413,74,596,46,26.8,4.9,67,81
+Logan Moniz,Centre Attacking Midfielder,None,9/5/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,4,4.3,3.76,5003,63,187,31,118,12,23.9,3.8,73,53
+Marcus Cooper,Centre Back,None,9/4/24,20:10,20:10:00,21:30:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,6.6,5.75,7.46,5060,63,197,36,335,18,30.9,3.8,53,45
+Marcus Cooper,Centre Back,None,9/7/24,9:00,9:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Whole Session,90,,5.9,6.45,5.43,5712,63,209,31,187,15,29.2,3.8,39,34
+Marcus Cooper,Centre Back,None,9/7/24,9:00,9:00:00,9:45:00,9/2/24,9/1/24,Match Session,None,First Half,45,,,,,4406,98,147,23,144,11,29.2,5.9,27,22
+Marcus Cooper,Centre Back,None,9/7/24,10:00,10:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Second Half,45,,,,,1306,29,62,8,43,4,23.2,1.7,12,12
+Marcus Cooper,Centre Back,None,9/5/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,4.3,5.03,3.53,4335,54,52,13,30,4,22.3,3.3,43,36
+Marcus Cooper,Centre Back,None,9/3/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,4.9,5.29,4.55,4590,57,78,15,4,1,20,3.4,54,66
+Sam Cunniffe,Centre Back,None,9/5/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,3.9,4.58,3.29,4880,61,62,12,15,2,21.1,3.7,46,30
+Sam Cunniffe,Centre Back,None,9/3/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,4.1,4.74,3.48,5113,64,74,12,0,0,18.1,3.8,52,36
+Sam Cunniffe,Centre Back,None,9/7/24,9:00,9:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Whole Session,90,,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sam Cunniffe,Centre Back,None,9/7/24,9:00,9:00:00,9:45:00,9/2/24,9/1/24,Match Session,None,First Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Sam Cunniffe,Centre Back,None,9/7/24,10:00,10:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Second Half,45,,,,,0,0,0,0,0,0,0,0,0,0
+Sam Cunniffe,Centre Back,None,9/4/24,20:10,20:10:00,21:30:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,6.4,5.53,7.17,6005,75,232,39,285,12,27.7,4.5,51,41
+Vasilian,Centre Midfielder,None,9/5/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,3.9,4.36,3.53,4766,60,175,29,77,9,22.7,3.6,44,34
+Vasilian,Centre Midfielder,None,9/7/24,9:00,9:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Whole Session,90,,8.9,9.36,8.4,10903,121,755,105,507,39,28.2,7.3,49,60
+Vasilian,Centre Midfielder,None,9/7/24,9:00,9:00:00,9:45:00,9/2/24,9/1/24,Match Session,None,First Half,45,,,,,5781,128,490,64,262,18,28.2,7.7,19,33
+Vasilian,Centre Midfielder,None,9/7/24,10:00,10:00:00,10:45:00,9/2/24,9/1/24,Match Session,None,Second Half,45,,,,,5123,114,264,41,245,21,26.3,6.8,30,27
+Vasilian,Centre Midfielder,None,9/3/24,18:50,18:50:00,20:10:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,4.8,4.91,4.77,5425,68,167,26,33,4,23,4.1,70,84
+Vasilian,Centre Midfielder,None,9/4/24,20:10,20:10:00,21:30:00,9/2/24,9/1/24,Training Session,None,Whole Session,80,,6.4,5.35,7.35,5946,74,389,61,447,29,27.6,4.5,58,66
