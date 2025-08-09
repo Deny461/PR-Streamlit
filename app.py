@@ -1907,7 +1907,7 @@ if st.session_state.page == "Dashboard Selection":
     st.markdown("**Choose what you want to view:**")
     choice = st.selectbox(
         "Dashboard Type:",
-        ["Player Gauges Dashboard", "ACWR Dashboard", "Testing Data Dashboard"],
+        ["Player Gauges Dashboard", "ACWR Dashboard", "Testing Data Dashboard", "API Radars"],
         key="dashboard_type_select"
     )
 
@@ -1999,3 +1999,25 @@ if st.session_state.page == "Testing Data Dashboard":
     if selected_player:
         st.markdown("---")
         render_player_testing_data_unified(selected_player, excel_players[selected_player])
+
+# === API RADARS DASHBOARD ===
+if st.session_state.page == "API Radars":
+    col1, col2 = st.columns([1, 3])
+    with col1:
+        if st.button("← Back to Dashboard Selection", key="radars_back"):
+            st.session_state.page = "Dashboard Selection"
+            st.rerun()
+
+    teams_players, excel_players = load_unified_player_data(fetch_gps=True, team_filter=st.session_state.selected_team)
+    team = st.session_state.selected_team
+    if team not in teams_players:
+        st.error(f"No players found for team {team}")
+        st.stop()
+    players = teams_players[team]
+
+    st.markdown("### 🧭 API Radars")
+    st.markdown(f"**{len(players)} players** in {team}")
+
+    for player in players:
+        with st.expander(f"🧭 {player}", expanded=True):
+            render_api_radars(player, excel_players[player], excel_players)
