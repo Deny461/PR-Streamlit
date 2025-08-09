@@ -31,6 +31,10 @@ api = PlayerDataClient(
 ORG_ID = st.secrets.get("PLAYERDATA_ORG_ID")
 API_AVAILABLE = True
 
+# === GLOBAL DATA WINDOW ===
+# Fixed API start date for all dashboards
+API_START_DATE = date(2025, 8, 7)
+
 # === HELPERS ===
 @st.cache_data(ttl=60)  # Cache expires every 60 seconds
 def load_data(path):
@@ -194,8 +198,8 @@ def fetch_recent_sessions_df(athlete_id: str, athlete_name: str, days: int = 365
     Fetch recent session participations for an athlete and adapt them into the CSV schema
     your UI already expects via sessions_to_df.
     """
-    # Compute start date (ISO8601 Date, not DateTime) per schema
-    start_date = (date.today() - timedelta(days=days)).isoformat()
+    # Use fixed start date for all dashboards
+    start_date = API_START_DATE.isoformat()
 
     query = """
     query Q($athleteId: ID!, $startDate: ISO8601Date!) {
@@ -554,7 +558,7 @@ def load_unified_player_data(fetch_gps: bool = True, team_filter: str = None):
                 if aid:
                     matched_count += 1
                     try:
-                        gps_df = fetch_recent_sessions_df(aid, player_name, days=365)
+                        gps_df = fetch_recent_sessions_df(aid, player_name)
                         if gps_df is not None and len(gps_df) > 0:
                             gps_data_count += 1
                             excel_players[player_name]['csv_match'] = player_name
