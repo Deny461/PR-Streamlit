@@ -9,6 +9,7 @@ import re
 from difflib import SequenceMatcher
 from datetime import date, timedelta
 from typing import Optional, Set
+import unicodedata
 
 # NEW: API client
 from playerdata_client import PlayerDataClient, sessions_to_df
@@ -30,6 +31,10 @@ api = PlayerDataClient(
 ORG_ID = st.secrets.get("PLAYERDATA_ORG_ID")
 API_AVAILABLE = True
 
+# === GLOBAL DATA WINDOW ===
+# Fixed API start date for all dashboards
+API_START_DATE = date(2025, 8, 7)
+
 # === HELPERS ===
 @st.cache_data(ttl=60)  # Cache expires every 60 seconds
 def load_data(path):
@@ -42,6 +47,73 @@ def load_data(path):
 def similarity(a, b):
     """Calculate similarity between two strings"""
     return SequenceMatcher(None, a.lower(), b.lower()).ratio()
+
+# --- Name matching helpers (nickname-aware) ---
+NICKNAME_MAP = {
+    # common
+    "sam": "samuel", "ben": "benjamin", "alex": "alexander", "max": "maxwell",
+    "will": "william", "bill": "william", "billy": "william", "liam": "william",
+    "matt": "matthew", "mattie": "matthew", "mike": "michael", "mikey": "michael",
+    "nick": "nicholas", "nate": "nathan", "nathaniel": "nathan",
+    "tom": "thomas", "tommy": "thomas", "dave": "david", "danny": "daniel", "dan": "daniel",
+    "chris": "christopher", "kris": "christopher", "topher": "christopher",
+    "josh": "joshua", "jake": "jacob", "zac": "zachary", "zack": "zachary",
+    "joe": "joseph", "joey": "joseph", "tony": "anthony",
+    "steve": "steven", "stephen": "steven",
+    "rob": "robert", "bobby": "robert", "bob": "robert",
+    "rick": "richard", "ricky": "richard", "rich": "richard",
+    "ted": "theodore", "theo": "theodore",
+    "jon": "jonathan", "johnny": "john",
+    # a few common female mappings (in case)
+    "liz": "elizabeth", "beth": "elizabeth", "kate": "katherine", "katie": "katherine",
+    "abby": "abigail", "ally": "allison", "allyson": "allison",
+}
+
+SUFFIXES = {"jr", "sr", "ii", "iii", "iv"}
+
+def _strip_accents(text: str) -> str:
+    return ''.join(c for c in unicodedata.normalize('NFKD', text) if not unicodedata.combining(c))
+
+def _normalize_whitespace(text: str) -> str:
+    return ' '.join(text.split())
+
+def normalize_person_name(full_name: str) -> str:
+    s = _strip_accents(full_name or "").lower()
+    s = re.sub(r"[^a-z\s]", " ", s)
+    s = _normalize_whitespace(s)
+    # remove common suffixes at end
+    parts = s.split()
+    if parts and parts[-1] in SUFFIXES:
+        parts = parts[:-1]
+    return ' '.join(parts)
+
+def split_first_last(full_name: str) -> tuple[str, str]:
+    n = normalize_person_name(full_name)
+    parts = n.split()
+    if not parts:
+        return "", ""
+    if len(parts) == 1:
+        return parts[0], ""
+    return parts[0], parts[-1]
+
+def canonical_first(first: str) -> str:
+    f = (first or "").lower()
+    return NICKNAME_MAP.get(f, f)
+
+def first_names_match(f1: str, f2: str) -> bool:
+    a, b = canonical_first(f1), canonical_first(f2)
+    if not a or not b:
+        return False
+    if a == b:
+        return True
+    if a[0] == b[0]:
+        # initial matches, allow
+        pass
+    # prefix allowance (sam vs samuel) for length >= 3
+    if (a.startswith(b) or b.startswith(a)) and min(len(a), len(b)) >= 3:
+        return True
+    # similarity on first names
+    return similarity(a, b) >= 0.87
 
 @st.cache_data(ttl=86400)  # cache org athletes for 24h
 def fetch_org_athletes(org_id: str = None):
@@ -72,7 +144,7 @@ def fetch_org_athletes(org_id: str = None):
     try:
         rows = []
         successful_clubs = 0
-        
+
         for club_id, club_name in club_mappings.items():
             try:
                 query = """
@@ -80,43 +152,42 @@ def fetch_org_athletes(org_id: str = None):
                   club(id: $clubId) {
                     id
                     name
-                    athletes {
-                      id
-                      name
-                    }
+                    athletes { id name }
                   }
                 }
                 """
                 data = api.gql(query, {"clubId": club_id})
-                
+
                 if data and data.get("club"):
                     club = data["club"]
                     actual_name = club.get("name", club_name)
                     athletes = club.get("athletes", []) or []
-                    
+
                     for athlete in athletes:
                         rows.append({
-                            "id": athlete["id"], 
-                            "name": athlete["name"], 
-                            "team": actual_name, 
-                            "team_id": club_id
+                            "id": athlete["id"],
+                            "name": athlete["name"],
+                            "team": actual_name,
+                            "team_id": club_id,
                         })
-                    
+
                     if athletes:  # Only count if it has athletes
                         successful_clubs += 1
-                        
+
             except Exception as club_error:
                 # Continue with other clubs if one fails
                 st.warning(f"⚠️ Failed to load club {club_name}: {club_error}")
                 continue
-        
+
         if rows:
-            st.success(f"✅ Loaded {len(rows)} athletes from {successful_clubs} Boston Bolts clubs via direct API access")
+            st.success(
+                f"✅ Loaded {len(rows)} athletes from {successful_clubs} Boston Bolts clubs via direct API access"
+            )
         else:
             st.warning("⚠️ No athletes found in any clubs - falling back to Excel-only mode")
-            
+
         return rows
-        
+
     except Exception as e:
         st.warning(f"⚠️ API fetch failed: {e}")
         return []
@@ -127,8 +198,8 @@ def fetch_recent_sessions_df(athlete_id: str, athlete_name: str, days: int = 365
     Fetch recent session participations for an athlete and adapt them into the CSV schema
     your UI already expects via sessions_to_df.
     """
-    # Compute start date (ISO8601 Date, not DateTime) per schema
-    start_date = (date.today() - timedelta(days=days)).isoformat()
+    # Use fixed start date for all dashboards
+    start_date = API_START_DATE.isoformat()
 
     query = """
     query Q($athleteId: ID!, $startDate: ISO8601Date!) {
@@ -377,17 +448,15 @@ def load_unified_player_data(fetch_gps: bool = True, team_filter: str = None):
                         for idx, row in phv_df.iterrows():
                             first_name = str(row.get('First Name', '')).strip()
                             last_name = str(row.get('Last Name', '')).strip()
-                            
                             if first_name and first_name != 'nan' and last_name and last_name != 'nan':
                                 phv_full_name = f"{first_name} {last_name}"
                                 if similarity(player_name, phv_full_name) >= 0.85:
                                     height_val = row.get('Height (cm)', None)
                                     weight_val = row.get('Weight (kg)', None)
-                                    
                                     phv_data = {
-                                        'Name': phv_full_name,
-                                        'Height': height_val if pd.notna(height_val) and height_val != 0 else None,
-                                        'Weight': weight_val if pd.notna(weight_val) and weight_val != 0 else None
+                                            'Name': phv_full_name,
+                                            'Height': height_val if pd.notna(height_val) and height_val != 0 else None,
+                                            'Weight': weight_val if pd.notna(weight_val) and weight_val != 0 else None
                                     }
                                     # Successfully found PHV data
                                     break
@@ -434,14 +503,34 @@ def load_unified_player_data(fetch_gps: bool = True, team_filter: str = None):
             with st.spinner("Loading athletes from PlayerData…"):
                 api_athletes = fetch_org_athletes(ORG_ID)
             api_name_to_id = {a["name"]: a["id"] for a in api_athletes}
-            
-            # Debug prints removed
-            
+
+            # Build normalized API index for faster matching
+            api_index = {}
+            for api_name, aid in api_name_to_id.items():
+                f, l = split_first_last(api_name)
+                api_index.setdefault((canonical_first(f), l), []).append((api_name, aid))
+
             def match_name_to_id(name: str):
+                # exact first try
                 if name in api_name_to_id:
                     return api_name_to_id[name], name, 1.0
+
+                f, l = split_first_last(name)
+                key = (canonical_first(f), l)
+
+                # 1) exact canonical-first + last
+                if key in api_index:
+                    api_name, aid = api_index[key][0]
+                    return aid, api_name, 0.99
+
+                # 2) last name must match, then flexible first
                 best_id, best_name, best_sim = None, None, 0
                 for api_name, aid in api_name_to_id.items():
+                    f2, l2 = split_first_last(api_name)
+                    if l2 != l or not l:
+                        continue
+                    if first_names_match(f, f2):
+                        return aid, api_name, 0.95
                     sim = similarity(name, api_name)
                     if sim > best_sim:
                         best_id, best_name, best_sim = aid, api_name, sim
@@ -469,7 +558,7 @@ def load_unified_player_data(fetch_gps: bool = True, team_filter: str = None):
                 if aid:
                     matched_count += 1
                     try:
-                        gps_df = fetch_recent_sessions_df(aid, player_name, days=365)
+                        gps_df = fetch_recent_sessions_df(aid, player_name)
                         if gps_df is not None and len(gps_df) > 0:
                             gps_data_count += 1
                             excel_players[player_name]['csv_match'] = player_name
@@ -477,7 +566,6 @@ def load_unified_player_data(fetch_gps: bool = True, team_filter: str = None):
                             excel_players[player_name]['csv_similarity'] = sim
                             excel_players[player_name]['api_id'] = aid
                         else:
-                            # Matched but no GPS data
                             excel_players[player_name]['csv_match'] = None
                             excel_players[player_name]['csv_data'] = None
                             excel_players[player_name]['csv_similarity'] = 0
@@ -493,6 +581,19 @@ def load_unified_player_data(fetch_gps: bool = True, team_filter: str = None):
                     excel_players[player_name]['csv_data'] = None
                     excel_players[player_name]['csv_similarity'] = 0
                     excel_players[player_name]['api_id'] = None
+        except Exception as e:
+            st.warning(f"GPS fetch failed for {player_name}: {e}")
+            excel_players[player_name]['csv_match'] = None
+            excel_players[player_name]['csv_data'] = None
+            excel_players[player_name]['csv_similarity'] = 0
+            excel_players[player_name]['api_id'] = None
+        except Exception as e:
+            st.warning(f"GPS fetch failed for {player_name}: {e}")
+            excel_players[player_name]['csv_match'] = None
+            excel_players[player_name]['csv_data'] = None
+            excel_players[player_name]['csv_similarity'] = 0
+            excel_players[player_name]['api_id'] = None
+            excel_players[player_name]['api_id'] = None
             if progress_bar is not None:
                 progress_bar.progress(100)
                 if status_txt is not None:
@@ -551,13 +652,119 @@ def render_unified_player_dashboard(player_name, excel_players):
         return
 
     player_info = excel_players[player_name]
-    tab1, tab2, tab3 = st.tabs(["📊 Performance Gauges", "📈 ACWR Analysis", "🏋️ Testing Data"])
+    tab1, tab2, tab3, tab4 = st.tabs(["📊 Performance Gauges", "📈 ACWR Analysis", "🏋️ Testing Data", "🧭 Physical Radar Charts"])
     with tab1:
         render_player_gauges(player_name, player_info)
     with tab2:
         render_player_acwr(player_name, player_info)
     with tab3:
         render_player_testing_data_unified(player_name, player_info)
+    with tab4:
+        render_api_radars(player_name, player_info, excel_players)
+
+def render_api_radars(player_name, player_info, excel_players):
+    csv_data = player_info.get('csv_data')
+    if csv_data is None or csv_data.empty:
+        st.warning("No API session data available for radars.")
+        return
+
+    player_key = player_info.get('csv_match', player_name)
+
+    def concat_team_api_df() -> pd.DataFrame:
+        rows = []
+        for p, info in excel_players.items():
+            c = info.get('csv_data')
+            if c is None or c.empty:
+                continue
+            pos = (info.get('profile_data') or {}).get('POSITION', 'Unknown')
+            c2 = c.copy()
+            c2['__PLAYER__'] = p
+            c2['__POSITION__'] = pos
+            rows.append(c2)
+        return pd.concat(rows, ignore_index=True) if rows else pd.DataFrame()
+
+    all_api = concat_team_api_df()
+    if all_api.empty:
+        st.warning("No API data available to build percentiles.")
+        return
+
+    # keep Whole Session only and ensure numerics
+    all_api = all_api[all_api['Segment Name'] == 'Whole Session'].copy()
+    all_api['Duration (mins)'] = pd.to_numeric(all_api['Duration (mins)'], errors='coerce')
+    for m in METRICS:
+        all_api[m] = pd.to_numeric(all_api[m], errors='coerce')
+    all_api = all_api.dropna(subset=['Duration (mins)'])
+
+    def per_player_metrics(source: pd.DataFrame, session_type: str, per90: bool) -> pd.DataFrame:
+        base = source[source['Session Type'] == session_type].copy()
+        if base.empty:
+            return pd.DataFrame(columns=['__PLAYER__'] + METRICS).set_index('__PLAYER__')
+        if per90:
+            for m in METRICS:
+                if m != 'Top Speed (kph)':
+                    base[m] = (base[m] / base['Duration (mins)']) * 90
+        # aggregate per player
+        agg = {}
+        for m in METRICS:
+            if m == 'Top Speed (kph)':
+                agg[m] = 'max'
+            else:
+                agg[m] = 'mean'
+        dfp = base.groupby('__PLAYER__').agg(agg)
+        return dfp
+
+    # build per-player tables
+    team_match = per_player_metrics(all_api, 'Match Session', per90=True)
+    team_train = per_player_metrics(all_api, 'Training Session', per90=False)
+
+    # position filters
+    pos_map = all_api.groupby('__PLAYER__')['__POSITION__'].agg(lambda x: x.dropna().iloc[0] if len(x.dropna()) else 'Unknown')
+    player_pos = pos_map.get(player_key, (player_info.get('profile_data') or {}).get('POSITION', 'Unknown'))
+    pos_players = set(pos_map[pos_map == player_pos].index.tolist())
+    pos_match = team_match[team_match.index.isin(pos_players)] if not team_match.empty else team_match
+    pos_train = team_train[team_train.index.isin(pos_players)] if not team_train.empty else team_train
+
+    def percentiles(table: pd.DataFrame, who: str) -> dict:
+        out = {m: 0.0 for m in METRICS}
+        if table.empty or who not in table.index:
+            return out
+        row = table.loc[who]
+        for m in METRICS:
+            col = table[m].dropna()
+            if col.empty:
+                out[m] = 0.0
+                continue
+            val = row[m]
+            out[m] = float((col <= val).mean() * 100.0)
+        return out
+
+    # compute player percentiles
+    p_match_vs_team = percentiles(team_match, player_key)
+    p_match_vs_pos = percentiles(pos_match, player_key)
+    p_train_vs_team = percentiles(team_train, player_key)
+    p_train_vs_pos = percentiles(pos_train, player_key)
+
+    def radar_percent(fig_title: str, values: dict, color="#3b82f6", key: str = None):
+        cats = [METRIC_LABELS[m] for m in METRICS]
+        vals = [values.get(m, 0) for m in METRICS]
+        fig = go.Figure(go.Scatterpolar(r=vals, theta=cats, fill='toself', name='Percentile',
+                                        line_color=color, fillcolor='rgba(59,130,246,0.25)'))
+        fig.update_layout(template='plotly_white',
+                          polar=dict(radialaxis=dict(visible=True, range=[0,100], tickvals=[0,25,50,75,100])),
+                          showlegend=False, title=fig_title, height=380, margin=dict(l=20,r=20,t=50,b=20))
+        st.plotly_chart(fig, use_container_width=True, key=key or f"radar-{player_key}-{fig_title}")
+
+    col1, col2 = st.columns(2)
+    with col1:
+        radar_percent("Match Sessions — percentile vs Team", p_match_vs_team, key=f"{player_key}-match-team")
+    with col2:
+        radar_percent(f"Match Sessions — percentile vs {player_pos}", p_match_vs_pos, color="#10b981", key=f"{player_key}-match-pos")
+
+    col3, col4 = st.columns(2)
+    with col3:
+        radar_percent("Training Sessions — percentile vs Team", p_train_vs_team, key=f"{player_key}-train-team")
+    with col4:
+        radar_percent(f"Training Sessions — percentile vs {player_pos}", p_train_vs_pos, color="#10b981", key=f"{player_key}-train-pos")
 
 def render_player_gauges(player_name, player_info):
     """Render performance gauges for a specific player"""
@@ -966,7 +1173,7 @@ def render_player_testing_data_unified(player_name, player_info):
         "FITNESS": {"metrics": ["VO2MAX"], "icon": "🫁"},
         "SPEED": {"metrics": ["10M SPRINT", "40M SPRINT", "AGILITY TEST"], "icon": "⚡"},
         "POWER": {"metrics": ["BROAD JUMP"], "icon": "💪"},
-        "STRENGTH": {"metrics": ["PULL UPS", "TBDL REL. STR"], "icon": "🏋️"},
+        "STRENGTH": {"metrics": ["PULL UPS"], "icon": "🏋️"},
     }
 
     for category, config in metrics_config.items():
@@ -981,10 +1188,10 @@ def render_player_testing_data_unified(player_name, player_info):
     st.markdown("<h3 style='text-align: center; color: #1e293b; margin-bottom: 2rem;'>📊 Performance Comparison</h3>", unsafe_allow_html=True)
     col1, col2 = st.columns(2)
     with col1:
-        st.markdown("#### vs Team Average")
+        st.markdown("<h4 style='text-align:center'>vs Team Average</h4>", unsafe_allow_html=True)
         create_team_comparison_radar(player_name, testing_data_dict, full_testing_data, metrics_config)
     with col2:
-        st.markdown("#### vs Position Average")
+        st.markdown("<h4 style='text-align:center'>vs Position Average</h4>", unsafe_allow_html=True)
         position = profile_data.get('POSITION', 'Forward')
         create_position_comparison_radar(player_name, testing_data_dict, full_testing_data, metrics_config, position)
 
@@ -1008,7 +1215,6 @@ def get_metric_unit_updated(metric):
         '40M SPRINT': 's',
         'AGILITY TEST': 's',
         'PULL UPS': 'reps',
-        'TBDL REL. STR': 'kg/bodyweight',
         'BROAD JUMP': 'cm'
     }
     return units.get(metric, '')
@@ -1035,7 +1241,7 @@ def get_overall_score_from_data(testing_data):
 def create_metric_card(metric, testing_data, full_data, player_name):
     raw_value = testing_data.get(metric)
     if pd.isna(raw_value) or raw_value is None:
-        st.warning(f"**{metric.replace('TBDL REL. STR', 'Relative Strength').title()}** - No data available")
+        st.warning(f"**{metric}** - No data available")
         return
 
     score_col = f"{metric} TEAM SCORE"
@@ -1057,7 +1263,7 @@ def create_metric_card(metric, testing_data, full_data, player_name):
     formatted_value = f"{raw_value:.1f}" if isinstance(raw_value, (int, float, float)) else str(raw_value)
 
     with st.container():
-        metric_display_name = metric.replace('TBDL REL. STR', 'Relative Strength').title()
+        metric_display_name = metric.title()
         st.markdown(f"""
         <div style='text-align: center; margin-bottom: 1rem;'>
             <h3 style='color: #1e293b; font-weight: 600; margin: 0; font-size: 1.5rem;'>{metric_display_name}</h3>
@@ -1137,7 +1343,7 @@ def create_team_comparison_radar(player_name, testing_data, full_data, metrics_c
                         team_avg_score = percentile
                 else:
                     team_avg_score = 50
-                categories.append(metric.replace('TBDL REL. STR', 'Relative Strength').title())
+                categories.append(metric.title())
                 player_scores.append(team_score)
                 team_averages.append(team_avg_score)
 
@@ -1186,7 +1392,7 @@ def create_position_comparison_radar(player_name, testing_data, full_data, metri
                     position_avg_score = max(0, min(100, position_avg_score))
                 else:
                     position_avg_score = 50
-                categories.append(metric.replace('TBDL REL. STR', 'Relative Strength').title())
+                categories.append(metric.title())
                 player_scores.append(team_score)
                 position_averages.append(position_avg_score)
 
@@ -1218,7 +1424,7 @@ def create_performance_scoring_table(testing_data, full_data, metrics, player_na
         'FITNESS': ['VO2MAX'],
         'SPEED': ['10M SPRINT', '40M SPRINT', 'AGILITY TEST'],
         'POWER': ['BROAD JUMP'],
-        'STRENGTH': ['PULL UPS', 'TBDL REL. STR']
+        'STRENGTH': ['PULL UPS']
     }
     col1, col2, col3, col4 = st.columns(4)
     with col1: st.markdown("**AVERAGE**")
@@ -1287,7 +1493,7 @@ def create_overall_score_gauge(score, player_name):
             }
         ))
         fig.update_layout(height=400, font={'color': "darkblue", 'family': "Arial"}, margin=dict(l=20, r=20, t=80, b=20))
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, use_container_width=True, key=f"overall_gauge_{player_name}")
         performance_level = get_performance_category_from_percentile(score)
         color = get_performance_color_from_percentile(score)
         st.markdown(f"""
@@ -1302,7 +1508,7 @@ def create_performance_category_charts(testing_data, full_data, metrics, player_
         'FITNESS SCORE': ['VO2MAX'],
         'SPEED SCORE': ['10M SPRINT', '40M SPRINT'],
         'POWER SCORE': ['BROAD JUMP'],
-        'STRENGTH SCORE': ['PULL UPS', 'TBDL REL. STR']
+        'STRENGTH SCORE': ['PULL UPS']
     }
     col1, col2, col3, col4 = st.columns(4)
     columns = [col1, col2, col3, col4]
@@ -1325,7 +1531,7 @@ def create_performance_category_charts(testing_data, full_data, metrics, player_
                     height=200, showlegend=False, yaxis=dict(range=[0, 100], title="Score"),
                     margin=dict(l=20, r=20, t=20, b=20), title=dict(text=category, font=dict(size=12))
                 )
-                st.plotly_chart(fig, use_container_width=True)
+                st.plotly_chart(fig, use_container_width=True, key=f"perf_cat_{category}_{player_name}")
 
 def create_strengths_weaknesses_section(testing_data, full_data, metrics, player_name):
     st.markdown("### PERFORMANCE FACILITATORS AND DEFENDERS")
@@ -1379,7 +1585,7 @@ def create_historical_data_section(player_info, player_name):
     with col3:
         st.selectbox("COMPARE TO", ["TEAM AVERAGE"], key=f"compare_{player_name}")
 
-    metrics_to_plot = ['AGILITY TEST', '10M SPRINT', 'VO2MAX', 'TBDL REL. STR']
+    metrics_to_plot = ['AGILITY TEST', '10M SPRINT', 'VO2MAX']
     for i in range(0, len(metrics_to_plot), 2):
         col1, col2 = st.columns(2)
         for j, col in enumerate([col1, col2]):
@@ -1407,7 +1613,7 @@ def create_historical_metric_chart(player_data, metric, player_name):
         xaxis_title="Date", yaxis_title=get_metric_unit_updated(metric),
         height=300, margin=dict(l=40, r=40, t=60, b=40)
     )
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, use_container_width=True, key=f"hist_metric_{player_name}_{metric}")
 
 def get_performance_color_from_percentile(percentile):
     if percentile >= 85: return '#4CAF50'
@@ -1472,7 +1678,7 @@ def create_performance_radar_updated(player_data_dict, all_data, metrics, player
     ))
     fig.update_layout(polar=dict(radialaxis=dict(visible=True, range=[0, 2])),
                       showlegend=True, title="Performance vs Team Average (1.0 = Average)", height=500)
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, use_container_width=True, key=f"create_perf_radar_updated_{player_name}")
 
 def create_percentile_analysis_updated(player_data_dict, all_data, metrics):
     st.markdown("### 🎯 Percentile Rankings")
@@ -1540,7 +1746,8 @@ def create_performance_radar(player_row, all_data, metrics):
     ))
     fig.update_layout(polar=dict(radialaxis=dict(visible=True, range=[0, 2])),
                       showlegend=True, title="Performance vs Team Average (1.0 = Average)", height=500)
-    st.plotly_chart(fig, use_container_width=True)
+    name_for_key = str(player_row.get('Name', 'Player'))
+    st.plotly_chart(fig, use_container_width=True, key=f"create_perf_radar_{name_for_key}")
 
 def create_percentile_analysis(player_row, all_data, metrics):
     st.markdown("### 🎯 Percentile Rankings")
@@ -1710,7 +1917,7 @@ if st.session_state.page == "Dashboard Selection":
     st.markdown("**Choose what you want to view:**")
     choice = st.selectbox(
         "Dashboard Type:",
-        ["Player Gauges Dashboard", "ACWR Dashboard", "Testing Data Dashboard"],
+        ["Player Gauges Dashboard", "ACWR Dashboard", "Testing Data Dashboard", "Physical Radar Charts"],
         key="dashboard_type_select"
     )
 
@@ -1802,3 +2009,25 @@ if st.session_state.page == "Testing Data Dashboard":
     if selected_player:
         st.markdown("---")
         render_player_testing_data_unified(selected_player, excel_players[selected_player])
+
+# === API RADARS DASHBOARD ===
+if st.session_state.page == "API Radars" or st.session_state.page == "Physical Radar Charts":
+    col1, col2 = st.columns([1, 3])
+    with col1:
+        if st.button("← Back to Dashboard Selection", key="radars_back"):
+            st.session_state.page = "Dashboard Selection"
+            st.rerun()
+
+    teams_players, excel_players = load_unified_player_data(fetch_gps=True, team_filter=st.session_state.selected_team)
+    team = st.session_state.selected_team
+    if team not in teams_players:
+        st.error(f"No players found for team {team}")
+        st.stop()
+    players = teams_players[team]
+
+    st.markdown("### 🧭 Physical Radar Charts")
+    st.markdown(f"**{len(players)} players** in {team}")
+
+    for player in players:
+        with st.expander(f"🧭 {player}", expanded=True):
+            render_api_radars(player, excel_players[player], excel_players)
