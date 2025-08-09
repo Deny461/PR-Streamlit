@@ -154,7 +154,7 @@ def fetch_org_athletes(org_id: str = None):
                     name
                     athletes { id name }
                   }
-    }
+                }
                 """
                 data = api.gql(query, {"clubId": club_id})
 
@@ -454,9 +454,9 @@ def load_unified_player_data(fetch_gps: bool = True, team_filter: str = None):
                                     height_val = row.get('Height (cm)', None)
                                     weight_val = row.get('Weight (kg)', None)
                                     phv_data = {
-                                        'Name': phv_full_name,
-                                        'Height': height_val if pd.notna(height_val) and height_val != 0 else None,
-                                        'Weight': weight_val if pd.notna(weight_val) and weight_val != 0 else None
+                                            'Name': phv_full_name,
+                                            'Height': height_val if pd.notna(height_val) and height_val != 0 else None,
+                                            'Weight': weight_val if pd.notna(weight_val) and weight_val != 0 else None
                                     }
                                     # Successfully found PHV data
                                     break
@@ -566,7 +566,6 @@ def load_unified_player_data(fetch_gps: bool = True, team_filter: str = None):
                             excel_players[player_name]['csv_similarity'] = sim
                             excel_players[player_name]['api_id'] = aid
                         else:
-                            # Matched but no GPS data
                             excel_players[player_name]['csv_match'] = None
                             excel_players[player_name]['csv_data'] = None
                             excel_players[player_name]['csv_similarity'] = 0
@@ -587,6 +586,13 @@ def load_unified_player_data(fetch_gps: bool = True, team_filter: str = None):
             excel_players[player_name]['csv_match'] = None
             excel_players[player_name]['csv_data'] = None
             excel_players[player_name]['csv_similarity'] = 0
+            excel_players[player_name]['api_id'] = None
+        except Exception as e:
+            st.warning(f"GPS fetch failed for {player_name}: {e}")
+            excel_players[player_name]['csv_match'] = None
+            excel_players[player_name]['csv_data'] = None
+            excel_players[player_name]['csv_similarity'] = 0
+            excel_players[player_name]['api_id'] = None
             excel_players[player_name]['api_id'] = None
             if progress_bar is not None:
                 progress_bar.progress(100)
@@ -738,7 +744,7 @@ def render_api_radars(player_name, player_info, excel_players):
     p_train_vs_team = percentiles(team_train, player_key)
     p_train_vs_pos = percentiles(pos_train, player_key)
 
-    def radar_percent(fig_title: str, values: dict, color="#3b82f6"):
+    def radar_percent(fig_title: str, values: dict, color="#3b82f6", key: str = None):
         cats = [METRIC_LABELS[m] for m in METRICS]
         vals = [values.get(m, 0) for m in METRICS]
         fig = go.Figure(go.Scatterpolar(r=vals, theta=cats, fill='toself', name='Percentile',
@@ -746,19 +752,19 @@ def render_api_radars(player_name, player_info, excel_players):
         fig.update_layout(template='plotly_white',
                           polar=dict(radialaxis=dict(visible=True, range=[0,100], tickvals=[0,25,50,75,100])),
                           showlegend=False, title=fig_title, height=380, margin=dict(l=20,r=20,t=50,b=20))
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, use_container_width=True, key=key or f"radar-{player_key}-{fig_title}")
 
     col1, col2 = st.columns(2)
     with col1:
-        radar_percent("Match Sessions — percentile vs Team", p_match_vs_team)
+        radar_percent("Match Sessions — percentile vs Team", p_match_vs_team, key=f"{player_key}-match-team")
     with col2:
-        radar_percent(f"Match Sessions — percentile vs {player_pos}", p_match_vs_pos, color="#10b981")
+        radar_percent(f"Match Sessions — percentile vs {player_pos}", p_match_vs_pos, color="#10b981", key=f"{player_key}-match-pos")
 
     col3, col4 = st.columns(2)
     with col3:
-        radar_percent("Training Sessions — percentile vs Team", p_train_vs_team)
+        radar_percent("Training Sessions — percentile vs Team", p_train_vs_team, key=f"{player_key}-train-team")
     with col4:
-        radar_percent(f"Training Sessions — percentile vs {player_pos}", p_train_vs_pos, color="#10b981")
+        radar_percent(f"Training Sessions — percentile vs {player_pos}", p_train_vs_pos, color="#10b981", key=f"{player_key}-train-pos")
 
 def render_player_gauges(player_name, player_info):
     """Render performance gauges for a specific player"""
@@ -1167,7 +1173,7 @@ def render_player_testing_data_unified(player_name, player_info):
         "FITNESS": {"metrics": ["VO2MAX"], "icon": "🫁"},
         "SPEED": {"metrics": ["10M SPRINT", "40M SPRINT", "AGILITY TEST"], "icon": "⚡"},
         "POWER": {"metrics": ["BROAD JUMP"], "icon": "💪"},
-        "STRENGTH": {"metrics": ["PULL UPS", "TBDL REL. STR"], "icon": "🏋️"},
+        "STRENGTH": {"metrics": ["PULL UPS"], "icon": "🏋️"},
     }
 
     for category, config in metrics_config.items():
@@ -1182,10 +1188,10 @@ def render_player_testing_data_unified(player_name, player_info):
     st.markdown("<h3 style='text-align: center; color: #1e293b; margin-bottom: 2rem;'>📊 Performance Comparison</h3>", unsafe_allow_html=True)
     col1, col2 = st.columns(2)
     with col1:
-        st.markdown("#### vs Team Average")
+        st.markdown("<h4 style='text-align:center'>vs Team Average</h4>", unsafe_allow_html=True)
         create_team_comparison_radar(player_name, testing_data_dict, full_testing_data, metrics_config)
     with col2:
-        st.markdown("#### vs Position Average")
+        st.markdown("<h4 style='text-align:center'>vs Position Average</h4>", unsafe_allow_html=True)
         position = profile_data.get('POSITION', 'Forward')
         create_position_comparison_radar(player_name, testing_data_dict, full_testing_data, metrics_config, position)
 
@@ -1209,7 +1215,6 @@ def get_metric_unit_updated(metric):
         '40M SPRINT': 's',
         'AGILITY TEST': 's',
         'PULL UPS': 'reps',
-        'TBDL REL. STR': 'kg/bodyweight',
         'BROAD JUMP': 'cm'
     }
     return units.get(metric, '')
@@ -1236,7 +1241,7 @@ def get_overall_score_from_data(testing_data):
 def create_metric_card(metric, testing_data, full_data, player_name):
     raw_value = testing_data.get(metric)
     if pd.isna(raw_value) or raw_value is None:
-        st.warning(f"**{metric.replace('TBDL REL. STR', 'Relative Strength').title()}** - No data available")
+        st.warning(f"**{metric}** - No data available")
         return
 
     score_col = f"{metric} TEAM SCORE"
@@ -1258,7 +1263,7 @@ def create_metric_card(metric, testing_data, full_data, player_name):
     formatted_value = f"{raw_value:.1f}" if isinstance(raw_value, (int, float, float)) else str(raw_value)
 
     with st.container():
-        metric_display_name = metric.replace('TBDL REL. STR', 'Relative Strength').title()
+        metric_display_name = metric.title()
         st.markdown(f"""
         <div style='text-align: center; margin-bottom: 1rem;'>
             <h3 style='color: #1e293b; font-weight: 600; margin: 0; font-size: 1.5rem;'>{metric_display_name}</h3>
@@ -1338,7 +1343,7 @@ def create_team_comparison_radar(player_name, testing_data, full_data, metrics_c
                         team_avg_score = percentile
                 else:
                     team_avg_score = 50
-                categories.append(metric.replace('TBDL REL. STR', 'Relative Strength').title())
+                categories.append(metric.title())
                 player_scores.append(team_score)
                 team_averages.append(team_avg_score)
 
@@ -1387,7 +1392,7 @@ def create_position_comparison_radar(player_name, testing_data, full_data, metri
                     position_avg_score = max(0, min(100, position_avg_score))
                 else:
                     position_avg_score = 50
-                categories.append(metric.replace('TBDL REL. STR', 'Relative Strength').title())
+                categories.append(metric.title())
                 player_scores.append(team_score)
                 position_averages.append(position_avg_score)
 
@@ -1419,7 +1424,7 @@ def create_performance_scoring_table(testing_data, full_data, metrics, player_na
         'FITNESS': ['VO2MAX'],
         'SPEED': ['10M SPRINT', '40M SPRINT', 'AGILITY TEST'],
         'POWER': ['BROAD JUMP'],
-        'STRENGTH': ['PULL UPS', 'TBDL REL. STR']
+        'STRENGTH': ['PULL UPS']
     }
     col1, col2, col3, col4 = st.columns(4)
     with col1: st.markdown("**AVERAGE**")
@@ -1488,7 +1493,7 @@ def create_overall_score_gauge(score, player_name):
             }
         ))
         fig.update_layout(height=400, font={'color': "darkblue", 'family': "Arial"}, margin=dict(l=20, r=20, t=80, b=20))
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, use_container_width=True, key=f"overall_gauge_{player_name}")
         performance_level = get_performance_category_from_percentile(score)
         color = get_performance_color_from_percentile(score)
         st.markdown(f"""
@@ -1503,7 +1508,7 @@ def create_performance_category_charts(testing_data, full_data, metrics, player_
         'FITNESS SCORE': ['VO2MAX'],
         'SPEED SCORE': ['10M SPRINT', '40M SPRINT'],
         'POWER SCORE': ['BROAD JUMP'],
-        'STRENGTH SCORE': ['PULL UPS', 'TBDL REL. STR']
+        'STRENGTH SCORE': ['PULL UPS']
     }
     col1, col2, col3, col4 = st.columns(4)
     columns = [col1, col2, col3, col4]
@@ -1526,7 +1531,7 @@ def create_performance_category_charts(testing_data, full_data, metrics, player_
                     height=200, showlegend=False, yaxis=dict(range=[0, 100], title="Score"),
                     margin=dict(l=20, r=20, t=20, b=20), title=dict(text=category, font=dict(size=12))
                 )
-                st.plotly_chart(fig, use_container_width=True)
+                st.plotly_chart(fig, use_container_width=True, key=f"perf_cat_{category}_{player_name}")
 
 def create_strengths_weaknesses_section(testing_data, full_data, metrics, player_name):
     st.markdown("### PERFORMANCE FACILITATORS AND DEFENDERS")
@@ -1580,7 +1585,7 @@ def create_historical_data_section(player_info, player_name):
     with col3:
         st.selectbox("COMPARE TO", ["TEAM AVERAGE"], key=f"compare_{player_name}")
 
-    metrics_to_plot = ['AGILITY TEST', '10M SPRINT', 'VO2MAX', 'TBDL REL. STR']
+    metrics_to_plot = ['AGILITY TEST', '10M SPRINT', 'VO2MAX']
     for i in range(0, len(metrics_to_plot), 2):
         col1, col2 = st.columns(2)
         for j, col in enumerate([col1, col2]):
@@ -1608,7 +1613,7 @@ def create_historical_metric_chart(player_data, metric, player_name):
         xaxis_title="Date", yaxis_title=get_metric_unit_updated(metric),
         height=300, margin=dict(l=40, r=40, t=60, b=40)
     )
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, use_container_width=True, key=f"hist_metric_{player_name}_{metric}")
 
 def get_performance_color_from_percentile(percentile):
     if percentile >= 85: return '#4CAF50'
@@ -1673,7 +1678,7 @@ def create_performance_radar_updated(player_data_dict, all_data, metrics, player
     ))
     fig.update_layout(polar=dict(radialaxis=dict(visible=True, range=[0, 2])),
                       showlegend=True, title="Performance vs Team Average (1.0 = Average)", height=500)
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, use_container_width=True, key=f"create_perf_radar_updated_{player_name}")
 
 def create_percentile_analysis_updated(player_data_dict, all_data, metrics):
     st.markdown("### 🎯 Percentile Rankings")
@@ -1741,7 +1746,8 @@ def create_performance_radar(player_row, all_data, metrics):
     ))
     fig.update_layout(polar=dict(radialaxis=dict(visible=True, range=[0, 2])),
                       showlegend=True, title="Performance vs Team Average (1.0 = Average)", height=500)
-    st.plotly_chart(fig, use_container_width=True)
+    name_for_key = str(player_row.get('Name', 'Player'))
+    st.plotly_chart(fig, use_container_width=True, key=f"create_perf_radar_{name_for_key}")
 
 def create_percentile_analysis(player_row, all_data, metrics):
     st.markdown("### 🎯 Percentile Rankings")
