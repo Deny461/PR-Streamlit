@@ -9,6 +9,7 @@ import re
 from difflib import SequenceMatcher
 from datetime import date, timedelta
 from typing import Optional, Set
+import unicodedata
 
 # NEW: API client
 from playerdata_client import PlayerDataClient, sessions_to_df
@@ -43,6 +44,73 @@ def similarity(a, b):
     """Calculate similarity between two strings"""
     return SequenceMatcher(None, a.lower(), b.lower()).ratio()
 
+# --- Name matching helpers (nickname-aware) ---
+NICKNAME_MAP = {
+    # common
+    "sam": "samuel", "ben": "benjamin", "alex": "alexander", "max": "maxwell",
+    "will": "william", "bill": "william", "billy": "william", "liam": "william",
+    "matt": "matthew", "mattie": "matthew", "mike": "michael", "mikey": "michael",
+    "nick": "nicholas", "nate": "nathan", "nathaniel": "nathan",
+    "tom": "thomas", "tommy": "thomas", "dave": "david", "danny": "daniel", "dan": "daniel",
+    "chris": "christopher", "kris": "christopher", "topher": "christopher",
+    "josh": "joshua", "jake": "jacob", "zac": "zachary", "zack": "zachary",
+    "joe": "joseph", "joey": "joseph", "tony": "anthony",
+    "steve": "steven", "stephen": "steven",
+    "rob": "robert", "bobby": "robert", "bob": "robert",
+    "rick": "richard", "ricky": "richard", "rich": "richard",
+    "ted": "theodore", "theo": "theodore",
+    "jon": "jonathan", "johnny": "john",
+    # a few common female mappings (in case)
+    "liz": "elizabeth", "beth": "elizabeth", "kate": "katherine", "katie": "katherine",
+    "abby": "abigail", "ally": "allison", "allyson": "allison",
+}
+
+SUFFIXES = {"jr", "sr", "ii", "iii", "iv"}
+
+def _strip_accents(text: str) -> str:
+    return ''.join(c for c in unicodedata.normalize('NFKD', text) if not unicodedata.combining(c))
+
+def _normalize_whitespace(text: str) -> str:
+    return ' '.join(text.split())
+
+def normalize_person_name(full_name: str) -> str:
+    s = _strip_accents(full_name or "").lower()
+    s = re.sub(r"[^a-z\s]", " ", s)
+    s = _normalize_whitespace(s)
+    # remove common suffixes at end
+    parts = s.split()
+    if parts and parts[-1] in SUFFIXES:
+        parts = parts[:-1]
+    return ' '.join(parts)
+
+def split_first_last(full_name: str) -> tuple[str, str]:
+    n = normalize_person_name(full_name)
+    parts = n.split()
+    if not parts:
+        return "", ""
+    if len(parts) == 1:
+        return parts[0], ""
+    return parts[0], parts[-1]
+
+def canonical_first(first: str) -> str:
+    f = (first or "").lower()
+    return NICKNAME_MAP.get(f, f)
+
+def first_names_match(f1: str, f2: str) -> bool:
+    a, b = canonical_first(f1), canonical_first(f2)
+    if not a or not b:
+        return False
+    if a == b:
+        return True
+    if a[0] == b[0]:
+        # initial matches, allow
+        pass
+    # prefix allowance (sam vs samuel) for length >= 3
+    if (a.startswith(b) or b.startswith(a)) and min(len(a), len(b)) >= 3:
+        return True
+    # similarity on first names
+    return similarity(a, b) >= 0.87
+
 @st.cache_data(ttl=86400)  # cache org athletes for 24h
 def fetch_org_athletes(org_id: str = None):
     """
@@ -72,7 +140,7 @@ def fetch_org_athletes(org_id: str = None):
     try:
         rows = []
         successful_clubs = 0
-        
+
         for club_id, club_name in club_mappings.items():
             try:
                 query = """
@@ -80,43 +148,42 @@ def fetch_org_athletes(org_id: str = None):
                   club(id: $clubId) {
                     id
                     name
-                    athletes {
-                      id
-                      name
-                    }
+                    athletes { id name }
                   }
                 }
                 """
                 data = api.gql(query, {"clubId": club_id})
-                
+
                 if data and data.get("club"):
                     club = data["club"]
                     actual_name = club.get("name", club_name)
                     athletes = club.get("athletes", []) or []
-                    
+
                     for athlete in athletes:
                         rows.append({
-                            "id": athlete["id"], 
-                            "name": athlete["name"], 
-                            "team": actual_name, 
-                            "team_id": club_id
+                            "id": athlete["id"],
+                            "name": athlete["name"],
+                            "team": actual_name,
+                            "team_id": club_id,
                         })
-                    
+
                     if athletes:  # Only count if it has athletes
                         successful_clubs += 1
-                        
+
             except Exception as club_error:
                 # Continue with other clubs if one fails
                 st.warning(f"⚠️ Failed to load club {club_name}: {club_error}")
                 continue
-        
+
         if rows:
-            st.success(f"✅ Loaded {len(rows)} athletes from {successful_clubs} Boston Bolts clubs via direct API access")
+            st.success(
+                f"✅ Loaded {len(rows)} athletes from {successful_clubs} Boston Bolts clubs via direct API access"
+            )
         else:
             st.warning("⚠️ No athletes found in any clubs - falling back to Excel-only mode")
-            
+
         return rows
-        
+
     except Exception as e:
         st.warning(f"⚠️ API fetch failed: {e}")
         return []
@@ -377,13 +444,11 @@ def load_unified_player_data(fetch_gps: bool = True, team_filter: str = None):
                         for idx, row in phv_df.iterrows():
                             first_name = str(row.get('First Name', '')).strip()
                             last_name = str(row.get('Last Name', '')).strip()
-                            
                             if first_name and first_name != 'nan' and last_name and last_name != 'nan':
                                 phv_full_name = f"{first_name} {last_name}"
                                 if similarity(player_name, phv_full_name) >= 0.85:
                                     height_val = row.get('Height (cm)', None)
                                     weight_val = row.get('Weight (kg)', None)
-                                    
                                     phv_data = {
                                         'Name': phv_full_name,
                                         'Height': height_val if pd.notna(height_val) and height_val != 0 else None,
@@ -434,14 +499,34 @@ def load_unified_player_data(fetch_gps: bool = True, team_filter: str = None):
             with st.spinner("Loading athletes from PlayerData…"):
                 api_athletes = fetch_org_athletes(ORG_ID)
             api_name_to_id = {a["name"]: a["id"] for a in api_athletes}
-            
-            # Debug prints removed
-            
+
+            # Build normalized API index for faster matching
+            api_index = {}
+            for api_name, aid in api_name_to_id.items():
+                f, l = split_first_last(api_name)
+                api_index.setdefault((canonical_first(f), l), []).append((api_name, aid))
+
             def match_name_to_id(name: str):
+                # exact first try
                 if name in api_name_to_id:
                     return api_name_to_id[name], name, 1.0
+
+                f, l = split_first_last(name)
+                key = (canonical_first(f), l)
+
+                # 1) exact canonical-first + last
+                if key in api_index:
+                    api_name, aid = api_index[key][0]
+                    return aid, api_name, 0.99
+
+                # 2) last name must match, then flexible first
                 best_id, best_name, best_sim = None, None, 0
                 for api_name, aid in api_name_to_id.items():
+                    f2, l2 = split_first_last(api_name)
+                    if l2 != l or not l:
+                        continue
+                    if first_names_match(f, f2):
+                        return aid, api_name, 0.95
                     sim = similarity(name, api_name)
                     if sim > best_sim:
                         best_id, best_name, best_sim = aid, api_name, sim
@@ -493,6 +578,12 @@ def load_unified_player_data(fetch_gps: bool = True, team_filter: str = None):
                     excel_players[player_name]['csv_data'] = None
                     excel_players[player_name]['csv_similarity'] = 0
                     excel_players[player_name]['api_id'] = None
+        except Exception as e:
+            st.warning(f"GPS fetch failed for {player_name}: {e}")
+            excel_players[player_name]['csv_match'] = None
+            excel_players[player_name]['csv_data'] = None
+            excel_players[player_name]['csv_similarity'] = 0
+            excel_players[player_name]['api_id'] = None
             if progress_bar is not None:
                 progress_bar.progress(100)
                 if status_txt is not None:
@@ -551,13 +642,119 @@ def render_unified_player_dashboard(player_name, excel_players):
         return
 
     player_info = excel_players[player_name]
-    tab1, tab2, tab3 = st.tabs(["📊 Performance Gauges", "📈 ACWR Analysis", "🏋️ Testing Data"])
+    tab1, tab2, tab3, tab4 = st.tabs(["📊 Performance Gauges", "📈 ACWR Analysis", "🏋️ Testing Data", "🧭 API Radars"])
     with tab1:
         render_player_gauges(player_name, player_info)
     with tab2:
         render_player_acwr(player_name, player_info)
     with tab3:
         render_player_testing_data_unified(player_name, player_info)
+    with tab4:
+        render_api_radars(player_name, player_info, excel_players)
+
+def render_api_radars(player_name, player_info, excel_players):
+    csv_data = player_info.get('csv_data')
+    if csv_data is None or csv_data.empty:
+        st.warning("No API session data available for radars.")
+        return
+
+    df = csv_data[csv_data['Athlete Name'] == player_info.get('csv_match', player_name)].copy()
+    if df.empty:
+        df = csv_data.copy()
+    df = df[df['Segment Name'] == 'Whole Session'].copy()
+    # ensure numerics
+    df['Duration (mins)'] = pd.to_numeric(df['Duration (mins)'], errors='coerce')
+    for m in METRICS:
+        df[m] = pd.to_numeric(df[m], errors='coerce')
+    df = df.dropna(subset=['Duration (mins)'])
+
+    def match_per90(d: pd.DataFrame) -> dict:
+        if d.empty:
+            return {m: 0 for m in METRICS}
+        out = {}
+        base = d[d['Session Type'] == 'Match Session'].copy()
+        if base.empty:
+            return {m: 0 for m in METRICS}
+        for m in METRICS:
+            if m == 'Top Speed (kph)':
+                out[m] = base[m].max(skipna=True)
+            else:
+                per90 = (base[m] / base['Duration (mins)']) * 90
+                out[m] = per90.mean(skipna=True)
+        return out
+
+    def train_per_session(d: pd.DataFrame) -> dict:
+        if d.empty:
+            return {m: 0 for m in METRICS}
+        base = d[d['Session Type'] == 'Training Session'].copy()
+        if base.empty:
+            return {m: 0 for m in METRICS}
+        out = {}
+        for m in METRICS:
+            if m == 'Top Speed (kph)':
+                out[m] = base[m].max(skipna=True)
+            else:
+                out[m] = base[m].mean(skipna=True)
+        return out
+
+    def concat_team_api_df() -> pd.DataFrame:
+        rows = []
+        for p, info in excel_players.items():
+            c = info.get('csv_data')
+            if c is None or c.empty:
+                continue
+            pos = (info.get('profile_data') or {}).get('POSITION', 'Unknown')
+            c2 = c.copy()
+            c2['__PLAYER__'] = p
+            c2['__POSITION__'] = pos
+            rows.append(c2)
+        return pd.concat(rows, ignore_index=True) if rows else pd.DataFrame()
+
+    def radar(fig_title: str, player_vals: dict, compare_vals: dict | None = None, colors=("#3b82f6", "#10b981")):
+        categories = [METRIC_LABELS[m] for m in METRICS]
+        pv = [player_vals.get(m, 0) or 0 for m in METRICS]
+        fig = go.Figure()
+        fig.add_trace(go.Scatterpolar(r=pv, theta=categories, fill='toself', name=player_name,
+                                      line_color=colors[0], fillcolor='rgba(59,130,246,0.25)'))
+        if compare_vals is not None:
+            cv = [compare_vals.get(m, 0) or 0 for m in METRICS]
+            fig.add_trace(go.Scatterpolar(r=cv, theta=categories, fill='toself', name='Position Avg',
+                                          line_color=colors[1], fillcolor='rgba(16,185,129,0.15)'))
+        fig.update_layout(polar=dict(radialaxis=dict(visible=True)), showlegend=True,
+                          title=fig_title, height=380, margin=dict(l=20, r=20, t=50, b=20))
+        st.plotly_chart(fig, use_container_width=True)
+
+    # Player-only radars
+    mp90 = match_per90(df)
+    tpavg = train_per_session(df)
+
+    # Position aggregates
+    all_api = concat_team_api_df()
+    pos = (player_info.get('profile_data') or {}).get('POSITION', 'Unknown')
+    compare_match, compare_train = None, None
+    if not all_api.empty:
+        team_pos = all_api[(all_api['__POSITION__'] == pos) & (all_api['Segment Name'] == 'Whole Session')].copy()
+        if not team_pos.empty:
+            compare_match = match_per90(team_pos)
+            compare_train = train_per_session(team_pos)
+
+    col1, col2 = st.columns(2)
+    with col1:
+        radar("Match Sessions — per 90 (Player)", mp90)
+    with col2:
+        if compare_match is not None:
+            radar(f"Match Sessions — per 90 vs {pos} Avg", mp90, compare_match)
+        else:
+            radar("Match Sessions — per 90 (Player)", mp90)
+
+    col3, col4 = st.columns(2)
+    with col3:
+        radar("Training Sessions — per session (Player)", tpavg)
+    with col4:
+        if compare_train is not None:
+            radar(f"Training Sessions — per session vs {pos} Avg", tpavg, compare_train)
+        else:
+            radar("Training Sessions — per session (Player)", tpavg)
 
 def render_player_gauges(player_name, player_info):
     """Render performance gauges for a specific player"""
