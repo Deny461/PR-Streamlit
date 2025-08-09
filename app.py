@@ -150,7 +150,7 @@ def fetch_org_athletes(org_id: str = None):
                     name
                     athletes { id name }
                   }
-                }
+    }
                 """
                 data = api.gql(query, {"clubId": club_id})
 
@@ -642,7 +642,7 @@ def render_unified_player_dashboard(player_name, excel_players):
         return
 
     player_info = excel_players[player_name]
-    tab1, tab2, tab3, tab4 = st.tabs(["📊 Performance Gauges", "📈 ACWR Analysis", "🏋️ Testing Data", "🧭 API Radars"])
+    tab1, tab2, tab3, tab4 = st.tabs(["📊 Performance Gauges", "📈 ACWR Analysis", "🏋️ Testing Data", "🧭 Physical Radar Charts"])
     with tab1:
         render_player_gauges(player_name, player_info)
     with tab2:
@@ -658,44 +658,7 @@ def render_api_radars(player_name, player_info, excel_players):
         st.warning("No API session data available for radars.")
         return
 
-    df = csv_data[csv_data['Athlete Name'] == player_info.get('csv_match', player_name)].copy()
-    if df.empty:
-        df = csv_data.copy()
-    df = df[df['Segment Name'] == 'Whole Session'].copy()
-    # ensure numerics
-    df['Duration (mins)'] = pd.to_numeric(df['Duration (mins)'], errors='coerce')
-    for m in METRICS:
-        df[m] = pd.to_numeric(df[m], errors='coerce')
-    df = df.dropna(subset=['Duration (mins)'])
-
-    def match_per90(d: pd.DataFrame) -> dict:
-        if d.empty:
-            return {m: 0 for m in METRICS}
-        out = {}
-        base = d[d['Session Type'] == 'Match Session'].copy()
-        if base.empty:
-            return {m: 0 for m in METRICS}
-        for m in METRICS:
-            if m == 'Top Speed (kph)':
-                out[m] = base[m].max(skipna=True)
-            else:
-                per90 = (base[m] / base['Duration (mins)']) * 90
-                out[m] = per90.mean(skipna=True)
-        return out
-
-    def train_per_session(d: pd.DataFrame) -> dict:
-        if d.empty:
-            return {m: 0 for m in METRICS}
-        base = d[d['Session Type'] == 'Training Session'].copy()
-        if base.empty:
-            return {m: 0 for m in METRICS}
-        out = {}
-        for m in METRICS:
-            if m == 'Top Speed (kph)':
-                out[m] = base[m].max(skipna=True)
-            else:
-                out[m] = base[m].mean(skipna=True)
-        return out
+    player_key = player_info.get('csv_match', player_name)
 
     def concat_team_api_df() -> pd.DataFrame:
         rows = []
@@ -710,51 +673,88 @@ def render_api_radars(player_name, player_info, excel_players):
             rows.append(c2)
         return pd.concat(rows, ignore_index=True) if rows else pd.DataFrame()
 
-    def radar(fig_title: str, player_vals: dict, compare_vals: dict | None = None, colors=("#3b82f6", "#10b981")):
-        categories = [METRIC_LABELS[m] for m in METRICS]
-        pv = [player_vals.get(m, 0) or 0 for m in METRICS]
-        fig = go.Figure()
-        fig.add_trace(go.Scatterpolar(r=pv, theta=categories, fill='toself', name=player_name,
-                                      line_color=colors[0], fillcolor='rgba(59,130,246,0.25)'))
-        if compare_vals is not None:
-            cv = [compare_vals.get(m, 0) or 0 for m in METRICS]
-            fig.add_trace(go.Scatterpolar(r=cv, theta=categories, fill='toself', name='Position Avg',
-                                          line_color=colors[1], fillcolor='rgba(16,185,129,0.15)'))
-        fig.update_layout(polar=dict(radialaxis=dict(visible=True)), showlegend=True,
-                          title=fig_title, height=380, margin=dict(l=20, r=20, t=50, b=20))
-        st.plotly_chart(fig, use_container_width=True)
-
-    # Player-only radars
-    mp90 = match_per90(df)
-    tpavg = train_per_session(df)
-
-    # Position aggregates
     all_api = concat_team_api_df()
-    pos = (player_info.get('profile_data') or {}).get('POSITION', 'Unknown')
-    compare_match, compare_train = None, None
-    if not all_api.empty:
-        team_pos = all_api[(all_api['__POSITION__'] == pos) & (all_api['Segment Name'] == 'Whole Session')].copy()
-        if not team_pos.empty:
-            compare_match = match_per90(team_pos)
-            compare_train = train_per_session(team_pos)
+    if all_api.empty:
+        st.warning("No API data available to build percentiles.")
+        return
+
+    # keep Whole Session only and ensure numerics
+    all_api = all_api[all_api['Segment Name'] == 'Whole Session'].copy()
+    all_api['Duration (mins)'] = pd.to_numeric(all_api['Duration (mins)'], errors='coerce')
+    for m in METRICS:
+        all_api[m] = pd.to_numeric(all_api[m], errors='coerce')
+    all_api = all_api.dropna(subset=['Duration (mins)'])
+
+    def per_player_metrics(source: pd.DataFrame, session_type: str, per90: bool) -> pd.DataFrame:
+        base = source[source['Session Type'] == session_type].copy()
+        if base.empty:
+            return pd.DataFrame(columns=['__PLAYER__'] + METRICS).set_index('__PLAYER__')
+        if per90:
+            for m in METRICS:
+                if m != 'Top Speed (kph)':
+                    base[m] = (base[m] / base['Duration (mins)']) * 90
+        # aggregate per player
+        agg = {}
+        for m in METRICS:
+            if m == 'Top Speed (kph)':
+                agg[m] = 'max'
+            else:
+                agg[m] = 'mean'
+        dfp = base.groupby('__PLAYER__').agg(agg)
+        return dfp
+
+    # build per-player tables
+    team_match = per_player_metrics(all_api, 'Match Session', per90=True)
+    team_train = per_player_metrics(all_api, 'Training Session', per90=False)
+
+    # position filters
+    pos_map = all_api.groupby('__PLAYER__')['__POSITION__'].agg(lambda x: x.dropna().iloc[0] if len(x.dropna()) else 'Unknown')
+    player_pos = pos_map.get(player_key, (player_info.get('profile_data') or {}).get('POSITION', 'Unknown'))
+    pos_players = set(pos_map[pos_map == player_pos].index.tolist())
+    pos_match = team_match[team_match.index.isin(pos_players)] if not team_match.empty else team_match
+    pos_train = team_train[team_train.index.isin(pos_players)] if not team_train.empty else team_train
+
+    def percentiles(table: pd.DataFrame, who: str) -> dict:
+        out = {m: 0.0 for m in METRICS}
+        if table.empty or who not in table.index:
+            return out
+        row = table.loc[who]
+        for m in METRICS:
+            col = table[m].dropna()
+            if col.empty:
+                out[m] = 0.0
+                continue
+            val = row[m]
+            out[m] = float((col <= val).mean() * 100.0)
+        return out
+
+    # compute player percentiles
+    p_match_vs_team = percentiles(team_match, player_key)
+    p_match_vs_pos = percentiles(pos_match, player_key)
+    p_train_vs_team = percentiles(team_train, player_key)
+    p_train_vs_pos = percentiles(pos_train, player_key)
+
+    def radar_percent(fig_title: str, values: dict, color="#3b82f6"):
+        cats = [METRIC_LABELS[m] for m in METRICS]
+        vals = [values.get(m, 0) for m in METRICS]
+        fig = go.Figure(go.Scatterpolar(r=vals, theta=cats, fill='toself', name='Percentile',
+                                        line_color=color, fillcolor='rgba(59,130,246,0.25)'))
+        fig.update_layout(template='plotly_white',
+                          polar=dict(radialaxis=dict(visible=True, range=[0,100], tickvals=[0,25,50,75,100])),
+                          showlegend=False, title=fig_title, height=380, margin=dict(l=20,r=20,t=50,b=20))
+        st.plotly_chart(fig, use_container_width=True)
 
     col1, col2 = st.columns(2)
     with col1:
-        radar("Match Sessions — per 90 (Player)", mp90)
+        radar_percent("Match Sessions — percentile vs Team", p_match_vs_team)
     with col2:
-        if compare_match is not None:
-            radar(f"Match Sessions — per 90 vs {pos} Avg", mp90, compare_match)
-        else:
-            radar("Match Sessions — per 90 (Player)", mp90)
+        radar_percent(f"Match Sessions — percentile vs {player_pos}", p_match_vs_pos, color="#10b981")
 
     col3, col4 = st.columns(2)
     with col3:
-        radar("Training Sessions — per session (Player)", tpavg)
+        radar_percent("Training Sessions — percentile vs Team", p_train_vs_team)
     with col4:
-        if compare_train is not None:
-            radar(f"Training Sessions — per session vs {pos} Avg", tpavg, compare_train)
-        else:
-            radar("Training Sessions — per session (Player)", tpavg)
+        radar_percent(f"Training Sessions — percentile vs {player_pos}", p_train_vs_pos, color="#10b981")
 
 def render_player_gauges(player_name, player_info):
     """Render performance gauges for a specific player"""
@@ -1907,7 +1907,7 @@ if st.session_state.page == "Dashboard Selection":
     st.markdown("**Choose what you want to view:**")
     choice = st.selectbox(
         "Dashboard Type:",
-        ["Player Gauges Dashboard", "ACWR Dashboard", "Testing Data Dashboard", "API Radars"],
+        ["Player Gauges Dashboard", "ACWR Dashboard", "Testing Data Dashboard", "Physical Radar Charts"],
         key="dashboard_type_select"
     )
 
@@ -2001,7 +2001,7 @@ if st.session_state.page == "Testing Data Dashboard":
         render_player_testing_data_unified(selected_player, excel_players[selected_player])
 
 # === API RADARS DASHBOARD ===
-if st.session_state.page == "API Radars":
+if st.session_state.page == "API Radars" or st.session_state.page == "Physical Radar Charts":
     col1, col2 = st.columns([1, 3])
     with col1:
         if st.button("← Back to Dashboard Selection", key="radars_back"):
@@ -2015,7 +2015,7 @@ if st.session_state.page == "API Radars":
         st.stop()
     players = teams_players[team]
 
-    st.markdown("### 🧭 API Radars")
+    st.markdown("### 🧭 Physical Radar Charts")
     st.markdown(f"**{len(players)} players** in {team}")
 
     for player in players:
