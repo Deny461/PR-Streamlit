@@ -7,6 +7,9 @@ import plotly.express as px
 import glob
 import re
 from difflib import SequenceMatcher
+import hashlib
+import os
+import binascii
 from datetime import date, timedelta
 from typing import Optional, Set
 import unicodedata
@@ -1868,6 +1871,38 @@ def _read_coach_access() -> dict:
 
 COACH_ACCESS = _read_coach_access()
 
+# === PASSWORDS (from secrets) ===
+def _read_coach_passwords() -> dict:
+    mapping = st.secrets.get("COACH_PASSWORDS", {})
+    if isinstance(mapping, dict):
+        return {str(k).lower().strip(): str(v) for k, v in mapping.items()}
+    return {}
+
+COACH_PASSWORDS = _read_coach_passwords()
+
+def _verify_pbkdf2(stored: str, provided: str) -> bool:
+    try:
+        # format: pbkdf2$<iterations>$<salt_hex>$<hash_hex>
+        algo, iters, salt_hex, hash_hex = stored.split("$", 3)
+        if algo != "pbkdf2":
+            return False
+        iterations = int(iters)
+        salt = binascii.unhexlify(salt_hex)
+        expected = binascii.unhexlify(hash_hex)
+        dk = hashlib.pbkdf2_hmac("sha256", provided.encode("utf-8"), salt, iterations)
+        return hashlib.compare_digest(dk, expected)
+    except Exception:
+        return False
+
+def _verify_password(email: str, provided: str) -> bool:
+    stored = COACH_PASSWORDS.get(email.lower().strip())
+    if not stored:
+        return False
+    if stored.startswith("pbkdf2$"):
+        return _verify_pbkdf2(stored, provided)
+    # fallback: plain text
+    return stored == provided
+
 def _filter_excel_team_keys(all_team_keys: list[str], allowed_team_names: list[str]) -> list[str]:
     """Map human team names (e.g., 'Homegrown 2011') to our Excel team keys (e.g., '2011 MLS Next').
     Strategy: extract all 4-digit years from allowed names and keep keys containing any of those years.
@@ -1893,22 +1928,56 @@ def _filter_excel_team_keys(all_team_keys: list[str], allowed_team_names: list[s
     return uniq
 
 def _login_page():
-    st.markdown("### Coach Login")
-    email = st.text_input("Coach email", value=st.session_state.get("pending_email", "")).strip().lower()
-    submitted = st.button("Sign in")
-    if submitted:
-        allowed = COACH_ACCESS.get(email)
-        if allowed:
+    # Centered, branded login card
+    st.markdown(
+        """
+        <style>
+        .bb-login-card {max-width: 560px; margin: 8vh auto; padding: 28px 28px 24px; border-radius: 16px;
+            background: linear-gradient(180deg,#0f172a 0%, #1e3a8a 60%, #0f172a 100%);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.25); color: #e5e7eb; border: 1px solid rgba(255,255,255,0.08)}
+        .bb-login-title {text-align:center; font-weight:800; font-size: 28px; letter-spacing:0.3px; margin: 6px 0 2px}
+        .bb-login-sub {text-align:center; color:#cbd5e1; font-size: 13px; margin-bottom: 18px}
+        .bb-login-row {display:flex; align-items:center; justify-content:center; gap:18px; margin-bottom:10px}
+        .bb-logo {height:64px}
+        .bb-btn {width:100%; background:#f59e0b; color:#0b1020; font-weight:700; padding:10px 14px; border-radius:10px; border:none}
+        .bb-card-inner {background: rgba(255,255,255,0.06); padding: 18px; border-radius: 12px;}
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.markdown('<div class="bb-login-card">', unsafe_allow_html=True)
+    col_l, col_m, col_r = st.columns([1, 5, 1])
+    with col_m:
+        st.markdown('<div class="bb-login-row">' \
+                    f'<img class="bb-logo" src="app/static/BostonBoltsLogo.png" onerror="this.src=\'BostonBoltsLogo.png\'"/>' \
+                    f'<img class="bb-logo" src="app/static/MLSNextLogo.png" onerror="this.src=\'MLSNextLogo.png\'"/>' \
+                    '</div>', unsafe_allow_html=True)
+        st.markdown('<div class="bb-login-title">Boston Bolts Performance</div>', unsafe_allow_html=True)
+        st.markdown('<div class="bb-login-sub">Coach access — sign in with your club email</div>', unsafe_allow_html=True)
+
+        with st.form("coach-login"):
+            email = st.text_input("Email", value=st.session_state.get("pending_email", "")).strip().lower()
+            password = st.text_input("Password", type="password")
+            submitted = st.form_submit_button("Sign in", use_container_width=True)
+
+        if submitted:
+            allowed = COACH_ACCESS.get(email)
+            if not allowed:
+                st.error("Email not recognized.")
+                st.session_state.pending_email = email
+                st.stop()
+            if not _verify_password(email, password):
+                st.error("Incorrect password.")
+                st.session_state.pending_email = email
+                st.stop()
+
             st.session_state.user_email = email
             st.session_state.allowed_teams = allowed
-            # If Jonny or any multi-team coach, land on Home; otherwise jump ahead
             st.session_state.page = "Home"
             st.session_state.pending_email = ""
             st.rerun()
-        else:
-            st.error("Email not recognized. Please use your Boston Bolts coach email.")
-            st.session_state.pending_email = email
-            st.stop()
+    st.markdown('</div>', unsafe_allow_html=True)
     st.stop()
 
 # === SESSION-STATE INIT ===
