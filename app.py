@@ -1836,6 +1836,76 @@ METRIC_LABELS = {
     "Top Speed (kph)": "Top Speed"
 }
 
+# === AUTH CONFIG (Coach access control by email) ===
+# You can override this mapping from .streamlit/secrets.toml under [COACH_ACCESS]
+DEFAULT_COACH_ACCESS = {
+    "kyleryan@bostonbolts.com": ["Boston Bolts MLS Next Homegrown 2013"],
+    "denispetro@bostonbolts.com": ["Boston Bolts MLS Next Homegrown 2012"],
+    "bryce@bostonbolts.com": ["Boston Bolts MLS Next Homegrown 2011"],
+    "seannapier@bostonbolts.com": ["Boston Bolts MLS Next Homegrown 2010"],
+    "jonnyburns@bostonbolts.com": [
+        "Boston Bolts MLS Next Homegrown 2009",
+        "Boston Bolts MLS Next Homegrown 2007/2008",
+    ],
+}
+
+def _read_coach_access() -> dict:
+    coach_access = st.secrets.get("COACH_ACCESS")
+    if isinstance(coach_access, dict) and coach_access:
+        # Normalize emails to lowercase; ensure lists
+        out = {}
+        for email, teams in coach_access.items():
+            if isinstance(teams, str):
+                teams = [teams]
+            out[str(email).lower().strip()] = [str(t) for t in (teams or [])]
+        return out
+    return DEFAULT_COACH_ACCESS
+
+COACH_ACCESS = _read_coach_access()
+
+def _filter_excel_team_keys(all_team_keys: list[str], allowed_team_names: list[str]) -> list[str]:
+    """Map human team names (e.g., 'Homegrown 2011') to our Excel team keys (e.g., '2011 MLS Next').
+    Strategy: extract all 4-digit years from allowed names and keep keys containing any of those years.
+    """
+    if not allowed_team_names:
+        return []
+    tokens: set[str] = set()
+    for name in allowed_team_names:
+        years = re.findall(r"\d{4}", str(name))
+        tokens.update(years)
+    out = []
+    for k in all_team_keys:
+        lower_k = str(k).lower()
+        if any(tok in lower_k for tok in tokens):
+            out.append(k)
+    # de-dup while preserving order
+    seen = set()
+    uniq = []
+    for k in out:
+        if k not in seen:
+            seen.add(k)
+            uniq.append(k)
+    return uniq
+
+def _login_page():
+    st.markdown("### Coach Login")
+    email = st.text_input("Coach email", value=st.session_state.get("pending_email", "")).strip().lower()
+    submitted = st.button("Sign in")
+    if submitted:
+        allowed = COACH_ACCESS.get(email)
+        if allowed:
+            st.session_state.user_email = email
+            st.session_state.allowed_teams = allowed
+            # If Jonny or any multi-team coach, land on Home; otherwise jump ahead
+            st.session_state.page = "Home"
+            st.session_state.pending_email = ""
+            st.rerun()
+        else:
+            st.error("Email not recognized. Please use your Boston Bolts coach email.")
+            st.session_state.pending_email = email
+            st.stop()
+    st.stop()
+
 # === SESSION-STATE INIT ===
 if "page" not in st.session_state:
     st.session_state.page = "Home"
@@ -1845,6 +1915,10 @@ if "show_debug" not in st.session_state:
     st.session_state.show_debug = False
 if "enable_api" not in st.session_state:
     st.session_state.enable_api = True
+
+# === GUARD: Require login ===
+if "user_email" not in st.session_state:
+    _login_page()
 
 # === LOGO & TITLE ===
 with st.container():
@@ -1873,15 +1947,40 @@ with st.container():
 
 # === LANDING PAGE ===
 if st.session_state.page == "Home":
-    st.markdown("### Step 1: Select Team")
+    # Sidebar sign-out
+    with st.sidebar:
+        st.caption(f"Signed in as {st.session_state.user_email}")
+        if st.button("Sign out"):
+            for k in [
+                "user_email", "allowed_teams", "page", "selected_team", "proceed"
+            ]:
+                st.session_state.pop(k, None)
+            st.rerun()
+
+    st.markdown("### Step 1: Team")
     teams_players, excel_players = load_unified_player_data(fetch_gps=False)
     if not teams_players:
         st.error("No Excel files with player data found!")
         st.stop()
 
+    allowed_teams = st.session_state.get("allowed_teams", [])
+    # Map coach allowed names to our Excel keys
+    filtered_keys = _filter_excel_team_keys(list(teams_players.keys()), allowed_teams)
+
+    if not filtered_keys:
+        st.error("No teams available for your account.")
+        st.stop()
+
+    # If only one team, auto-select and move on
+    if len(filtered_keys) == 1:
+        st.session_state.selected_team = filtered_keys[0]
+        st.session_state.page = "Dashboard Selection"
+        st.rerun()
+
+    # Multi-team coach (e.g., Jonny): show selector
     team_choice = st.selectbox(
         "Choose which team you want to view:",
-        list(teams_players.keys()),
+        filtered_keys,
         key="home_team_select"
     )
 
