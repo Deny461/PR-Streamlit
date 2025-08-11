@@ -34,6 +34,7 @@ API_AVAILABLE = True
 # === GLOBAL DATA WINDOW ===
 # Fixed API start date for all dashboards
 API_START_DATE = date(2025, 8, 7)
+CACHE_DAY = date.today().isoformat()  # Daily cache key to ensure fast reloads within a day
 
 # === HELPERS ===
 @st.cache_data(ttl=60)  # Cache expires every 60 seconds
@@ -192,8 +193,8 @@ def fetch_org_athletes(org_id: str = None):
         st.warning(f"⚠️ API fetch failed: {e}")
         return []
 
-@st.cache_data(ttl=86400)  # cache per-athlete sessions for 24h
-def fetch_recent_sessions_df(athlete_id: str, athlete_name: str, days: int = 365) -> pd.DataFrame:
+@st.cache_data(ttl=86400)  # cache per-athlete sessions for 24h; respects daily invalidation via cache_day param
+def fetch_recent_sessions_df(athlete_id: str, athlete_name: str, days: int = 365, cache_day: str = None) -> pd.DataFrame:
     """
     Fetch recent session participations for an athlete and adapt them into the CSV schema
     your UI already expects via sessions_to_df.
@@ -223,6 +224,8 @@ def fetch_recent_sessions_df(athlete_id: str, athlete_name: str, days: int = 365
     }
     """
     try:
+        # include cache_day in key implicitly
+        _ = cache_day or CACHE_DAY
         data = api.gql(query, {"athleteId": athlete_id, "startDate": start_date})
     except Exception as e:
         # Surface and return empty so calling code can continue
@@ -363,12 +366,14 @@ def fetch_recent_sessions_df(athlete_id: str, athlete_name: str, days: int = 365
         })
     return df_out
 
-@st.cache_data(ttl=7776000)  # Cache for ~90 days (Excel changes infrequently)
-def load_unified_player_data(fetch_gps: bool = True, team_filter: str = None):
+@st.cache_data(ttl=7776000)  # Cache for ~90 days; daily invalidation via cache_day param
+def load_unified_player_data(fetch_gps: bool = True, team_filter: str = None, cache_day: str = None):
     """Load Excel files as master source and optionally merge with PlayerData API (keeping SAME keys: csv_match/csv_data).
     - When fetch_gps is False, returns Excel-derived structures only (fast path).
     - When team_filter is provided, GPS fetching is limited to that team for speed.
     """
+    # cache_day participates in the cache key; default to today's date for "once per day" behavior
+    cache_day = cache_day or CACHE_DAY
     excel_files = glob.glob("*.xlsx")
     # Early filter: if team_filter is provided, attempt to keep only that team's workbook(s)
     if team_filter:
@@ -558,7 +563,7 @@ def load_unified_player_data(fetch_gps: bool = True, team_filter: str = None):
                 if aid:
                     matched_count += 1
                     try:
-                        gps_df = fetch_recent_sessions_df(aid, player_name)
+                        gps_df = fetch_recent_sessions_df(aid, player_name, cache_day=CACHE_DAY)
                         if gps_df is not None and len(gps_df) > 0:
                             gps_data_count += 1
                             excel_players[player_name]['csv_match'] = player_name
@@ -1947,7 +1952,7 @@ with st.container():
 # === LANDING PAGE ===
 if st.session_state.page == "Home":
     # Immediately resolve the user's team context and jump to Dashboard Selection.
-    teams_players, _ = load_unified_player_data(fetch_gps=False)
+    teams_players, _ = load_unified_player_data(fetch_gps=False, cache_day=CACHE_DAY)
     allowed_teams = st.session_state.get("allowed_teams", [])
     filtered_keys = _filter_excel_team_keys(list(teams_players.keys()), allowed_teams) if teams_players else []
 
@@ -2023,7 +2028,7 @@ if st.session_state.page == "Player Gauges Dashboard":
             st.session_state.show_debug = not st.session_state.show_debug
             st.rerun()
 
-    teams_players, excel_players = load_unified_player_data(fetch_gps=True, team_filter=st.session_state.selected_team)
+    teams_players, excel_players = load_unified_player_data(fetch_gps=True, team_filter=st.session_state.selected_team, cache_day=CACHE_DAY)
     team = st.session_state.selected_team
     if team not in teams_players:
         st.error(f"No players found for team {team}")
@@ -2045,7 +2050,7 @@ if st.session_state.page == "ACWR Dashboard":
             st.session_state.page = "Dashboard Selection"
             st.rerun()
 
-    teams_players, excel_players = load_unified_player_data(fetch_gps=True, team_filter=st.session_state.selected_team)
+    teams_players, excel_players = load_unified_player_data(fetch_gps=True, team_filter=st.session_state.selected_team, cache_day=CACHE_DAY)
     team = st.session_state.selected_team
     if team not in teams_players:
         st.error(f"No players found for team {team}")
@@ -2067,14 +2072,14 @@ if st.session_state.page == "Testing Data Dashboard":
             st.session_state.page = "Dashboard Selection"
             st.rerun()
 
-    teams_players, excel_players = load_unified_player_data(fetch_gps=True, team_filter=st.session_state.selected_team)
+    teams_players, excel_players = load_unified_player_data(fetch_gps=True, team_filter=st.session_state.selected_team, cache_day=CACHE_DAY)
     team = st.session_state.selected_team
     if team not in teams_players:
         st.error(f"No players found for team {team}")
         st.stop()
     players = teams_players[team]
 
-    st.markdown("### Step 3: Select Individual Player")
+    st.markdown("### Select Individual Player")
     st.markdown(f"**Team:** {team} ({len(players)} players)")
 
     selected_player = st.selectbox(
@@ -2095,7 +2100,7 @@ if st.session_state.page == "API Radars" or st.session_state.page == "Physical R
             st.session_state.page = "Dashboard Selection"
             st.rerun()
 
-    teams_players, excel_players = load_unified_player_data(fetch_gps=True, team_filter=st.session_state.selected_team)
+    teams_players, excel_players = load_unified_player_data(fetch_gps=True, team_filter=st.session_state.selected_team, cache_day=CACHE_DAY)
     team = st.session_state.selected_team
     if team not in teams_players:
         st.error(f"No players found for team {team}")
