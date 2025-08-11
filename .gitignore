@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Environments
+.venv/
+.env
+
+# Streamlit secrets (keep local only)
+.streamlit/secrets.toml
+
+# macOS
+.DS_Store
