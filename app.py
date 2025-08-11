@@ -1920,100 +1920,81 @@ if "enable_api" not in st.session_state:
 if "user_email" not in st.session_state:
     _login_page()
 
-# === LOGO & TITLE ===
+# === HEADER ===
 with st.container():
     c1, c2, c3 = st.columns([0.08, 0.001, 0.72])
     with c1: st.image("BostonBoltsLogo.png", width=120)
     with c2: st.markdown("<div style='border-left:2px solid gray; height:90px;'></div>", unsafe_allow_html=True)
     with c3: st.image("MLSNextLogo.png", width=120)
 with st.container():
-    if st.session_state.page == "Home":
-        title = "Performance Analytics"
-    elif st.session_state.page == "Dashboard Selection":
-        title = f"{st.session_state.selected_team} - Select Dashboard"
+    # Clean title without step wording
+    if st.session_state.page == "Dashboard Selection":
+        title = f"{st.session_state.selected_team} — Dashboard"
     elif st.session_state.page == "Player Gauges Dashboard":
-        title = f"Player Readiness for {st.session_state.selected_team}"
+        title = f"Player Readiness — {st.session_state.selected_team}"
     elif st.session_state.page == "ACWR Dashboard":
-        title = f"ACWR Analysis for {st.session_state.selected_team}"
+        title = f"ACWR — {st.session_state.selected_team}"
     elif st.session_state.page == "Testing Data Dashboard":
-        title = f"Testing Data for {st.session_state.selected_team}"
+        title = f"Testing Data — {st.session_state.selected_team}"
     else:
         title = "Performance Analytics"
 
     st.markdown(
-        f"<h1 style='text-align:center;font-size:60px;margin-top:-40px;'>{title}</h1>",
+        f"<h1 style='text-align:center;font-size:48px;margin-top:-40px;'>{title}</h1>",
         unsafe_allow_html=True
     )
 
 # === LANDING PAGE ===
 if st.session_state.page == "Home":
-    # Sidebar sign-out
+    # Immediately resolve the user's team context and jump to Dashboard Selection.
+    teams_players, _ = load_unified_player_data(fetch_gps=False)
+    allowed_teams = st.session_state.get("allowed_teams", [])
+    filtered_keys = _filter_excel_team_keys(list(teams_players.keys()), allowed_teams) if teams_players else []
+
+    # Persist available choices for multi-team coaches
+    st.session_state.allowed_team_choices = filtered_keys
+
+    if filtered_keys:
+        if len(filtered_keys) == 1:
+            st.session_state.selected_team = filtered_keys[0]
+        else:
+            # Default to first option; can be changed on the Dashboard Selection page
+            st.session_state.selected_team = st.session_state.get("selected_team", filtered_keys[0])
+    else:
+        st.session_state.selected_team = None
+
+    st.session_state.page = "Dashboard Selection"
+    st.rerun()
+
+# === DASHBOARD SELECTION PAGE ===
+if st.session_state.page == "Dashboard Selection":
+    # Sidebar: account + quick controls
     with st.sidebar:
         st.caption(f"Signed in as {st.session_state.user_email}")
-        if st.button("Sign out"):
-            for k in [
-                "user_email", "allowed_teams", "page", "selected_team", "proceed"
-            ]:
-                st.session_state.pop(k, None)
-            st.rerun()
-
-    st.markdown("### Step 1: Team")
-    teams_players, excel_players = load_unified_player_data(fetch_gps=False)
-    if not teams_players:
-        st.error("No Excel files with player data found!")
-        st.stop()
-
-    allowed_teams = st.session_state.get("allowed_teams", [])
-    # Map coach allowed names to our Excel keys
-    filtered_keys = _filter_excel_team_keys(list(teams_players.keys()), allowed_teams)
-
-    if not filtered_keys:
-        st.error("No teams available for your account.")
-        st.stop()
-
-    # If only one team, auto-select and move on
-    if len(filtered_keys) == 1:
-        st.session_state.selected_team = filtered_keys[0]
-        st.session_state.page = "Dashboard Selection"
-        st.rerun()
-
-    # Multi-team coach (e.g., Jonny): show selector
-    team_choice = st.selectbox(
-        "Choose which team you want to view:",
-        filtered_keys,
-        key="home_team_select"
-    )
-
-    # API toggle and refresh button
-    col1, col2, col3 = st.columns([1, 1, 2])
-    with col1:
+        # For multi-team coaches, allow team switch here
+        choices = st.session_state.get("allowed_team_choices", []) or [st.session_state.get("selected_team")]
+        if choices and len(choices) > 1:
+            new_team = st.selectbox("Team", options=choices, index=max(0, choices.index(st.session_state.get("selected_team", choices[0]))))
+            if new_team != st.session_state.get("selected_team"):
+                st.session_state.selected_team = new_team
+                load_unified_player_data.clear()
+                st.rerun()
+        # API toggle and data refresh
         api_enabled = st.checkbox("Enable GPS API", value=st.session_state.enable_api)
         if api_enabled != st.session_state.enable_api:
             st.session_state.enable_api = api_enabled
             load_unified_player_data.clear()
             st.rerun()
-    with col2:
         if st.button("Refresh Data"):
             fetch_recent_sessions_df.clear()
             load_unified_player_data.clear()
             st.rerun()
-    with col3:
-        if st.session_state.enable_api:
-            st.success("🟢 GPS API enabled - includes PlayerData GPS performance data")
-        else:
-            st.info("🔵 Excel-only mode - faster loading, testing data only")
+        if st.button("Sign out"):
+            for k in ["user_email", "allowed_teams", "page", "selected_team", "proceed", "allowed_team_choices"]:
+                st.session_state.pop(k, None)
+            st.rerun()
 
-    if st.button("Continue to Dashboard Selection", key="team_continue"):
-        st.session_state.selected_team = team_choice
-        st.session_state.page = "Dashboard Selection"
-        st.rerun()
-    st.stop()
-
-# === DASHBOARD SELECTION PAGE ===
-if st.session_state.page == "Dashboard Selection":
-    st.markdown(f"### Step 2: Select Dashboard for {st.session_state.selected_team}")
-
-    st.markdown("**Choose what you want to view:**")
+    st.markdown("**Choose a dashboard:**")
     choice = st.selectbox(
         "Dashboard Type:",
         ["Player Gauges Dashboard", "ACWR Dashboard", "Testing Data Dashboard", "Physical Radar Charts"],
@@ -2026,10 +2007,7 @@ if st.session_state.page == "Dashboard Selection":
             st.session_state.page = choice
             st.session_state.proceed = True
             st.rerun()
-    with col2:
-        if st.button("← Back to Team Selection", key="back_to_team"):
-            st.session_state.page = "Home"
-            st.rerun()
+    # No back to team selection page; team can be switched from the sidebar for multi-team coaches
     st.stop()
 
 # === PLAYER GAUGES DASHBOARD ===
